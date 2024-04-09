@@ -1,0 +1,14 @@
+
+                           PCB Net Class to ASCII Log
+
+                           ---------------------------
+
+                          02:54 PM Friday, May 27, 2022
+                                   Job Name: 
+
+WARNING:  Impedance data may not be invalid based on the current Setup Parameters.  Opening the Net Class and Clearances dialog will automatically update and correct this data.
+
+Beginning Net Class ASCII Output processing..
+
+Net Class ASCII Output processing completed.
+

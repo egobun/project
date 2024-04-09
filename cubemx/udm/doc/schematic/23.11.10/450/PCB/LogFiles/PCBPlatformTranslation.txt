@@ -1,0 +1,136 @@
+
+                        PCB Platform Translation Log File
+                        ---------------------------------
+
+                       06:45 PM Sunday, December 03, 2006
+    Job Name: C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\template.pcb
+
+
+Current Platform: Undetermined
+Target Platform:  Windows
+
+
+Converting case-sensitive directories and filenames...
+
+
+Converting ASCII files...
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\AutoActive.lck"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\All Off.dcs"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\All On.dcs"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\Assembly Bottom.dcs"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\Assembly Top.dcs"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\Drill Drawing.dcs"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\GerberMachineFile1.gmf"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\Graphics Settings.bak"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\Graphics Settings.hkp"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\Placement.dcs"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\PlotSetup.gpf"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\Routing.dcs"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\Silk Bottom Generated.dcs"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\Silk Bottom.dcs"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\Silk Top Generated.dcs"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\Silk Top.dcs"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\LogFiles\PCBInfoFile.txt"
+
+    ***** Conversion failed. Access is denied. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\LogFiles\PCBLogFile.txt"
+
+    ***** Conversion failed. Access is denied. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\LogFiles\PCBPlatformTranslation.txt"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\LogFiles\PCBVersion.txt"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\template.pcb"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Work\Layout_Temp\layer.fsc"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Work\Layout_Temp\LayoutTemp.tmp"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Work\Layout_Temp\SysIndex.cbf"
+
+    ***** Conversion was successful. *****
+
+
+Converting paths stored in files...
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\template.pcb"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Work\template.prj"
+
+    ***** Conversion failed. One or more paths were not converted. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Work\Layout_Temp\JobPrefsDB.jpf"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Work\Layout_Temp\LayoutDB.lyt"
+
+    ***** Conversion was successful. *****
+
+    Filename: "C:\work\PCB\mlib\LayoutTemplates\4 Layer Template\Config\PlotSetup.gpf"
+
+    ***** Conversion was successful. *****
+

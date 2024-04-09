@@ -1,0 +1,216 @@
+=======================================================================
+Expedition PCB - Pinnacle - Version EXP2005.1_060615.00 2005.1
+=======================================================================
+
+RELOAD CELLS
+
+Job Directory:  C:\Mentor_proj\408\PCB\
+
+
+Design Units:(mm)
+
+Replace Cell Log:   repCellLog33.txt
+
+Tue Nov 30 18:17:43 2021
+
+Reference Designator            Cell Name                         New Cell Name
+===============================================================================
+
+
+---------------  RELOAD CELLS  Tue Nov 30 18:17:43 2021  ---------------
+
+
+C369                            CAPC1005X55N                      CAPC1005X55N                    
+DA403                           SOT95P275X145-6N                  SOT95P275X145-6N                
+DA702                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C469                            CAPC1005X55N                      CAPC1005X55N                    
+C568                            CAPC2012X135N                     CAPC2012X135N                   
+C603                            CAPC2012X135N                     CAPC2012X135N                   
+DA301                           SIL0008E                          SIL0008E                        
+C267                            CAPC1005X55N                      CAPC1005X55N                    
+C671                            CAPC1608X90N                      CAPC1608X90N                    
+C463                            CAPC1005X55N                      CAPC1005X55N                    
+DA402                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C362                            CAPC1005X55N                      CAPC1005X55N                    
+C408                            CAPC1005X55N                      CAPC1005X55N                    
+C305                            CAPC1608X90N                      CAPC1608X90N                    
+C666                            CAPC1608X90N                      CAPC1608X90N                    
+C468                            CAPC2012X135N                     CAPC2012X135N                   
+C409                            CAPC1005X55N                      CAPC1005X55N                    
+C265                            CAPC1005X55N                      CAPC1005X55N                    
+C410                            CAPC1005X55N                      CAPC1005X55N                    
+DA405                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C761                            CAPC1608X90N                      CAPC1608X90N                    
+C312                            CAPC1005X55N                      CAPC1005X55N                    
+C563                            CAPC1005X55N                      CAPC1005X55N                    
+DA404                           SOT95P280X145-5N                  SOT95P280X145-5N                
+DA205                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C245                            CAPC1005X55N                      CAPC1005X55N                    
+C402                            CAPC2012X135N                     CAPC2012X135N                   
+C404                            CAPC1005X55N                      CAPC1005X55N                    
+C701                            CAPC1005X55N                      CAPC1005X55N                    
+C363                            CAPC1005X55N                      CAPC1005X55N                    
+C210                            CAPC1005X55N                      CAPC1005X55N                    
+C674                            CAPC2012X135N                     CAPC2012X135N                   
+C768                            CAPC2012X135N                     CAPC2012X135N                   
+C602                            CAPC2012X135N                     CAPC2012X135N                   
+DA202                           SIL0008E                          SIL0008E                        
+C407                            CAPC1005X55N                      CAPC1005X55N                    
+DA306                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C405                            CAPC1608X90N                      CAPC1608X90N                    
+C702                            CAPC2012X135N                     CAPC2012X135N                   
+C466                            CAPC1608X90N                      CAPC1608X90N                    
+C406                            CAPC1608X90N                      CAPC1608X90N                    
+C601                            CAPC1005X55N                      CAPC1005X55N                    
+C373                            CAPC1005X55N                      CAPC1005X55N                    
+C572                            CAPC1005X55N                      CAPC1005X55N                    
+C304                            CAPC1005X55N                      CAPC1005X55N                    
+C401                            CAPC1005X55N                      CAPC1005X55N                    
+C403                            CAPC2012X135N                     CAPC2012X135N                   
+C570                            CAPC1005X55N                      CAPC1005X55N                    
+C364                            CAPC1005X55N                      CAPC1005X55N                    
+DA401                           SIL0008E                          SIL0008E                        
+DA701                           SIL0008E                          SIL0008E                        
+C467                            CAPC1005X55N                      CAPC1005X55N                    
+C765                            CAPC1005X55N                      CAPC1005X55N                    
+DA503                           SOT95P275X145-6N                  SOT95P275X145-6N                
+C762                            CAPC1005X55N                      CAPC1005X55N                    
+C769                            CAPC1005X55N                      CAPC1005X55N                    
+C310                            CAPC1005X55N                      CAPC1005X55N                    
+C241                            CAPC1005X55N                      CAPC1005X55N                    
+C264                            CAPC1005X55N                      CAPC1005X55N                    
+C208                            CAPC2012X135N                     CAPC2012X135N                   
+C664                            CAPC1005X55N                      CAPC1005X55N                    
+C270                            CAPC1005X55N                      CAPC1005X55N                    
+C767                            CAPC1005X55N                      CAPC1005X55N                    
+C311                            CAPC1005X55N                      CAPC1005X55N                    
+C370                            CAPC1005X55N                      CAPC1005X55N                    
+C505                            CAPC1608X90N                      CAPC1608X90N                    
+C606                            CAPC1608X90N                      CAPC1608X90N                    
+C247                            CAPC1005X55N                      CAPC1005X55N                    
+C507                            CAPC1005X55N                      CAPC1005X55N                    
+C472                            CAPC1005X55N                      CAPC1005X55N                    
+C506                            CAPC1608X90N                      CAPC1608X90N                    
+C609                            CAPC1005X55N                      CAPC1005X55N                    
+DA203                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C503                            CAPC2012X135N                     CAPC2012X135N                   
+C249                            CAPC1608X90N                      CAPC1608X90N                    
+C462                            CAPC1005X55N                      CAPC1005X55N                    
+DA504                           SOT95P280X145-5N                  SOT95P280X145-5N                
+DA505                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C206                            CAPC2012X135N                     CAPC2012X135N                   
+C374                            CAPC2012X135N                     CAPC2012X135N                   
+C504                            CAPC1005X55N                      CAPC1005X55N                    
+C605                            CAPC1608X90N                      CAPC1608X90N                    
+C248                            CAPC1005X55N                      CAPC1005X55N                    
+C366                            CAPC1608X90N                      CAPC1608X90N                    
+C502                            CAPC2012X135N                     CAPC2012X135N                   
+C501                            CAPC1005X55N                      CAPC1005X55N                    
+C607                            CAPC1005X55N                      CAPC1005X55N                    
+C561                            CAPC1608X90N                      CAPC1608X90N                    
+DA501                           SIL0008E                          SIL0008E                        
+C569                            CAPC1005X55N                      CAPC1005X55N                    
+C771                            CAPC1608X90N                      CAPC1608X90N                    
+DA502                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C610                            CAPC1005X55N                      CAPC1005X55N                    
+C509                            CAPC1005X55N                      CAPC1005X55N                    
+C368                            CAPC2012X135N                     CAPC2012X135N                   
+C708                            CAPC1005X55N                      CAPC1005X55N                    
+C510                            CAPC1005X55N                      CAPC1005X55N                    
+C306                            CAPC1608X90N                      CAPC1608X90N                    
+C508                            CAPC1005X55N                      CAPC1005X55N                    
+C662                            CAPC1005X55N                      CAPC1005X55N                    
+C709                            CAPC1005X55N                      CAPC1005X55N                    
+C471                            CAPC1608X90N                      CAPC1608X90N                    
+C661                            CAPC1608X90N                      CAPC1608X90N                    
+C564                            CAPC1005X55N                      CAPC1005X55N                    
+C470                            CAPC1005X55N                      CAPC1005X55N                    
+C301                            CAPC1005X55N                      CAPC1005X55N                    
+C764                            CAPC1005X55N                      CAPC1005X55N                    
+C672                            CAPC1005X55N                      CAPC1005X55N                    
+C710                            CAPC1005X55N                      CAPC1005X55N                    
+DA305                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C303                            CAPC2012X135N                     CAPC2012X135N                   
+C262                            CAPC1005X55N                      CAPC1005X55N                    
+DA601                           SIL0008E                          SIL0008E                        
+C307                            CAPC1005X55N                      CAPC1005X55N                    
+C668                            CAPC2012X135N                     CAPC2012X135N                   
+C673                            CAPC1005X55N                      CAPC1005X55N                    
+DA705                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C604                            CAPC1005X55N                      CAPC1005X55N                    
+C209                            CAPC1005X55N                      CAPC1005X55N                    
+C464                            CAPC1005X55N                      CAPC1005X55N                    
+DA704                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C562                            CAPC1005X55N                      CAPC1005X55N                    
+C461                            CAPC1608X90N                      CAPC1608X90N                    
+C204                            CAPC2012X135N                     CAPC2012X135N                   
+C266                            CAPC1608X90N                      CAPC1608X90N                    
+C261                            CAPC1608X90N                      CAPC1608X90N                    
+C244                            CAPC1005X55N                      CAPC1005X55N                    
+C670                            CAPC1005X55N                      CAPC1005X55N                    
+C202                            CAPC2012X135N                     CAPC2012X135N                   
+C365                            CAPC1005X55N                      CAPC1005X55N                    
+C763                            CAPC1005X55N                      CAPC1005X55N                    
+C371                            CAPC1608X90N                      CAPC1608X90N                    
+C203                            CAPC1005X55N                      CAPC1005X55N                    
+C608                            CAPC1005X55N                      CAPC1005X55N                    
+C211                            CAPC1005X55N                      CAPC1005X55N                    
+C273                            CAPC1005X55N                      CAPC1005X55N                    
+C707                            CAPC1005X55N                      CAPC1005X55N                    
+C566                            CAPC1608X90N                      CAPC1608X90N                    
+DA603                           SOT95P275X145-6N                  SOT95P275X145-6N                
+DA602                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C372                            CAPC1005X55N                      CAPC1005X55N                    
+C567                            CAPC1005X55N                      CAPC1005X55N                    
+C308                            CAPC1005X55N                      CAPC1005X55N                    
+C309                            CAPC1005X55N                      CAPC1005X55N                    
+C770                            CAPC1005X55N                      CAPC1005X55N                    
+C773                            CAPC1005X55N                      CAPC1005X55N                    
+C665                            CAPC1005X55N                      CAPC1005X55N                    
+C706                            CAPC1608X90N                      CAPC1608X90N                    
+C361                            CAPC1608X90N                      CAPC1608X90N                    
+C271                            CAPC1608X90N                      CAPC1608X90N                    
+DA302                           SOT95P280X145-5N                  SOT95P280X145-5N                
+DA605                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C243                            CAPC1005X55N                      CAPC1005X55N                    
+DA204                           SOT95P275X145-6N                  SOT95P275X145-6N                
+C663                            CAPC1005X55N                      CAPC1005X55N                    
+C705                            CAPC1608X90N                      CAPC1608X90N                    
+C263                            CAPC1005X55N                      CAPC1005X55N                    
+DA304                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C571                            CAPC1608X90N                      CAPC1608X90N                    
+C772                            CAPC1005X55N                      CAPC1005X55N                    
+C574                            CAPC2012X135N                     CAPC2012X135N                   
+C669                            CAPC1005X55N                      CAPC1005X55N                    
+DA703                           SOT95P275X145-6N                  SOT95P275X145-6N                
+C246                            CAPC1005X55N                      CAPC1005X55N                    
+C250                            CAPC1608X90N                      CAPC1608X90N                    
+DA604                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C242                            CAPC1005X55N                      CAPC1005X55N                    
+C205                            CAPC1005X55N                      CAPC1005X55N                    
+C703                            CAPC2012X135N                     CAPC2012X135N                   
+C474                            CAPC2012X135N                     CAPC2012X135N                   
+C269                            CAPC1005X55N                      CAPC1005X55N                    
+C367                            CAPC1005X55N                      CAPC1005X55N                    
+C565                            CAPC1005X55N                      CAPC1005X55N                    
+C201                            CAPC2012X135N                     CAPC2012X135N                   
+DA206                           SOT95P280X145-5N                  SOT95P280X145-5N                
+C274                            CAPC2012X135N                     CAPC2012X135N                   
+C704                            CAPC1005X55N                      CAPC1005X55N                    
+C573                            CAPC1005X55N                      CAPC1005X55N                    
+C465                            CAPC1005X55N                      CAPC1005X55N                    
+C473                            CAPC1005X55N                      CAPC1005X55N                    
+C302                            CAPC2012X135N                     CAPC2012X135N                   
+C212                            CAPC1005X55N                      CAPC1005X55N                    
+C774                            CAPC2012X135N                     CAPC2012X135N                   
+C667                            CAPC1005X55N                      CAPC1005X55N                    
+C272                            CAPC1005X55N                      CAPC1005X55N                    
+C207                            CAPC2012X135N                     CAPC2012X135N                   
+C766                            CAPC1608X90N                      CAPC1608X90N                    
+DA303                           SOT95P275X145-6N                  SOT95P275X145-6N                
+C268                            CAPC2012X135N                     CAPC2012X135N                   
+
+
+---------------    Tue Nov 30 18:17:44 2021  ---------------
+
+

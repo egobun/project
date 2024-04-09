@@ -1,0 +1,211 @@
+
+                               Forward Annotation
+                               ------------------
+
+                       03:56 PM Friday, December 16, 2022
+                    Job Name: C:\Mentor_proj\450\PCB\450.pcb
+
+
+Version:  01.01.00
+
+     The PDBs listed in the project file will be searched to satisfy the parts
+      requirements of the CDB only for parts not already found in the
+      Target PDB.
+
+     The schematic source is a Common Data Base.
+
+     The AllowAlphaRefDes status indicates that reference
+      designators containing all alpha characters should be deleted
+      and the relevant symbols repackaged.
+
+     The FLATNETNAMEs status indicates that the present set
+      of schematic netnames should be used to update the
+      FLATNETNAMEs.
+
+     WARNING:  The schematic source files have been modified since
+      the present Common DataBase was compiled.  Please have the
+      schematic designer recompile the CDB and rerun this procedure
+      if it is desired to incorporate the latest changes.
+
+     Common Data Base has been read
+
+     Target PDB Name: Work\Layout_Temp\PartsDB.pdb
+
+     Number of Part Numbers: 44
+          Part Numb: BLM18HE102SN1 -> Vend Part: BLM18HE102SN1 
+          Part Numb: BM08B-SRSS-TB -> Vend Part: BM08B-SRSS-TB 
+          Part Numb: CAP-0402_1.0u_X5R_10V -> Vend Part: CAP-0402_1.0u_X5R_10V 
+          Part Numb: CAP-0402_2.2u__X5R_6.3V -> Vend Part: CAP-0402_2.2u__X5R_6.3V 
+          Part Numb: CAP-0402_3.3n_10%_X7R_50V -> Vend Part: CAP-0402_3.3n_10%_X7R_50V 
+          Part Numb: CAP-0402_10p_5%_NP0_50V -> Vend Part: CAP-0402_10p_5%_NP0_50V 
+          Part Numb: CAP-0402_15p_5%_NP0_50V -> Vend Part: CAP-0402_15p_5%_NP0_50V 
+          Part Numb: CAP-0402_22n_10%_X7R_16V -> Vend Part: CAP-0402_22n_10%_X7R_16V 
+          Part Numb: CAP-0402_100n_10%_X7R_16V -> Vend Part: CAP-0402_100n_10%_X7R_16V 
+          Part Numb: CAP-0402_100n_10%_X7R_50V -> Vend Part: CAP-0402_100n_10%_X7R_50V 
+          Part Numb: CAP-0603_10u_10%_X5R_10V -> Vend Part: CAP-0603_10u_10%_X5R_10V 
+          Part Numb: CAP-0805_10u_10%_X7R_25V -> Vend Part: CAP-0805_10u_10%_X7R_25V 
+          Part Numb: DLW21SN921SK2 -> Vend Part: DLW21SN921SK2 
+          Part Numb: EMIF02-02OABRY -> Vend Part: EMIF02-02OABRY 
+          Part Numb: ESD5Z12T1G -> Vend Part: ESD5Z12T1G 
+          Part Numb: FAN3100TSX -> Vend Part: FAN3100TSX 
+          Part Numb: FPF2101 -> Vend Part: FPF2101 
+          Part Numb: INA168NA -> Vend Part: INA168NA 
+          Part Numb: IRLML0030TRPBF -> Vend Part: IRLML0030TRPBF 
+          Part Numb: IRLML9301TRPBF -> Vend Part: IRLML9301TRPBF 
+          Part Numb: LMZ21700SILR -> Vend Part: LMZ21700SILR 
+          Part Numb: LP2985AIM5-5.0 -> Vend Part: LP2985AIM5-5.0 
+          Part Numb: LQH43PN100M26 -> Vend Part: LQH43PN100M26 
+          Part Numb: LTC3130IMSE -> Vend Part: LTC3130IMSE 
+          Part Numb: LTC4412HS6 -> Vend Part: LTC4412HS6 
+          Part Numb: MAX809SQ263G -> Vend Part: MAX809SQ263G 
+          Part Numb: PLD2-60S -> Vend Part: PLD2-60S 
+          Part Numb: PLL-1.27-30S -> Vend Part: PLL-1.27-30S 
+          Part Numb: RES-0402_0 -> Vend Part: RES-0402_0 
+          Part Numb: RES-0402_1.00M_1% -> Vend Part: RES-0402_1.00M_1% 
+          Part Numb: RES-0402_2.74M_1% -> Vend Part: RES-0402_2.74M_1% 
+          Part Numb: RES-0402_4.99k_1% -> Vend Part: RES-0402_4.99k_1% 
+          Part Numb: RES-0402_10.0k_1% -> Vend Part: RES-0402_10.0k_1% 
+          Part Numb: RES-0402_24.9k_1% -> Vend Part: RES-0402_24.9k_1% 
+          Part Numb: RES-0402_100_1% -> Vend Part: RES-0402_100_1% 
+          Part Numb: RES-0402_249k_1% -> Vend Part: RES-0402_249k_1% 
+          Part Numb: RES-0402_301k_1% -> Vend Part: RES-0402_301k_1% 
+          Part Numb: RES-0805_0.1_1% -> Vend Part: RES-0805_0.1_1% 
+          Part Numb: RESA-0804V-4x_10.0k_5% -> Vend Part: RESA-0804V-4x_10.0k_5% 
+          Part Numb: SMD03225C4-4-25.000MHz -> Vend Part: SMD03225C4-4-25.000MHz 
+          Part Numb: SN65HVD233D -> Vend Part: SN65HVD233D 
+          Part Numb: STM32F405RG -> Vend Part: STM32F405RG 
+          Part Numb: TCAN330DCN -> Vend Part: TCAN330DCN 
+          Part Numb: VIK1 -> Vend Part: VIK1 
+
+     Number of Part Names: 0
+
+     Number of Part Labels: 0
+
+
+     Checking for value differences between symbol properties and PartsDB properties
+
+     Checking the validity of the packaging of prepackaged schematic
+      symbols.  Only the first error in symbols having the same
+      Reference Designator will be reported.
+
+     The packaging of all prepackaged schematic symbols is consistent
+      with the Parts DataBase data for the cross mapping of
+      symbol pin names to Part Number pin numbers.
+      Symbols that were not prepackaged will now be packaged correctly.
+      
+     No errors in Existing Schematic Packaging.
+
+     The Common DataBase has been read and will be packaged.
+     Clustering 536 Symbols:
+             536  ***********************************
+             500  **************************************************
+             450  **************************************************
+             400  **************************************************
+             350  **************************************************
+             300  **************************************************
+             250  **************************************************
+             200  **************************************************
+             150  **************************************************
+             100  **************************************************
+              50  **************************************************
+     Clustering is Complete
+
+     Packager Assignments successfully completed
+
+
+
+     488 nets were found containing 2063 pins
+     535 components were found
+
+     After augmentation of supply pins, there are 488 nets where 25 nets have only one pin:
+INFO Block 408 Page 1, Pin PB13 on Symbol XCMP623: Single pin on net SYS_NET_1.
+INFO Block 408 Page 1, Pin PB13 on Symbol XCMP63: Single pin on net XSIG010186.
+INFO Block 408 Page 1, Pin PB13 on Symbol XCMP547: Single pin on net XSIG011441.
+INFO Block 408 Page 1, Pin PB13 on Symbol XCMP566: Single pin on net XSIG011543.
+INFO Block 408 Page 1, Pin PB13 on Symbol XCMP585: Single pin on net XSIG011628.
+INFO Block 408 Page 1, Pin PB13 on Symbol XCMP604: Single pin on net XSIG011713.
+INFO Block 408 Page 1, Pin PB12 on Symbol XCMP623: Single pin on net XSIG012121.
+INFO Block 408 Page 1, Pin PC10 on Symbol XCMP63: Single pin on net XSIG012804.
+INFO Block 408 Page 1, Pin PC11 on Symbol XCMP63: Single pin on net XSIG012805.
+INFO Block 408 Page 1, Pin PC12 on Symbol XCMP63: Single pin on net XSIG012806.
+INFO Block 408 Page 1, Pin PC12 on Symbol XCMP547: Single pin on net XSIG012809.
+INFO Block 408 Page 1, Pin PC11 on Symbol XCMP547: Single pin on net XSIG012810.
+INFO Block 408 Page 1, Pin PC10 on Symbol XCMP547: Single pin on net XSIG012811.
+INFO Block 408 Page 1, Pin PC12 on Symbol XCMP566: Single pin on net XSIG012823.
+INFO Block 408 Page 1, Pin PC11 on Symbol XCMP566: Single pin on net XSIG012824.
+INFO Block 408 Page 1, Pin PC10 on Symbol XCMP566: Single pin on net XSIG012825.
+INFO Block 408 Page 1, Pin PC12 on Symbol XCMP585: Single pin on net XSIG012839.
+INFO Block 408 Page 1, Pin PC11 on Symbol XCMP585: Single pin on net XSIG012840.
+INFO Block 408 Page 1, Pin PC10 on Symbol XCMP585: Single pin on net XSIG012841.
+INFO Block 408 Page 1, Pin PC12 on Symbol XCMP604: Single pin on net XSIG012844.
+INFO Block 408 Page 1, Pin PC11 on Symbol XCMP604: Single pin on net XSIG012845.
+INFO Block 408 Page 1, Pin PC10 on Symbol XCMP604: Single pin on net XSIG012846.
+INFO Block 408 Page 1, Pin PC10 on Symbol XCMP623: Single pin on net XSIG012849.
+INFO Block 408 Page 1, Pin PC11 on Symbol XCMP623: Single pin on net XSIG012850.
+INFO Block 408 Page 1, Pin PC12 on Symbol XCMP623: Single pin on net XSIG012851.
+
+     Creating a formatted Schematic Netlist (LogFiles\SchematicNetlist.txt)...
+     A formatted Schematic Netlist has been created.
+
+     The Logic DataBase has been compiled from the Schematic Design.
+      Use Netload to bring the Component Design into sync.
+
+     This Logic Data was Compiled with 1 warnings.
+      Erroneous results may occur if not fixed.
+
+                                     NetLoad
+                                     -------
+
+                       03:56 PM Friday, December 16, 2022
+                    Job Name: C:\Mentor_proj\450\PCB\450.pcb
+
+
+Version:  02.11.12
+
+     Netloading the Layout.  Unused components will be changed to spares.
+
+     Unconnected pins will be set to net "(Net0)".
+
+     Schematic reference designator changes will not be forward annotated.
+
+     "V1" is being converted from a spare to a "VIK1" part.
+
+     Netload completed successfully with 0 warning(s).
+     
+     Back Annotating...
+
+  Updating Logic Database...
+
+     Version:  99.00.05
+
+     No changes made to Existing Schematic Packaging.
+
+
+     There is no symbol data to be back annotated to the schematic source.
+
+
+     The Logic DataBase has been updated and the Common DataBase has
+      automatically been brought into sync with the Logic DataBase.
+      Please proceed with your design.
+
+     Finished updating the Logic Database.
+
+     Creating a formatted Schematic Netlist (LogFiles\AfterBakAnnoNetlist.txt)...
+     A formatted Schematic Netlist has been created.
+
+     Creating a new netlist text file (LogFiles\KeyinNetList.txt)
+      from the Logic Database (Work\Layout_Temp\LogicDB.lgc)...
+  A new netlist text file has been generated.
+
+
+
+                 Beginning Netload on the Layout Design.
+           ---------------------------------------------------
+	Unresolvable short found at point (40350000, 53700000).
+	Unresolvable short found at point (40350000, 53700000).
+
+Forward-Annotation on the Layout Design has been successfully completed.
+
+There were 0 reassignments of nets.
+There were 0 traces broken back.
+There were 0 nets removed from the Layout Design.

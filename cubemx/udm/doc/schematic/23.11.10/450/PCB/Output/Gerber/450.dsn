@@ -1,0 +1,98 @@
+{Program	Expedition GerbTool(tm)
+	{Version	8.1.2 X1}
+	{Created	Fri Dec 16 16:25:49 2022}
+}
+{Environment
+	{ViewMetric	Yes}
+}
+{Layers
+	{Layer  1
+		{File		SoldermaskTop.gdo}
+		{LyrName	SoldermaskTop}
+		{Visibility	On}
+		{Type		Other}
+		{Ftype		Gerber}
+	}
+	{Layer  2
+		{File		SoldermaskBottom.gdo}
+		{LyrName	SoldermaskBottom}
+		{Visibility	Off}
+		{Type		Other}
+		{Ftype		Gerber}
+	}
+	{Layer  3
+		{File		SilkscreenTop.gdo}
+		{LyrName	SilkscreenTop}
+		{Visibility	Off}
+		{Type		Other}
+		{Ftype		Gerber}
+	}
+	{Layer  4
+		{File		SilkscreenBottom.gdo}
+		{LyrName	SilkscreenBottom}
+		{Visibility	Off}
+		{Type		Other}
+		{Ftype		Gerber}
+	}
+	{Layer  5
+		{File		LayerTop.gdo}
+		{LyrName	LayerTop}
+		{Visibility	Off}
+		{Type		Top}
+		{Ftype		Gerber}
+	}
+	{Layer  6
+		{File		Layer4Bottom.gdo}
+		{LyrName	Layer4Bottom}
+		{Visibility	Off}
+		{Type		Bottom}
+		{Ftype		Gerber}
+	}
+	{Layer  7
+		{File		Layer3.gdo}
+		{LyrName	Layer3}
+		{Visibility	Off}
+		{Type		Inner}
+		{Ftype		Gerber}
+	}
+	{Layer  8
+		{File		Layer2.gdo}
+		{LyrName	Layer2}
+		{Visibility	Off}
+		{Type		Inner}
+		{Ftype		Gerber}
+	}
+	{Layer  9
+		{File		DrillDrawingThrough.gdo}
+		{LyrName	DrillDrawingThrough}
+		{Visibility	Off}
+		{Type		Other}
+		{Ftype		Gerber}
+	}
+	{Layer 10
+		{File		Cutter 1 mm.gdo}
+		{LyrName	Cutter 1 mm}
+		{Visibility	Off}
+		{Type		Other}
+		{Ftype		Gerber}
+	}
+	{Layer 11
+		{File		BoardOutline.gdo}
+		{LyrName	BoardOutline}
+		{Visibility	Off}
+		{Type		Other}
+		{Ftype		Gerber}
+	}
+}
+{Format Gerber
+	{Dialect		RS274X}
+	{m.n			2.4}
+	{Mode			Absolute}
+	{ZeroSuppression	Leading}
+	{Terminator		0x2a, 0xd, 0xa}
+	{Metric			No}
+	{Modal			Yes}
+	{CharSet		ASCII}
+	{Arcs360		No}
+	{ArcsModal		Yes}
+}

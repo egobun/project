@@ -1,0 +1,18 @@
+---------------------
+Missing Planes Report
+---------------------
+
+Monday, February 28, 2022 07:34 PM
+
+The following is a list of layer(s) with plane net(s) that
+do not have plane metal generated for them.  Enter the Planes
+Processor dialog and generate planes for these plane nets.
+Run Batch DRC verification before producing manufacturing
+outputs.  Dynamic Area Fills may give the appearance of the
+planes being generated, therefore this option may need to be
+turned off.
+
+Layer 2
+-------
+(Net0)
+

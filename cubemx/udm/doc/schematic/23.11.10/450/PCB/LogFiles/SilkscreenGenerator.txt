@@ -1,0 +1,38 @@
+
+                              SILKSCREEN GENERATOR
+                              --------------------
+
+                       04:25 PM Friday, December 16, 2022
+                    Job Name: C:\Mentor_proj\450\PCB\450.pcb
+
+
+    Silkscreen Side To Process           : BOTH
+
+    Process All Cell Types               : YES
+
+    Top Silkscreen For Selected Cells    : Silkscreen Outline Top
+                                         : Board Outline
+
+    Bottom Silkscreen For Selected Cells : Silkscreen Outline Bottom
+                                         : Board Outline
+
+    Break Silkscreen Using               : Conductive Pads
+
+    Break Graphics Pad Clearance         : NA
+
+    Break Graphics Via Clearance         : NA
+
+    Break Text Pad Clearance             : NA
+
+    Break Text Via Clearance             : NA
+
+    Broken Graphics Line Width           : 0.25mm
+
+    Broken Text Line Width               : 0.25mm
+    
+
+
+    TOP Silkscreen Data Created Successfully (829 Geometries).
+
+
+    BOTTOM Silkscreen Data Created Successfully (281 Geometries).

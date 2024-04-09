@@ -1,0 +1,21 @@
+Fri Nov 12 18:51:15 2021
+
+Note: EnetGenAdapter::Init(C:\Mentor_proj\408\408.cdb\Layout\)
+Note: EnetGenAdapter::Import()
+Tue Nov 30 13:41:14 2021
+
+Note: EnetGenAdapter::Init(C:\Mentor_proj\408\408.cdb\Layout\)
+Note: EnetGenAdapter::Import()
+Wed Dec 01 12:59:14 2021
+
+Note: EnetGenAdapter::Init(C:\Mentor_proj\408\408.cdb\Layout\)
+Note: EnetGenAdapter::Import()
+Wed Dec 08 16:47:19 2021
+
+Note: EnetGenAdapter::Init(C:\Mentor_proj\408\408.cdb\Layout\)
+Note: EnetGenAdapter::Import()
+Fri May 27 15:00:39 2022
+
+Note: EnetGenAdapter::Init(C:\Mentor_proj\450\PCB\Work\Layout_Temp\)
+Note: EnetGenAdapter::Import()
+Warning: Electrical net DAC.6^^^ has more physical nets than the threshold. One or more of the nets may be a power net. Electrical nets will not be generated.

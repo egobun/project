@@ -1,0 +1,92 @@
+
+Schematic unused pins from : Packager  16-Dec-2022  15:56
+
+------------------------------------------------------------------------
+            Part/Reference             |          Unused pins
+                                       |  (G) - Gate, (P) - Partial Gate
+------------------------------------------------------------------------
+ Part BLM18HE102SN1                    |
+ Part BM08B-SRSS-TB                    |
+ Part CAP-0402_1.0u_X5R_10V            |
+ Part CAP-0402_2.2u__X5R_6.3V          |
+ Part CAP-0402_3.3n_10%_X7R_50V        |
+ Part CAP-0402_10p_5%_NP0_50V          |
+ Part CAP-0402_15p_5%_NP0_50V          |
+ Part CAP-0402_22n_10%_X7R_16V         |
+ Part CAP-0402_100n_10%_X7R_16V        |
+ Part CAP-0402_100n_10%_X7R_50V        |
+ Part CAP-0603_10u_10%_X5R_10V         |
+ Part CAP-0805_10u_10%_X7R_25V         |
+ Part DLW21SN921SK2                    |
+ Part EMIF02-02OABRY                   |
+ Part ESD5Z12T1G                       |
+ Part FAN3100TSX                       |
+ Part FPF2101                          |
+  DA204                                | (P)  4
+  DA205                                | (P)  4
+  DA304                                | (P)  4
+  DA305                                | (P)  4
+  DA404                                | (P)  4
+  DA405                                | (P)  4
+  DA504                                | (P)  4
+  DA505                                | (P)  4
+  DA604                                | (P)  4
+  DA605                                | (P)  4
+  DA704                                | (P)  4
+  DA705                                | (P)  4
+ Part INA168NA                         |
+ Part IRLML0030TRPBF                   |
+ Part IRLML9301TRPBF                   |
+ Part LMZ21700SILR                     |
+ Part LP2985AIM5-5.0                   |
+  DA202                                | (P)  4
+  DA302                                | (P)  4
+  DA402                                | (P)  4
+  DA502                                | (P)  4
+  DA602                                | (P)  4
+  DA702                                | (P)  4
+ Part LQH43PN100M26                    |
+ Part LTC3130IMSE                      |
+ Part LTC4412HS6                       |
+  DA203                                | (P)  4
+  DA303                                | (P)  4
+  DA403                                | (P)  4
+  DA503                                | (P)  4
+  DA603                                | (P)  4
+  DA703                                | (P)  4
+ Part MAX809SQ263G                     |
+ Part PLD2-60S                         |
+  XP101                                | (P)  3 7 9 11 13 15 17 19 21
+                                       |  23 25 27 31 41
+  XP101                                | (P)  4 8 10 12 14 16 18 20 22
+                                       |  24 26 28 32 42
+ Part PLL-1.27-30S                     |
+ Part RES-0402_0                       |
+ Part RES-0402_1.00M_1%                |
+ Part RES-0402_2.74M_1%                |
+ Part RES-0402_4.99k_1%                |
+ Part RES-0402_10.0k_1%                |
+ Part RES-0402_24.9k_1%                |
+ Part RES-0402_100_1%                  |
+ Part RES-0402_249k_1%                 |
+ Part RES-0402_301k_1%                 |
+ Part RES-0805_0.1_1%                  |
+ Part RESA-0804V-4x_10.0k_5%           |
+ Part SMD03225C4-4-25.000MHz           |
+ Part SN65HVD233D                      |
+ Part STM32F405RG                      |
+  DD242                                | (P)  8 9 10 17 22 24 25 26 27
+                                       |  28 29 30 33 40
+  DD342                                | (P)  8 9 10 17 22 24 25 26 27
+                                       |  28 29 30 33 40
+  DD442                                | (P)  8 9 10 17 22 24 25 26 27
+                                       |  28 29 30 33 40
+  DD541                                | (P)  8 9 10 17 22 24 25 26 27
+                                       |  28 29 30 33 40
+  DD642                                | (P)  8 9 10 17 22 24 25 26 27
+                                       |  28 29 30 33 40
+  DD742                                | (P)  8 9 10 17 22 24 25 26 27
+                                       |  28 29 30 40
+ Part TCAN330DCN                       |
+ Part VIK1                             |
+  V1                                   | (G)  .

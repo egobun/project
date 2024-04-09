@@ -1,0 +1,2356 @@
+
+(pcb "C:\Mentor_proj\408\PCB\Work\Layout_Temp\CES\408.db"
+	(version "5.0.0")
+	(units "basic")
+	(config_properties
+		(attributes
+			(attval "DSN_MAX_DISTANCE_CONVERGE" 952500.0)
+			(attval "DSN_DEF_DISTANCE_TOL" "")
+			(attval "DSN_DEF_TIME_TOL" ""))
+		(constraints
+			(cnsval "U:Linear" "MILLIMETERS:2")
+			(cnsval "U:Angle" "DEGREES:2")
+			(cnsval "U:Unknown" "Unknown:0")
+			(cnsval "U:Power" "MILLI:4")
+			(cnsval "U:Volt" "MILLI:4")
+			(cnsval "U:Ohm" "BASE:2")
+			(cnsval "U:Inductance" "MICRO:4")
+			(cnsval "U:Capacitance" "MICRO:4")
+			(cnsval "U:Ampere" "MILLI:4")
+			(cnsval "U:Time" "NANO:4")
+			(cnsval "U:Velocity" "IN_PER_NS:4")
+			(cnsval "NextVirtPinId" "1")
+			(cnsval "DSN_POWERS"
+ "+12V=12.0;+5V=5.0;-12V=-12.0;-5V=-5.0;GND=0.0;VCC=5.0;VDD=5.0;VEE=-5.2;VSS=0.0;0.9V=0.9;GROUND=0.0")
+			(cnsval "DSN_MAXENETS" 5)
+			(cnsval "DSN_BIGNETPINCOUNT" 25)
+			(cnsval "DSN_USE_MODELS" 0)
+			(cnsval "DSN_DISCRETES"
+ "CAPACITOR=C;CONNECTOR=P,J;DIODE=D;INDUCTOR=L;RESISTOR=R")
+			(cnsval "VBDCProject" "C:\Mentor_proj\408\408.prj")
+			(cnsval "AdapterType" "BackEnd")
+			(cnsval "TargetLayoutSystem" "Expedition")
+			(cnsval "ClassDelim" "/")))
+	(project_properties
+		(attributes
+			(attval "EPLANNER_DSN" "1.0")))
+	(files_ext
+		(file_ext "Padstack.hkp" "1635876948")
+		(file_ext "PadstackDB.psk" "1635305286")
+		(file_ext "JobPrefs.hkp" "1635876948")
+		(file_ext "JobPrefsDB.jpf" "1635834837")
+		(file_ext "NetClass.hkp" "1635834367")
+		(file_ext "NetClassDB.ncl" "1635305286")
+		(file_ext "NetProps.hkp" "1635876948")
+		(file_ext "NetPropsDB.npr" "1635834834")
+		(file_ext "408.cdb" "1635834834")
+		(file_ext "PartsDB.pdb" "1635834834"))
+	(part_library
+		(part "SM08B-SRSS-TB")
+		(logical_part "SM08B-SRSS-TB"
+			(slots
+				(slot "SM08B-SRSS-TB_PinHolder-8_0"))
+			(part_type "IC")
+			(pin 10 2 "power_gate1" 0 "GND" 0)
+			(pin 9 2 "power_gate2" 0 "GND" 0)
+			(pin 8  0 "SM08B-SRSS-TB_PinHolder-8_0" 0 "8" 0)
+			(pin 7  0 "SM08B-SRSS-TB_PinHolder-8_0" 0 "7" 0)
+			(pin 6  0 "SM08B-SRSS-TB_PinHolder-8_0" 0 "6" 0)
+			(pin 5  0 "SM08B-SRSS-TB_PinHolder-8_0" 0 "5" 0)
+			(pin 4  0 "SM08B-SRSS-TB_PinHolder-8_0" 0 "4" 0)
+			(pin 3  0 "SM08B-SRSS-TB_PinHolder-8_0" 0 "3" 0)
+			(pin 2  0 "SM08B-SRSS-TB_PinHolder-8_0" 0 "2" 0)
+			(pin 1  0 "SM08B-SRSS-TB_PinHolder-8_0" 0 "1" 0))
+		(part "RES-0402_249k_1%")
+		(logical_part_mapping "RES-0402_249k_1%"
+			(comp "R263" "R264"))
+		(logical_part "RES-0402_249k_1%"
+			(constraints
+				(cnsval "EDIT_VALUE" "249000")
+				(cnsval "VALUE" "249000"))
+			(slots
+				(slot "RES-0402_249k_1%_Resistor_0"))
+			(part_type "RESISTOR")
+			(pin 2  5 "RES-0402_249k_1%_Resistor_0" 0 "2" 0)
+			(pin 1  5 "RES-0402_249k_1%_Resistor_0" 0 "1" 0))
+		(part "RES-0402_33_5%")
+		(logical_part_mapping "RES-0402_33_5%"
+			(comp "R261"))
+		(logical_part "RES-0402_33_5%"
+			(constraints
+				(cnsval "EDIT_VALUE" "33")
+				(cnsval "VALUE" "33"))
+			(slots
+				(slot "RES-0402_33_5%_Resistor_0"))
+			(part_type "RESISTOR")
+			(pin 2  5 "RES-0402_33_5%_Resistor_0" 0 "2" 0)
+			(pin 1  5 "RES-0402_33_5%_Resistor_0" 0 "1" 0))
+		(part "RES-0402_2.74M_1%")
+		(logical_part_mapping "RES-0402_2.74M_1%"
+			(comp "R262"))
+		(logical_part "RES-0402_2.74M_1%"
+			(constraints
+				(cnsval "EDIT_VALUE" "0.00274")
+				(cnsval "VALUE" "0.00274"))
+			(slots
+				(slot "RES-0402_2.74M_1%_Resistor_0"))
+			(part_type "RESISTOR")
+			(pin 2  5 "RES-0402_2.74M_1%_Resistor_0" 0 "2" 0)
+			(pin 1  5 "RES-0402_2.74M_1%_Resistor_0" 0 "1" 0))
+		(part "RES-0402_1.00M_1%")
+		(logical_part_mapping "RES-0402_1.00M_1%"
+			(comp "R265"))
+		(logical_part "RES-0402_1.00M_1%"
+			(constraints
+				(cnsval "EDIT_VALUE" "0.001")
+				(cnsval "VALUE" "0.001"))
+			(slots
+				(slot "RES-0402_1.00M_1%_Resistor_0"))
+			(part_type "RESISTOR")
+			(pin 2  5 "RES-0402_1.00M_1%_Resistor_0" 0 "2" 0)
+			(pin 1  5 "RES-0402_1.00M_1%_Resistor_0" 0 "1" 0))
+		(part "PLD2-20")
+		(logical_part_mapping "PLD2-20"
+			(comp "XP367" "XP366"))
+		(logical_part "PLD2-20"
+			(slots
+				(slot "PLD2-20_PinHolder-10_0")
+				(slot "PLD2-20_PinHolder-10_1"))
+			(part_type "IC")
+			(pin 19  0 "PLD2-20_PinHolder-10_0" 0 "10" 0)
+			(pin 17  0 "PLD2-20_PinHolder-10_0" 0 "9" 0)
+			(pin 15  0 "PLD2-20_PinHolder-10_0" 0 "8" 0)
+			(pin 13  0 "PLD2-20_PinHolder-10_0" 0 "7" 0)
+			(pin 11  0 "PLD2-20_PinHolder-10_0" 0 "6" 0)
+			(pin 9  0 "PLD2-20_PinHolder-10_0" 0 "5" 0)
+			(pin 7  0 "PLD2-20_PinHolder-10_0" 0 "4" 0)
+			(pin 5  0 "PLD2-20_PinHolder-10_0" 0 "3" 0)
+			(pin 3  0 "PLD2-20_PinHolder-10_0" 0 "2" 0)
+			(pin 1  0 "PLD2-20_PinHolder-10_0" 0 "1" 0)
+			(pin 20  0 "PLD2-20_PinHolder-10_1" 0 "10" 0)
+			(pin 18  0 "PLD2-20_PinHolder-10_1" 0 "9" 0)
+			(pin 16  0 "PLD2-20_PinHolder-10_1" 0 "8" 0)
+			(pin 14  0 "PLD2-20_PinHolder-10_1" 0 "7" 0)
+			(pin 12  0 "PLD2-20_PinHolder-10_1" 0 "6" 0)
+			(pin 10  0 "PLD2-20_PinHolder-10_1" 0 "5" 0)
+			(pin 8  0 "PLD2-20_PinHolder-10_1" 0 "4" 0)
+			(pin 6  0 "PLD2-20_PinHolder-10_1" 0 "3" 0)
+			(pin 4  0 "PLD2-20_PinHolder-10_1" 0 "2" 0)
+			(pin 2  0 "PLD2-20_PinHolder-10_1" 0 "1" 0))
+		(part "LTC3130IMSE")
+		(logical_part_mapping "LTC3130IMSE"
+			(comp "DA262"))
+		(logical_part "LTC3130IMSE"
+			(slots
+				(slot "LTC3130IMSE_LTC3130xM_0"))
+			(part_type "IC")
+			(pin 17 2 "power_gate3" 0 "GND" 0)
+			(pin 14  0 "LTC3130IMSE_LTC3130xM_0" 0 "VOUT" 0)
+			(pin 5  0 "LTC3130IMSE_LTC3130xM_0" 0 "VIN" 0)
+			(pin 7  0 "LTC3130IMSE_LTC3130xM_0" 0 "VCC" 0)
+			(pin 16  5 "LTC3130IMSE_LTC3130xM_0" 0 "SW2" 0)
+			(pin 3  5 "LTC3130IMSE_LTC3130xM_0" 0 "SW1" 0)
+			(pin 6  3 "LTC3130IMSE_LTC3130xM_0" 0 "RUN" 0)
+			(pin 4  0 "LTC3130IMSE_LTC3130xM_0" 0 "PVIN" 0)
+			(pin 13  4 "LTC3130IMSE_LTC3130xM_0" 0 "PGOOD" 0)
+			(pin 8  3 "LTC3130IMSE_LTC3130xM_0" 0 "MPCC" 0)
+			(pin 11  3 "LTC3130IMSE_LTC3130xM_0" 0 "MODE" 0)
+			(pin 10  3 "LTC3130IMSE_LTC3130xM_0" 0 "ILIM" 0)
+			(pin 1  0 "LTC3130IMSE_LTC3130xM_0" 0 "GND" 0)
+			(pin 9  5 "LTC3130IMSE_LTC3130xM_0" 0 "FB" 0)
+			(pin 12  5 "LTC3130IMSE_LTC3130xM_0" 0 "EXTVCC" 0)
+			(pin 15  5 "LTC3130IMSE_LTC3130xM_0" 0 "BST2" 0)
+			(pin 2  5 "LTC3130IMSE_LTC3130xM_0" 0 "BST1" 0))
+		(part "LQH43CN100K03")
+		(logical_part "LQH43CN100K03"
+			(constraints
+				(cnsval "EDIT_VALUE" "0.00001")
+				(cnsval "VALUE" "0.00001"))
+			(slots
+				(slot "LQH43CN100K03_Inductance_0"))
+			(part_type "INDUCTOR")
+			(pin 2  5 "LQH43CN100K03_Inductance_0" 0 "2" 0)
+			(pin 1  5 "LQH43CN100K03_Inductance_0" 0 "1" 0))
+		(part "LQH3NPN100MME")
+		(logical_part_mapping "LQH3NPN100MME"
+			(comp "L261"))
+		(logical_part "LQH3NPN100MME"
+			(constraints
+				(cnsval "EDIT_VALUE" "0.00001")
+				(cnsval "VALUE" "0.00001"))
+			(slots
+				(slot "LQH3NPN100MME_Inductance_0"))
+			(part_type "INDUCTOR")
+			(pin 2  5 "LQH3NPN100MME_Inductance_0" 0 "2" 0)
+			(pin 1  5 "LQH3NPN100MME_Inductance_0" 0 "1" 0))
+		(part "DRV10983ZPWP")
+		(logical_part_mapping "DRV10983ZPWP"
+			(comp "DA261"))
+		(logical_part "DRV10983ZPWP"
+			(slots
+				(slot "DRV10983ZPWP_DRV10983_0"))
+			(part_type "IC")
+			(pin 21  4 "DRV10983ZPWP_DRV10983_0" 0 "W2" 0)
+			(pin 22  4 "DRV10983ZPWP_DRV10983_0" 0 "W1" 0)
+			(pin 9  0 "DRV10983ZPWP_DRV10983_0" 0 "V3P3" 0)
+			(pin 19  4 "DRV10983ZPWP_DRV10983_0" 0 "V2" 0)
+			(pin 7  0 "DRV10983ZPWP_DRV10983_0" 0 "V1P8" 0)
+			(pin 20  4 "DRV10983ZPWP_DRV10983_0" 0 "V1" 0)
+			(pin 6  5 "DRV10983ZPWP_DRV10983_0" 0 "VREG" 0)
+			(pin 1  5 "DRV10983ZPWP_DRV10983_0" 0 "VCP" 0)
+			(pin 23  0 "DRV10983ZPWP_DRV10983_0" 0 "VCC2" 0)
+			(pin 24  0 "DRV10983ZPWP_DRV10983_0" 0 "VCC1" 0)
+			(pin 17  4 "DRV10983ZPWP_DRV10983_0" 0 "U2" 0)
+			(pin 18  4 "DRV10983ZPWP_DRV10983_0" 0 "U1" 0)
+			(pin 5  0 "DRV10983ZPWP_DRV10983_0" 0 "SWGND" 0)
+			(pin 4  5 "DRV10983ZPWP_DRV10983_0" 0 "SW" 0)
+			(pin 13  3 "DRV10983ZPWP_DRV10983_0" 0 "SPEED" 0)
+			(pin 11  0 "DRV10983ZPWP_DRV10983_0" 0 "SDA" 0)
+			(pin 10  0 "DRV10983ZPWP_DRV10983_0" 0 "SCL" 0)
+			(pin 15  0 "DRV10983ZPWP_DRV10983_0" 0 "PGND2" 0)
+			(pin 16  0 "DRV10983ZPWP_DRV10983_0" 0 "PGND1" 0)
+			(pin 8  0 "DRV10983ZPWP_DRV10983_0" 0 "GND" 0)
+			(pin 12  4 "DRV10983ZPWP_DRV10983_0" 0 "FG" 0)
+			(pin 14  3 "DRV10983ZPWP_DRV10983_0" 0 "DIR" 0)
+			(pin 2  5 "DRV10983ZPWP_DRV10983_0" 0 "CPP" 0)
+			(pin 3  5 "DRV10983ZPWP_DRV10983_0" 0 "CPN" 0))
+		(part "CAP-0805_10u_10%_X7R_25V")
+		(logical_part_mapping "CAP-0805_10u_10%_X7R_25V"
+			(comp "C274" "C268"))
+		(logical_part "CAP-0805_10u_10%_X7R_25V"
+			(constraints
+				(cnsval "EDIT_VALUE" "0.00001")
+				(cnsval "VALUE" "0.00001"))
+			(slots
+				(slot "CAP-0805_10u_10%_X7R_25V_Capacitor_0"))
+			(part_type "CAPACITOR")
+			(pin 2  5 "CAP-0805_10u_10%_X7R_25V_Capacitor_0" 0 "2" 0)
+			(pin 1  5 "CAP-0805_10u_10%_X7R_25V_Capacitor_0" 0 "1" 0))
+		(part "CAP-0603_10u_10%_X5R_10V")
+		(logical_part_mapping "CAP-0603_10u_10%_X5R_10V"
+			(comp "C271" "C261"))
+		(logical_part "CAP-0603_10u_10%_X5R_10V"
+			(constraints
+				(cnsval "EDIT_VALUE" "0.00001")
+				(cnsval "VALUE" "0.00001"))
+			(slots
+				(slot "CAP-0603_10u_10%_X5R_10V_Capacitor_0"))
+			(part_type "CAPACITOR")
+			(pin 2  5 "CAP-0603_10u_10%_X5R_10V_Capacitor_0" 0 "2" 0)
+			(pin 1  5 "CAP-0603_10u_10%_X5R_10V_Capacitor_0" 0 "1" 0))
+		(part "CAP-0603_4.7u_10%_Y5R_6.3V")
+		(logical_part_mapping "CAP-0603_4.7u_10%_Y5R_6.3V"
+			(comp "C266"))
+		(logical_part "CAP-0603_4.7u_10%_Y5R_6.3V"
+			(constraints
+				(cnsval "EDIT_VALUE" "0.0000047")
+				(cnsval "VALUE" "0.0000047"))
+			(slots
+				(slot "CAP-0603_4.7u_10%_Y5R_6.3V_Capacitor_0"))
+			(part_type "CAPACITOR")
+			(pin 2  5 "CAP-0603_4.7u_10%_Y5R_6.3V_Capacitor_0" 0 "2" 0)
+			(pin 1  5 "CAP-0603_4.7u_10%_Y5R_6.3V_Capacitor_0" 0 "1" 0))
+		(part "CAP-0402_100n_10%_X7R_16V")
+		(logical_part_mapping "CAP-0402_100n_10%_X7R_16V"
+			(comp "C269" "C267" "C262" "C265"))
+		(logical_part "CAP-0402_100n_10%_X7R_16V"
+			(constraints
+				(cnsval "EDIT_VALUE" "0.0000001")
+				(cnsval "VALUE" "0.0000001"))
+			(slots
+				(slot "CAP-0402_100n_10%_X7R_16V_Capacitor_0"))
+			(part_type "CAPACITOR")
+			(pin 2  5 "CAP-0402_100n_10%_X7R_16V_Capacitor_0" 0 "2" 0)
+			(pin 1  5 "CAP-0402_100n_10%_X7R_16V_Capacitor_0" 0 "1" 0))
+		(part "CAP-0402_22n_10%_X7R_16V")
+		(logical_part_mapping "CAP-0402_22n_10%_X7R_16V"
+			(comp "C272" "C270"))
+		(logical_part "CAP-0402_22n_10%_X7R_16V"
+			(constraints
+				(cnsval "EDIT_VALUE" "0.000000022")
+				(cnsval "VALUE" "0.000000022"))
+			(slots
+				(slot "CAP-0402_22n_10%_X7R_16V_Capacitor_0"))
+			(part_type "CAPACITOR")
+			(pin 2  5 "CAP-0402_22n_10%_X7R_16V_Capacitor_0" 0 "2" 0)
+			(pin 1  5 "CAP-0402_22n_10%_X7R_16V_Capacitor_0" 0 "1" 0))
+		(part "CAP-0402_10p_5%_NP0_50V")
+		(logical_part_mapping "CAP-0402_10p_5%_NP0_50V"
+			(comp "C273"))
+		(logical_part "CAP-0402_10p_5%_NP0_50V"
+			(constraints
+				(cnsval "EDIT_VALUE" "0.000000000010")
+				(cnsval "VALUE" "0.000000000010"))
+			(slots
+				(slot "CAP-0402_10p_5%_NP0_50V_Capacitor_0"))
+			(part_type "CAPACITOR")
+			(pin 2  5 "CAP-0402_10p_5%_NP0_50V_Capacitor_0" 0 "2" 0)
+			(pin 1  5 "CAP-0402_10p_5%_NP0_50V_Capacitor_0" 0 "1" 0))
+		(part "CAP-0402_1.0u_X5R_10V")
+		(logical_part_mapping "CAP-0402_1.0u_X5R_10V"
+			(comp "C264" "C263"))
+		(logical_part "CAP-0402_1.0u_X5R_10V"
+			(constraints
+				(cnsval "EDIT_VALUE" "0.000001")
+				(cnsval "VALUE" "0.000001"))
+			(slots
+				(slot "CAP-0402_1.0u_X5R_10V_Capacitor_0"))
+			(part_type "CAPACITOR")
+			(pin 2  5 "CAP-0402_1.0u_X5R_10V_Capacitor_0" 0 "2" 0)
+			(pin 1  5 "CAP-0402_1.0u_X5R_10V_Capacitor_0" 0 "1" 0))
+		(part "BM10B-SRSS-TB")
+		(logical_part_mapping "BM10B-SRSS-TB"
+			(comp "XP365" "XP364"))
+		(logical_part "BM10B-SRSS-TB"
+			(slots
+				(slot "BM10B-SRSS-TB_PinHolder-12_0"))
+			(part_type "IC")
+			(pin 12  0 "BM10B-SRSS-TB_PinHolder-12_0" 0 "12" 0)
+			(pin 11  0 "BM10B-SRSS-TB_PinHolder-12_0" 0 "11" 0)
+			(pin 10  0 "BM10B-SRSS-TB_PinHolder-12_0" 0 "10" 0)
+			(pin 9  0 "BM10B-SRSS-TB_PinHolder-12_0" 0 "9" 0)
+			(pin 8  0 "BM10B-SRSS-TB_PinHolder-12_0" 0 "8" 0)
+			(pin 7  0 "BM10B-SRSS-TB_PinHolder-12_0" 0 "7" 0)
+			(pin 6  0 "BM10B-SRSS-TB_PinHolder-12_0" 0 "6" 0)
+			(pin 5  0 "BM10B-SRSS-TB_PinHolder-12_0" 0 "5" 0)
+			(pin 4  0 "BM10B-SRSS-TB_PinHolder-12_0" 0 "4" 0)
+			(pin 3  0 "BM10B-SRSS-TB_PinHolder-12_0" 0 "3" 0)
+			(pin 2  0 "BM10B-SRSS-TB_PinHolder-12_0" 0 "2" 0)
+			(pin 1  0 "BM10B-SRSS-TB_PinHolder-12_0" 0 "1" 0))
+		(part "BM08B-SRSS-TB")
+		(logical_part_mapping "BM08B-SRSS-TB"
+			(comp "XP363" "XP362" "XP361" "XP261"))
+		(logical_part "BM08B-SRSS-TB"
+			(slots
+				(slot "BM08B-SRSS-TB_PinHolder-8_0"))
+			(part_type "IC")
+			(pin 10 2 "power_gate4" 0 "GND" 0)
+			(pin 9 2 "power_gate5" 0 "GND" 0)
+			(pin 8  0 "BM08B-SRSS-TB_PinHolder-8_0" 0 "8" 0)
+			(pin 7  0 "BM08B-SRSS-TB_PinHolder-8_0" 0 "7" 0)
+			(pin 6  0 "BM08B-SRSS-TB_PinHolder-8_0" 0 "6" 0)
+			(pin 5  0 "BM08B-SRSS-TB_PinHolder-8_0" 0 "5" 0)
+			(pin 4  0 "BM08B-SRSS-TB_PinHolder-8_0" 0 "4" 0)
+			(pin 3  0 "BM08B-SRSS-TB_PinHolder-8_0" 0 "3" 0)
+			(pin 2  0 "BM08B-SRSS-TB_PinHolder-8_0" 0 "2" 0)
+			(pin 1  0 "BM08B-SRSS-TB_PinHolder-8_0" 0 "1" 0)))
+	(placement
+		(component "Passive discrete"
+			(place "R263" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "RES-0402_249k_1%")
+				(attval "REFDES" "R263"))
+			(constraints
+				(cnsval "VALUE" "249K ")))
+		(component "Passive discrete"
+			(place "R264" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "RES-0402_249k_1%")
+				(attval "REFDES" "R264"))
+			(constraints
+				(cnsval "VALUE" "249K ")))
+		(component "Passive discrete"
+			(place "R261" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "RES-0402_33_5%")
+				(attval "REFDES" "R261"))
+			(constraints
+				(cnsval "VALUE" "33 ")))
+		(component "Passive discrete"
+			(place "R262" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "RES-0402_2.74M_1%")
+				(attval "REFDES" "R262"))
+			(constraints
+				(cnsval "VALUE" "2.74M ")))
+		(component "Passive discrete"
+			(place "R265" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "RES-0402_1.00M_1%")
+				(attval "REFDES" "R265"))
+			(constraints
+				(cnsval "VALUE" "1M ")))
+		(component "Physical connector"
+			(place "XP367" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.2")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "4" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.4")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "6" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "3.6")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "8" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "4.8")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "10" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "5.10")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "12" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "6.12")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "14" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "7.14")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "16" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "8.16")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "18" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "9.18")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "20" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "10.20")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "1" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "3" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.3")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "5" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "3.5")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "7" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "4.7")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "9" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "5.9")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "11" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "6.11")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "13" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "7.13")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "15" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "8.15")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "17" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "9.17")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "19" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "10.19")
+						(cnsval "PINTYPE" "UNKNOWN"))))
+			(attributes
+				(attval "PKG_TYPE" "Physical connector")
+				(attval "DEVICE" "PLD2-20")
+				(attval "REFDES" "XP367")))
+		(component "Physical connector"
+			(place "XP366" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.2")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "4" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.4")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "6" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "3.6")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "8" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "4.8")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "10" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "5.10")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "12" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "6.12")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "14" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "7.14")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "16" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "8.16")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "18" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "9.18")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "20" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "10.20")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "1" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "3" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.3")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "5" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "3.5")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "7" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "4.7")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "9" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "5.9")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "11" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "6.11")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "13" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "7.13")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "15" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "8.15")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "17" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "9.17")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "19" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "10.19")
+						(cnsval "PINTYPE" "UNKNOWN"))))
+			(attributes
+				(attval "PKG_TYPE" "Physical connector")
+				(attval "DEVICE" "PLD2-20")
+				(attval "REFDES" "XP366")))
+		(component "IC"
+			(place "DA262" 0.0 0.0 top 0.0
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "BST1.2")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "15" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "BST2.15")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "12" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "EXTVCC.12")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "9" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "FB.9")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "1" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "GND.1")
+						(cnsval "PINTYPE" "POWER")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "10" 0.0 0.0 "IN"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "ILIM.10")
+						(cnsval "PINTYPE" "IN")))
+				(comp_pin "11" 0.0 0.0 "IN"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "MODE.11")
+						(cnsval "PINTYPE" "IN")))
+				(comp_pin "8" 0.0 0.0 "IN"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "MPCC.8")
+						(cnsval "PINTYPE" "IN")))
+				(comp_pin "13" 0.0 0.0 "OUT"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "PGOOD.13")
+						(cnsval "PINTYPE" "OUT")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "4" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "PVIN.4")
+						(cnsval "PINTYPE" "POWER")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "6" 0.0 0.0 "IN"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "RUN.6")
+						(cnsval "PINTYPE" "IN")))
+				(comp_pin "3" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "SW1.3")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "16" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "SW2.16")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "7" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "VCC.7")
+						(cnsval "PINTYPE" "POWER")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "5" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "VIN.5")
+						(cnsval "PINTYPE" "POWER")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "14" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "VOUT.14")
+						(cnsval "PINTYPE" "POWER")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "17" 0.0 0.0 "POWER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L"))))
+			(attributes
+				(attval "PKG_TYPE" "IC")
+				(attval "DEVICE" "LTC3130IMSE")
+				(attval "REFDES" "DA262")))
+		(component "Passive discrete"
+			(place "L261" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "LQH3NPN100MME")
+				(attval "REFDES" "L261"))
+			(constraints
+				(cnsval "VALUE" "10u ")))
+		(component "IC"
+			(place "DA261" 0.0 0.0 top 0.0
+				(comp_pin "3" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "CPN.3")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "CPP.2")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "14" 0.0 0.0 "IN"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "DIR.14")
+						(cnsval "PINTYPE" "IN")))
+				(comp_pin "12" 0.0 0.0 "OUT"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "FG.12")
+						(cnsval "PINTYPE" "OUT")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "8" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "GND.8")
+						(cnsval "PINTYPE" "POWER")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "16" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "PGND1.16")
+						(cnsval "PINTYPE" "POWER")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "15" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "PGND2.15")
+						(cnsval "PINTYPE" "POWER")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "10" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "SCL.10")
+						(cnsval "PINTYPE" "BI")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "11" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "SDA.11")
+						(cnsval "PINTYPE" "BI")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "13" 0.0 0.0 "IN"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "SPEED.13")
+						(cnsval "PINTYPE" "IN")))
+				(comp_pin "4" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "SW.4")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "5" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "SWGND.5")
+						(cnsval "PINTYPE" "POWER")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "18" 0.0 0.0 "OUT"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "U1.18")
+						(cnsval "PINTYPE" "OUT")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "17" 0.0 0.0 "OUT"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "U2.17")
+						(cnsval "PINTYPE" "OUT")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "24" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "VCC1.24")
+						(cnsval "PINTYPE" "POWER")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "23" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "VCC2.23")
+						(cnsval "PINTYPE" "POWER")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "VCP.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "6" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "VREG.6")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "20" 0.0 0.0 "OUT"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "V1.20")
+						(cnsval "PINTYPE" "OUT")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "7" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "V1P8.7")
+						(cnsval "PINTYPE" "POWER")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "19" 0.0 0.0 "OUT"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "V2.19")
+						(cnsval "PINTYPE" "OUT")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "9" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "V3P3.9")
+						(cnsval "PINTYPE" "POWER")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "22" 0.0 0.0 "OUT"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "W1.22")
+						(cnsval "PINTYPE" "OUT")
+						(cnsval "PIN_GROUP" "S")))
+				(comp_pin "21" 0.0 0.0 "OUT"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "S")
+						(cnsval "REALPINDATA" "W2.21")
+						(cnsval "PINTYPE" "OUT")
+						(cnsval "PIN_GROUP" "S"))))
+			(attributes
+				(attval "PKG_TYPE" "IC")
+				(attval "DEVICE" "DRV10983ZPWP")
+				(attval "REFDES" "DA261")))
+		(component "Passive discrete"
+			(place "C274" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "CAP-0805_10u_10%_X7R_25V")
+				(attval "REFDES" "C274"))
+			(constraints
+				(cnsval "VALUE" "10u ")))
+		(component "Passive discrete"
+			(place "C268" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "CAP-0805_10u_10%_X7R_25V")
+				(attval "REFDES" "C268"))
+			(constraints
+				(cnsval "VALUE" "10u ")))
+		(component "Passive discrete"
+			(place "C271" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "CAP-0603_10u_10%_X5R_10V")
+				(attval "REFDES" "C271"))
+			(constraints
+				(cnsval "VALUE" "10u ")))
+		(component "Passive discrete"
+			(place "C261" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "CAP-0603_10u_10%_X5R_10V")
+				(attval "REFDES" "C261"))
+			(constraints
+				(cnsval "VALUE" "10u ")))
+		(component "Passive discrete"
+			(place "C266" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "CAP-0603_4.7u_10%_Y5R_6.3V")
+				(attval "REFDES" "C266"))
+			(constraints
+				(cnsval "VALUE" "4.7u ")))
+		(component "Passive discrete"
+			(place "C269" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "CAP-0402_100n_10%_X7R_16V")
+				(attval "REFDES" "C269"))
+			(constraints
+				(cnsval "VALUE" "100n ")))
+		(component "Passive discrete"
+			(place "C267" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "CAP-0402_100n_10%_X7R_16V")
+				(attval "REFDES" "C267"))
+			(constraints
+				(cnsval "VALUE" "100n ")))
+		(component "Passive discrete"
+			(place "C262" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "CAP-0402_100n_10%_X7R_16V")
+				(attval "REFDES" "C262"))
+			(constraints
+				(cnsval "VALUE" "100n ")))
+		(component "Passive discrete"
+			(place "C265" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "CAP-0402_100n_10%_X7R_16V")
+				(attval "REFDES" "C265"))
+			(constraints
+				(cnsval "VALUE" "100n ")))
+		(component "Passive discrete"
+			(place "C272" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "CAP-0402_22n_10%_X7R_16V")
+				(attval "REFDES" "C272"))
+			(constraints
+				(cnsval "VALUE" "22n ")))
+		(component "Passive discrete"
+			(place "C270" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "CAP-0402_22n_10%_X7R_16V")
+				(attval "REFDES" "C270"))
+			(constraints
+				(cnsval "VALUE" "22n ")))
+		(component "Passive discrete"
+			(place "C273" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "CAP-0402_10p_5%_NP0_50V")
+				(attval "REFDES" "C273"))
+			(constraints
+				(cnsval "VALUE" "10p ")))
+		(component "Passive discrete"
+			(place "C264" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "CAP-0402_1.0u_X5R_10V")
+				(attval "REFDES" "C264"))
+			(constraints
+				(cnsval "VALUE" "1u ")))
+		(component "Passive discrete"
+			(place "C263" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "ANALOG")))
+				(comp_pin "2" 0.0 0.0 "BI"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "ANALOG"))))
+			(attributes
+				(attval "PKG_TYPE" "Passive discrete")
+				(attval "DEVICE" "CAP-0402_1.0u_X5R_10V")
+				(attval "REFDES" "C263"))
+			(constraints
+				(cnsval "VALUE" "1u ")))
+		(component "Physical connector"
+			(place "XP365" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "2" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "3" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "3.3")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "4" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "4.4")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "5" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "5.5")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "6" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "6.6")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "7" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "7.7")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "8" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "8.8")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "9" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "9.9")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "10" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "10.10")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "11" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "11.11")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "12" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "12.12")
+						(cnsval "PINTYPE" "UNKNOWN"))))
+			(attributes
+				(attval "PKG_TYPE" "Physical connector")
+				(attval "DEVICE" "BM10B-SRSS-TB")
+				(attval "REFDES" "XP365")))
+		(component "Physical connector"
+			(place "XP364" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "2" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "3" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "3.3")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "4" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "4.4")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "5" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "5.5")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "6" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "6.6")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "7" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "7.7")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "8" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "8.8")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "9" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "9.9")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "10" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "10.10")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "11" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "11.11")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "12" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "12.12")
+						(cnsval "PINTYPE" "UNKNOWN"))))
+			(attributes
+				(attval "PKG_TYPE" "Physical connector")
+				(attval "DEVICE" "BM10B-SRSS-TB")
+				(attval "REFDES" "XP364")))
+		(component "Physical connector"
+			(place "XP363" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "2" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "3" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "3.3")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "4" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "4.4")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "5" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "5.5")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "6" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "6.6")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "7" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "7.7")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "8" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "8.8")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "9" 0.0 0.0 "POWER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")))
+				(comp_pin "10" 0.0 0.0 "POWER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L"))))
+			(attributes
+				(attval "PKG_TYPE" "Physical connector")
+				(attval "DEVICE" "BM08B-SRSS-TB")
+				(attval "REFDES" "XP363")))
+		(component "Physical connector"
+			(place "XP362" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "2" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "3" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "3.3")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "4" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "4.4")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "5" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "5.5")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "6" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "6.6")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "7" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "7.7")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "8" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "8.8")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "9" 0.0 0.0 "POWER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")))
+				(comp_pin "10" 0.0 0.0 "POWER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L"))))
+			(attributes
+				(attval "PKG_TYPE" "Physical connector")
+				(attval "DEVICE" "BM08B-SRSS-TB")
+				(attval "REFDES" "XP362")))
+		(component "Physical connector"
+			(place "XP361" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "2" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "3" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "3.3")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "4" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "4.4")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "5" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "5.5")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "6" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "6.6")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "7" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "7.7")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "8" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "8.8")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "9" 0.0 0.0 "POWER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")))
+				(comp_pin "10" 0.0 0.0 "POWER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L"))))
+			(attributes
+				(attval "PKG_TYPE" "Physical connector")
+				(attval "DEVICE" "BM08B-SRSS-TB")
+				(attval "REFDES" "XP361")))
+		(component "Physical connector"
+			(place "XP261" 0.0 0.0 top 0.0
+				(comp_pin "1" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "1.1")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "2" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "2.2")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "3" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "3.3")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "4" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "4.4")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "5" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "5.5")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "6" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "6.6")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "7" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "7.7")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "8" 0.0 0.0 "OTHER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")
+						(cnsval "REALPINDATA" "8.8")
+						(cnsval "PINTYPE" "UNKNOWN")))
+				(comp_pin "9" 0.0 0.0 "POWER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L")))
+				(comp_pin "10" 0.0 0.0 "POWER"
+					(constraints
+						(cnsval "ASSIGN_PIN_GROUP" "L"))))
+			(attributes
+				(attval "PKG_TYPE" "Physical connector")
+				(attval "DEVICE" "BM08B-SRSS-TB")
+				(attval "REFDES" "XP261"))))
+	(functions
+		(func "\XCMP20" "" "R263" 1)
+		(func "\XCMP19" "" "R264" 1)
+		(func "\XCMP21" "" "R261" 1)
+		(func "\XCMP18" "" "R262" 1)
+		(func "\XCMP22" "" "R265" 1)
+		(func "\XCMP59" "" "XP367" 1)
+		(func "\XCMP60" "" "XP367" 2)
+		(func "\XCMP57" "" "XP366" 1)
+		(func "\XCMP58" "" "XP366" 2)
+		(func "\XCMP4" "" "DA262" 1)
+		(func "\XCMP52" "" "L261" 1)
+		(func "\XCMP1" "" "DA261" 1)
+		(func "\XCMP6" "" "C274" 1)
+		(func "\XCMP5" "" "C268" 1)
+		(func "\XCMP8" "" "C271" 1)
+		(func "\XCMP3" "" "C261" 1)
+		(func "\XCMP2" "" "C266" 1)
+		(func "\XCMP15" "" "C269" 1)
+		(func "\XCMP14" "" "C267" 1)
+		(func "\XCMP13" "" "C262" 1)
+		(func "\XCMP12" "" "C265" 1)
+		(func "\XCMP17" "" "C272" 1)
+		(func "\XCMP16" "" "C270" 1)
+		(func "\XCMP23" "" "C273" 1)
+		(func "\XCMP11" "" "C264" 1)
+		(func "\XCMP10" "" "C263" 1)
+		(func "\XCMP56" "" "XP365" 1)
+		(func "\XCMP55" "" "XP364" 1)
+		(func "\XCMP54" "" "XP363" 1)
+		(func "\XCMP53" "" "XP362" 1)
+		(func "\XCMP48" "" "XP361" 1)
+		(func "\XCMP47" "" "XP261" 1))
+	(network
+		(net "GND"
+			(pins XP261-10 XP361-10 XP362-10 XP363-10 XP363-9 XP362-9 DA262-17
+ XP361-9 XP261-9 C266-2 C267-2 DA261-8 DA261-5 DA261-15 DA261-16 C261-1
+ C263-1 C264-1 C268-2 C269-2 DA262-10 DA262-11 DA262-1 C274-2 C271-2 R263-2
+ XP261-4)
+			(global 0.0))
+		(net "XSIG010003"
+			(pins DA261-21 DA261-22 XP261-3))
+		(net "XSIG010004"
+			(pins DA261-19 DA261-20 XP261-2))
+		(net "XSIG010005"
+			(pins DA261-17 DA261-18 XP261-1))
+		(net "XSIG010006"
+			(pins DA261-1 C265-2))
+		(net "XSIG010007"
+			(pins DA261-2 C262-1))
+		(net "XSIG010008"
+			(pins DA261-3 C262-2))
+		(net "XSIG010009"
+			(pins DA261-9 C264-2))
+		(net "XSIG010010"
+			(pins DA261-7 C263-2))
+		(net "XSIG010014"
+			(pins DA261-4 R261-2))
+		(net "XSIG010015"
+			(pins DA261-6 C261-2 R261-1))
+		(net "XSIG010019"
+			(pins DA261-10))
+		(net "XSIG010020"
+			(pins DA261-11))
+		(net "XSIG010021"
+			(pins DA261-12))
+		(net "XSIG010022"
+			(pins DA261-13))
+		(net "XSIG010023"
+			(pins DA261-14))
+		(net "XSIG010029"
+			(pins DA262-4 DA262-5 C268-1 C269-1))
+		(net "XSIG010032"
+			(pins DA262-6))
+		(net "XSIG010033"
+			(pins DA262-2 C270-1))
+		(net "XSIG010034"
+			(pins DA262-15 C272-2))
+		(net "XSIG010036"
+			(pins DA262-13))
+		(net "XSIG010038"
+			(pins DA262-9 R262-2 R264-1 R263-1))
+		(net "XSIG010041"
+			(pins R264-2 C273-2))
+		(net "XSIG010042"
+			(pins DA262-3 C270-2 L261-1))
+		(net "XSIG010043"
+			(pins DA262-16 C272-1 L261-2))
+		(net "XSIG010045"
+			(pins XP261-5))
+		(net "XSIG010046"
+			(pins XP261-6))
+		(net "XSIG010047"
+			(pins XP261-7))
+		(net "XSIG010048"
+			(pins XP261-8))
+		(net "XSIG010050"
+			(pins DA262-8 DA262-7 C271-1))
+		(net "XSIG010051"
+			(pins DA261-23 DA261-24 C266-1 DA262-14 DA262-12 C274-1 C265-1 C267-1
+ R262-1 R265-1 C273-1))
+		(net "XSIG010058"
+			(pins R265-2))
+		(net "XSIG010117"
+			(pins XP364-11 XP364-12))
+		(net "XSIG010118"
+			(pins XP365-11 XP365-12)))
+	(network_electrical
+		(net_electrical "XSIG010033^^^"
+			(scalars "XSIG010043" "XSIG010042" "XSIG010034" "XSIG010033")
+			(constraints
+				(cnsval "PIN_COUNT" 10))
+			(connpinpair "C270.1" "C270.2")
+			(connpinpair "L261.1" "L261.2")
+			(connpinpair "C272.1" "C272.2"))
+		(net_electrical "XSIG010006^^^"
+			(scalars "XSIG010058" "XSIG010051" "XSIG010041" "XSIG010038" "XSIG010006")
+			(constraints
+				(cnsval "PIN_COUNT" 20))
+			(connpinpair "C265.2" "C265.1")
+			(connpinpair "C273.1" "C273.2")
+			(connpinpair "R265.1" "R265.2")
+			(connpinpair "R264.2" "R264.1"))
+		(net_electrical "XSIG010007^^^"
+			(scalars "XSIG010008" "XSIG010007")
+			(constraints
+				(cnsval "PIN_COUNT" 4))
+			(connpinpair "C262.1" "C262.2"))
+		(net_electrical "XSIG010118"
+			(scalars "XSIG010118")
+			(constraints
+				(cnsval "PIN_COUNT" 2)))
+		(net_electrical "XSIG010117"
+			(scalars "XSIG010117")
+			(constraints
+				(cnsval "PIN_COUNT" 2)))
+		(net_electrical "XSIG010050"
+			(scalars "XSIG010050")
+			(constraints
+				(cnsval "PIN_COUNT" 3)))
+		(net_electrical "XSIG010048"
+			(scalars "XSIG010048")
+			(constraints
+				(cnsval "PIN_COUNT" 1)))
+		(net_electrical "XSIG010047"
+			(scalars "XSIG010047")
+			(constraints
+				(cnsval "PIN_COUNT" 1)))
+		(net_electrical "XSIG010046"
+			(scalars "XSIG010046")
+			(constraints
+				(cnsval "PIN_COUNT" 1)))
+		(net_electrical "XSIG010045"
+			(scalars "XSIG010045")
+			(constraints
+				(cnsval "PIN_COUNT" 1)))
+		(net_electrical "XSIG010036"
+			(scalars "XSIG010036")
+			(constraints
+				(cnsval "PIN_COUNT" 1)))
+		(net_electrical "XSIG010032"
+			(scalars "XSIG010032")
+			(constraints
+				(cnsval "PIN_COUNT" 1)))
+		(net_electrical "XSIG010029"
+			(scalars "XSIG010029")
+			(constraints
+				(cnsval "PIN_COUNT" 4)))
+		(net_electrical "XSIG010023"
+			(scalars "XSIG010023")
+			(constraints
+				(cnsval "PIN_COUNT" 1)))
+		(net_electrical "XSIG010022"
+			(scalars "XSIG010022")
+			(constraints
+				(cnsval "PIN_COUNT" 1)))
+		(net_electrical "XSIG010021"
+			(scalars "XSIG010021")
+			(constraints
+				(cnsval "PIN_COUNT" 1)))
+		(net_electrical "XSIG010020"
+			(scalars "XSIG010020")
+			(constraints
+				(cnsval "PIN_COUNT" 1)))
+		(net_electrical "XSIG010019"
+			(scalars "XSIG010019")
+			(constraints
+				(cnsval "PIN_COUNT" 1)))
+		(net_electrical "XSIG010015"
+			(scalars "XSIG010015")
+			(constraints
+				(cnsval "PIN_COUNT" 3)))
+		(net_electrical "XSIG010014"
+			(scalars "XSIG010014")
+			(constraints
+				(cnsval "PIN_COUNT" 2)))
+		(net_electrical "XSIG010010"
+			(scalars "XSIG010010")
+			(constraints
+				(cnsval "PIN_COUNT" 2)))
+		(net_electrical "XSIG010009"
+			(scalars "XSIG010009")
+			(constraints
+				(cnsval "PIN_COUNT" 2)))
+		(net_electrical "XSIG010005"
+			(scalars "XSIG010005")
+			(constraints
+				(cnsval "PIN_COUNT" 3)))
+		(net_electrical "XSIG010004"
+			(scalars "XSIG010004")
+			(constraints
+				(cnsval "PIN_COUNT" 3)))
+		(net_electrical "XSIG010003"
+			(scalars "XSIG010003")
+			(constraints
+				(cnsval "PIN_COUNT" 3)))
+		(net_scalar "XSIG010118"
+			(constraints
+				(cnsval "PIN_COUNT" 2)
+				(cnsval "CDB_NETNUMBER" "196609")
+				(cnsval "CDB_NETNAME" "XSIG010118")))
+		(net_scalar "XSIG010117"
+			(constraints
+				(cnsval "PIN_COUNT" 2)
+				(cnsval "CDB_NETNUMBER" "192513")
+				(cnsval "CDB_NETNAME" "XSIG010117")))
+		(net_scalar "XSIG010058"
+			(constraints
+				(cnsval "PIN_COUNT" 1)
+				(cnsval "CDB_NETNUMBER" 188417)
+				(cnsval "CDB_NETNAME" "XSIG010058")))
+		(net_scalar "XSIG010051"
+			(constraints
+				(cnsval "PIN_COUNT" 11)
+				(cnsval "CDB_NETNUMBER" 184321)
+				(cnsval "CDB_NETNAME" "XSIG010051")))
+		(net_scalar "XSIG010050"
+			(constraints
+				(cnsval "PIN_COUNT" 3)
+				(cnsval "CDB_NETNUMBER" "180225")
+				(cnsval "CDB_NETNAME" "XSIG010050")))
+		(net_scalar "XSIG010048"
+			(constraints
+				(cnsval "PIN_COUNT" 1)
+				(cnsval "CDB_NETNUMBER" "172033")
+				(cnsval "CDB_NETNAME" "XSIG010048")))
+		(net_scalar "XSIG010047"
+			(constraints
+				(cnsval "PIN_COUNT" 1)
+				(cnsval "CDB_NETNUMBER" "167937")
+				(cnsval "CDB_NETNAME" "XSIG010047")))
+		(net_scalar "XSIG010046"
+			(constraints
+				(cnsval "PIN_COUNT" 1)
+				(cnsval "CDB_NETNUMBER" "163841")
+				(cnsval "CDB_NETNAME" "XSIG010046")))
+		(net_scalar "XSIG010045"
+			(constraints
+				(cnsval "PIN_COUNT" 1)
+				(cnsval "CDB_NETNUMBER" "159745")
+				(cnsval "CDB_NETNAME" "XSIG010045")))
+		(net_scalar "XSIG010043"
+			(constraints
+				(cnsval "PIN_COUNT" 3)
+				(cnsval "CDB_NETNUMBER" 155649)
+				(cnsval "CDB_NETNAME" "XSIG010043")))
+		(net_scalar "XSIG010042"
+			(constraints
+				(cnsval "PIN_COUNT" 3)
+				(cnsval "CDB_NETNUMBER" 151553)
+				(cnsval "CDB_NETNAME" "XSIG010042")))
+		(net_scalar "XSIG010041"
+			(constraints
+				(cnsval "PIN_COUNT" 2)
+				(cnsval "CDB_NETNUMBER" 147457)
+				(cnsval "CDB_NETNAME" "XSIG010041")))
+		(net_scalar "XSIG010038"
+			(constraints
+				(cnsval "PIN_COUNT" 4)
+				(cnsval "CDB_NETNUMBER" 139265)
+				(cnsval "CDB_NETNAME" "XSIG010038")))
+		(net_scalar "XSIG010036"
+			(constraints
+				(cnsval "PIN_COUNT" 1)
+				(cnsval "CDB_NETNUMBER" "131073")
+				(cnsval "CDB_NETNAME" "XSIG010036")))
+		(net_scalar "XSIG010034"
+			(constraints
+				(cnsval "PIN_COUNT" 2)
+				(cnsval "CDB_NETNUMBER" 122881)
+				(cnsval "CDB_NETNAME" "XSIG010034")))
+		(net_scalar "XSIG010033"
+			(constraints
+				(cnsval "PIN_COUNT" 2)
+				(cnsval "CDB_NETNUMBER" 118785)
+				(cnsval "CDB_NETNAME" "XSIG010033")))
+		(net_scalar "XSIG010032"
+			(constraints
+				(cnsval "PIN_COUNT" 1)
+				(cnsval "CDB_NETNUMBER" "114689")
+				(cnsval "CDB_NETNAME" "XSIG010032")))
+		(net_scalar "XSIG010029"
+			(constraints
+				(cnsval "PIN_COUNT" 4)
+				(cnsval "CDB_NETNUMBER" "110593")
+				(cnsval "CDB_NETNAME" "XSIG010029")))
+		(net_scalar "XSIG010023"
+			(constraints
+				(cnsval "PIN_COUNT" 1)
+				(cnsval "CDB_NETNUMBER" "94209")
+				(cnsval "CDB_NETNAME" "XSIG010023")))
+		(net_scalar "XSIG010022"
+			(constraints
+				(cnsval "PIN_COUNT" 1)
+				(cnsval "CDB_NETNUMBER" "90113")
+				(cnsval "CDB_NETNAME" "XSIG010022")))
+		(net_scalar "XSIG010021"
+			(constraints
+				(cnsval "PIN_COUNT" 1)
+				(cnsval "CDB_NETNUMBER" "86017")
+				(cnsval "CDB_NETNAME" "XSIG010021")))
+		(net_scalar "XSIG010020"
+			(constraints
+				(cnsval "PIN_COUNT" 1)
+				(cnsval "CDB_NETNUMBER" "81921")
+				(cnsval "CDB_NETNAME" "XSIG010020")))
+		(net_scalar "XSIG010019"
+			(constraints
+				(cnsval "PIN_COUNT" 1)
+				(cnsval "CDB_NETNUMBER" "77825")
+				(cnsval "CDB_NETNAME" "XSIG010019")))
+		(net_scalar "XSIG010015"
+			(constraints
+				(cnsval "PIN_COUNT" 3)
+				(cnsval "CDB_NETNUMBER" "61441")
+				(cnsval "CDB_NETNAME" "XSIG010015")))
+		(net_scalar "XSIG010014"
+			(constraints
+				(cnsval "PIN_COUNT" 2)
+				(cnsval "CDB_NETNUMBER" "57345")
+				(cnsval "CDB_NETNAME" "XSIG010014")))
+		(net_scalar "XSIG010010"
+			(constraints
+				(cnsval "PIN_COUNT" 2)
+				(cnsval "CDB_NETNUMBER" "40961")
+				(cnsval "CDB_NETNAME" "XSIG010010")))
+		(net_scalar "XSIG010009"
+			(constraints
+				(cnsval "PIN_COUNT" 2)
+				(cnsval "CDB_NETNUMBER" "36865")
+				(cnsval "CDB_NETNAME" "XSIG010009")))
+		(net_scalar "XSIG010008"
+			(constraints
+				(cnsval "PIN_COUNT" 2)
+				(cnsval "CDB_NETNUMBER" 32769)
+				(cnsval "CDB_NETNAME" "XSIG010008")))
+		(net_scalar "XSIG010007"
+			(constraints
+				(cnsval "PIN_COUNT" 2)
+				(cnsval "CDB_NETNUMBER" 28673)
+				(cnsval "CDB_NETNAME" "XSIG010007")))
+		(net_scalar "XSIG010006"
+			(constraints
+				(cnsval "PIN_COUNT" 2)
+				(cnsval "CDB_NETNUMBER" 24577)
+				(cnsval "CDB_NETNAME" "XSIG010006")))
+		(net_scalar "XSIG010005"
+			(constraints
+				(cnsval "PIN_COUNT" 3)
+				(cnsval "CDB_NETNUMBER" "20481")
+				(cnsval "CDB_NETNAME" "XSIG010005")))
+		(net_scalar "XSIG010004"
+			(constraints
+				(cnsval "PIN_COUNT" 3)
+				(cnsval "CDB_NETNUMBER" "16385")
+				(cnsval "CDB_NETNAME" "XSIG010004")))
+		(net_scalar "XSIG010003"
+			(constraints
+				(cnsval "PIN_COUNT" 3)
+				(cnsval "CDB_NETNUMBER" "12289")
+				(cnsval "CDB_NETNAME" "XSIG010003")))
+		(net_scalar "GND"
+			(power_level 0.0)
+			(constraints
+				(cnsval "SUPPLY_VOLTAGE" 0.0)
+				(cnsval "CDB_NETNUMBER" "176129")
+				(cnsval "CDB_NETNAME" "GND"))))
+	(layers_ext
+		(layer_ext "DIELECTRIC_1" 1
+			(LAYER_TYPE_EXT "Insulator")
+			(CONDUCTOR_EXT "None")
+			(DIELECTRIC_EXT "=1.000000000000")
+			(HEIGHT_EXT 114300.0)
+			(VIA_SIZE_EXT 0.0)
+			(TLF_EXT 0.0)
+			(T2T_CLEAR_EXT 0.0)
+			(TRACE_WIDTH_EXT 0.0)
+			(constraints
+				(cnsval "LAYER_TECH" "None")
+				(cnsval "EXTRACTED_DIELECTRIC" 1.0)
+				(cnsval "JOBPREFS_LAYER_TYPE" "DIELECTRIC")
+				(cnsval "LAYER_HKP_TECH" "LAMINATE")
+				(cnsval "LAYER_DESC" "Solder_Mask")
+				(cnsval "JOBPREFS_LAYER_NUM" "1")))
+		(layer_ext "SIGNAL_1" 2
+			(LAYER_TYPE_EXT "Signal")
+			(CONDUCTOR_EXT "None")
+			(DIELECTRIC_EXT "=1.000000000000")
+			(HEIGHT_EXT 26999.0)
+			(VIA_SIZE_EXT 0.0)
+			(TLF_EXT 0.0)
+			(T2T_CLEAR_EXT 0.0)
+			(TRACE_WIDTH_EXT 0.0)
+			(constraints
+				(cnsval "LAYER_TECH" "None")
+				(cnsval "EXTRACTED_DIELECTRIC" 1.0)
+				(cnsval "JOBPREFS_LAYER_TYPE" "Signal")
+				(cnsval "DIRECTIONAL_BIAS" "HORIZONTAL")
+				(cnsval "LAYER_DIFFPAIR" "1")
+				(cnsval "LAYER_DESC" "Microstrip")
+				(cnsval "JOBPREFS_LAYER_NUM" "1")
+				(cnsval "LAYER_PAIR" "4")
+				(cnsval "LAYER_ENABLED" "TRUE")
+				(cnsval "BULK_RES" 0.000000017200)))
+		(layer_ext "DIELECTRIC_3" 3
+			(LAYER_TYPE_EXT "Insulator")
+			(CONDUCTOR_EXT "None")
+			(DIELECTRIC_EXT "=4.700000000000")
+			(HEIGHT_EXT 420000.0)
+			(VIA_SIZE_EXT 0.0)
+			(TLF_EXT 0.0)
+			(T2T_CLEAR_EXT 0.0)
+			(TRACE_WIDTH_EXT 0.0)
+			(constraints
+				(cnsval "LAYER_TECH" "None")
+				(cnsval "EXTRACTED_DIELECTRIC" 1.0)
+				(cnsval "JOBPREFS_LAYER_TYPE" "DIELECTRIC")
+				(cnsval "LAYER_HKP_TECH" "LAMINATE")
+				(cnsval "LAYER_DESC" "Core/Pre-preg")
+				(cnsval "JOBPREFS_LAYER_NUM" "3")))
+		(layer_ext "PLANE_2" 4
+			(LAYER_TYPE_EXT "Signal")
+			(CONDUCTOR_EXT "None")
+			(DIELECTRIC_EXT "=1.000000000000")
+			(HEIGHT_EXT 26999.0)
+			(VIA_SIZE_EXT 0.0)
+			(TLF_EXT 0.0)
+			(T2T_CLEAR_EXT 0.0)
+			(TRACE_WIDTH_EXT 0.0)
+			(constraints
+				(cnsval "LAYER_TECH" "None")
+				(cnsval "EXTRACTED_DIELECTRIC" 1.0)
+				(cnsval "JOBPREFS_LAYER_TYPE" "Plane")
+				(cnsval "PLANE_TYPE" "POSITIVE")
+				(cnsval "DIRECTIONAL_BIAS" "VERTICAL")
+				(cnsval "LAYER_DIFFPAIR" "2")
+				(cnsval "LAYER_DESC" "Plane")
+				(cnsval "PNET_CLEARANCES" "381000")
+				(cnsval "JOBPREFS_LAYER_NUM" "2")
+				(cnsval "PLANE_NETS" "(Net0)")
+				(cnsval "LAYER_PAIR" "3")
+				(cnsval "PNET_UBORDERS" "0")
+				(cnsval "LAYER_ENABLED" "FALSE")
+				(cnsval "BULK_RES" 0.000000017200)))
+		(layer_ext "DIELECTRIC_5" 5
+			(LAYER_TYPE_EXT "Insulator")
+			(CONDUCTOR_EXT "None")
+			(DIELECTRIC_EXT "=4.700000000000")
+			(HEIGHT_EXT 390000.0)
+			(VIA_SIZE_EXT 0.0)
+			(TLF_EXT 0.0)
+			(T2T_CLEAR_EXT 0.0)
+			(TRACE_WIDTH_EXT 0.0)
+			(constraints
+				(cnsval "LAYER_TECH" "None")
+				(cnsval "EXTRACTED_DIELECTRIC" 1.0)
+				(cnsval "JOBPREFS_LAYER_TYPE" "DIELECTRIC")
+				(cnsval "LAYER_HKP_TECH" "LAMINATE")
+				(cnsval "LAYER_DESC" "Core/Pre-preg")
+				(cnsval "JOBPREFS_LAYER_NUM" "5")))
+		(layer_ext "PLANE_3" 6
+			(LAYER_TYPE_EXT "Signal")
+			(CONDUCTOR_EXT "None")
+			(DIELECTRIC_EXT "=1.000000000000")
+			(HEIGHT_EXT 26999.0)
+			(VIA_SIZE_EXT 0.0)
+			(TLF_EXT 0.0)
+			(T2T_CLEAR_EXT 0.0)
+			(TRACE_WIDTH_EXT 0.0)
+			(constraints
+				(cnsval "LAYER_TECH" "None")
+				(cnsval "EXTRACTED_DIELECTRIC" 1.0)
+				(cnsval "JOBPREFS_LAYER_TYPE" "Plane")
+				(cnsval "PLANE_TYPE" "POSITIVE")
+				(cnsval "DIRECTIONAL_BIAS" "HORIZONTAL")
+				(cnsval "LAYER_DIFFPAIR" "3")
+				(cnsval "LAYER_DESC" "Plane")
+				(cnsval "PNET_CLEARANCES" "381000")
+				(cnsval "JOBPREFS_LAYER_NUM" "3")
+				(cnsval "PLANE_NETS" "(Net0)")
+				(cnsval "LAYER_PAIR" "2")
+				(cnsval "PNET_UBORDERS" "0")
+				(cnsval "LAYER_ENABLED" "FALSE")
+				(cnsval "BULK_RES" 0.000000017200)))
+		(layer_ext "DIELECTRIC_7" 7
+			(LAYER_TYPE_EXT "Insulator")
+			(CONDUCTOR_EXT "None")
+			(DIELECTRIC_EXT "=4.700000000000")
+			(HEIGHT_EXT 420000.0)
+			(VIA_SIZE_EXT 0.0)
+			(TLF_EXT 0.0)
+			(T2T_CLEAR_EXT 0.0)
+			(TRACE_WIDTH_EXT 0.0)
+			(constraints
+				(cnsval "LAYER_TECH" "None")
+				(cnsval "EXTRACTED_DIELECTRIC" 1.0)
+				(cnsval "JOBPREFS_LAYER_TYPE" "DIELECTRIC")
+				(cnsval "LAYER_HKP_TECH" "LAMINATE")
+				(cnsval "LAYER_DESC" "Core/Pre-preg")
+				(cnsval "JOBPREFS_LAYER_NUM" "7")))
+		(layer_ext "SIGNAL_4" 8
+			(LAYER_TYPE_EXT "Signal")
+			(CONDUCTOR_EXT "None")
+			(DIELECTRIC_EXT "=1.000000000000")
+			(HEIGHT_EXT 26999.0)
+			(VIA_SIZE_EXT 0.0)
+			(TLF_EXT 0.0)
+			(T2T_CLEAR_EXT 0.0)
+			(TRACE_WIDTH_EXT 0.0)
+			(constraints
+				(cnsval "LAYER_TECH" "None")
+				(cnsval "EXTRACTED_DIELECTRIC" 1.0)
+				(cnsval "JOBPREFS_LAYER_TYPE" "Signal")
+				(cnsval "DIRECTIONAL_BIAS" "VERTICAL")
+				(cnsval "LAYER_DIFFPAIR" "4")
+				(cnsval "LAYER_DESC" "Microstrip")
+				(cnsval "JOBPREFS_LAYER_NUM" "4")
+				(cnsval "LAYER_PAIR" "1")
+				(cnsval "LAYER_ENABLED" "TRUE")
+				(cnsval "BULK_RES" 0.000000017200)))
+		(layer_ext "DIELECTRIC_9" 9
+			(LAYER_TYPE_EXT "Insulator")
+			(CONDUCTOR_EXT "None")
+			(DIELECTRIC_EXT "=1.000000000000")
+			(HEIGHT_EXT 114300.0)
+			(VIA_SIZE_EXT 0.0)
+			(TLF_EXT 0.0)
+			(T2T_CLEAR_EXT 0.0)
+			(TRACE_WIDTH_EXT 0.0)
+			(constraints
+				(cnsval "LAYER_TECH" "None")
+				(cnsval "EXTRACTED_DIELECTRIC" 1.0)
+				(cnsval "JOBPREFS_LAYER_TYPE" "DIELECTRIC")
+				(cnsval "LAYER_HKP_TECH" "LAMINATE")
+				(cnsval "LAYER_DESC" "Solder_Mask")
+				(cnsval "JOBPREFS_LAYER_NUM" "9"))))
+	(cond_rules
+		(cond_rule
+			(cr_source CLASS "(All)")
+			(cr_target CLASS "(All)")
+			(cr_ruleset "CLASS_CLASS"
+				(cnsval "C2C_SCHEME" "(Master)")
+				(cnsval "C2C_RULE" "(Default Rule)")))
+		(cond_rule
+			(cr_source CLASS "(All)")
+			(cr_target CLASS "(All)")
+			(cr_ruleset "CLASS_CLASS"
+				(cnsval "C2C_SCHEME" "(Minimum)")
+				(cnsval "C2C_RULE" "(Default Rule)"))))
+	(GenObjectType TOPOTMPL)
+	(GenObjectType SCHEME_CLASS_LAYER
+		(GenCompObject "(Master)" "Scheme"
+			(GenCompObject "(Master)/(Default)" "NetClass"
+				(GenObject "(Master)/(Default)/SIGNAL_1" "Layer"
+					(cnsval "TYP_IMPEDANCE" 50.0)
+					(cnsval "TYP_TRACE_WIDTH" 381000.0)
+					(cnsval "EXP_TRACE_WIDTH" 381000.0)
+					(cnsval "ROUTE" "true")
+					(cnsval "DIFF_SPACING" 381000.0)
+					(cnsval "MIN_TRACE_WIDTH" 300000.0))
+				(GenObject "(Master)/(Default)/PLANE_2" "Layer"
+					(cnsval "TYP_IMPEDANCE" 50.0)
+					(cnsval "TYP_TRACE_WIDTH" 381000.0)
+					(cnsval "EXP_TRACE_WIDTH" 381000.0)
+					(cnsval "ROUTE" "true")
+					(cnsval "DIFF_SPACING" 381000.0)
+					(cnsval "MIN_TRACE_WIDTH" 381000.0))
+				(GenObject "(Master)/(Default)/PLANE_3" "Layer"
+					(cnsval "TYP_IMPEDANCE" 50.0)
+					(cnsval "TYP_TRACE_WIDTH" 381000.0)
+					(cnsval "EXP_TRACE_WIDTH" 381000.0)
+					(cnsval "ROUTE" "true")
+					(cnsval "DIFF_SPACING" 381000.0)
+					(cnsval "MIN_TRACE_WIDTH" 381000.0))
+				(GenObject "(Master)/(Default)/SIGNAL_4" "Layer"
+					(cnsval "TYP_IMPEDANCE" 50.0)
+					(cnsval "TYP_TRACE_WIDTH" 381000.0)
+					(cnsval "EXP_TRACE_WIDTH" 381000.0)
+					(cnsval "ROUTE" "true")
+					(cnsval "DIFF_SPACING" 381000.0)
+					(cnsval "MIN_TRACE_WIDTH" 300000.0))))
+		(GenCompObject "(Minimum)" "Scheme"
+			(GenCompObject "(Minimum)/(Default)" "NetClass"
+				(cnsval "SCLNAME" "(Default)")
+				(GenObject "(Minimum)/(Default)/SIGNAL_1" "Layer"
+					(cnsval "TYP_IMPEDANCE" 50.0)
+					(cnsval "TYP_TRACE_WIDTH" 381000.0)
+					(cnsval "SCLNAME" "SIGNAL_1")
+					(cnsval "EXP_TRACE_WIDTH" 381000.0)
+					(cnsval "ROUTE" "true")
+					(cnsval "DIFF_SPACING" 381000.0)
+					(cnsval "MIN_TRACE_WIDTH" 300000.0))
+				(GenObject "(Minimum)/(Default)/PLANE_2" "Layer"
+					(cnsval "TYP_IMPEDANCE" 50.0)
+					(cnsval "TYP_TRACE_WIDTH" 381000.0)
+					(cnsval "SCLNAME" "PLANE_2")
+					(cnsval "EXP_TRACE_WIDTH" 381000.0)
+					(cnsval "ROUTE" "true")
+					(cnsval "DIFF_SPACING" 381000.0)
+					(cnsval "MIN_TRACE_WIDTH" 381000.0))
+				(GenObject "(Minimum)/(Default)/PLANE_3" "Layer"
+					(cnsval "TYP_IMPEDANCE" 50.0)
+					(cnsval "TYP_TRACE_WIDTH" 381000.0)
+					(cnsval "SCLNAME" "PLANE_3")
+					(cnsval "EXP_TRACE_WIDTH" 381000.0)
+					(cnsval "ROUTE" "true")
+					(cnsval "DIFF_SPACING" 381000.0)
+					(cnsval "MIN_TRACE_WIDTH" 381000.0))
+				(GenObject "(Minimum)/(Default)/SIGNAL_4" "Layer"
+					(cnsval "TYP_IMPEDANCE" 50.0)
+					(cnsval "TYP_TRACE_WIDTH" 381000.0)
+					(cnsval "SCLNAME" "SIGNAL_4")
+					(cnsval "EXP_TRACE_WIDTH" 381000.0)
+					(cnsval "ROUTE" "true")
+					(cnsval "DIFF_SPACING" 381000.0)
+					(cnsval "MIN_TRACE_WIDTH" 300000.0)))))
+	(GenObjectType SCHEME_RULE_LAYER
+		(GenCompObject "(Master)" "Scheme"
+			(GenCompObject "(Master)/(Default Rule)" "ClearRule"
+				(GenObject "(Master)/(Default Rule)/SIGNAL_1" "Layer"
+					(cnsval "SMDPAD_TO_TRACE" 300000.0)
+					(cnsval "MASK_TO_RESISTOR" 300000.0)
+					(cnsval "MASK_TO_PAD" 300000.0)
+					(cnsval "TRACE_TO_VIA" 300000.0)
+					(cnsval "RESISTOR_TO_PAD" 300000.0)
+					(cnsval "SMDPAD_TO_VIA" 300000.0)
+					(cnsval "RESISTOR_TO_TRACE" 300000.0)
+					(cnsval "MASK_TO_VIA" 300000.0)
+					(cnsval "MASK_TO_TRACE" 300000.0)
+					(cnsval "VIA_TO_PLANE" 381000.0)
+					(cnsval "TRACE_TO_TRACE" 300000.0)
+					(cnsval "PAD_TO_PAD" 300000.0)
+					(cnsval "RESISTOR_TO_VIA" 300000.0)
+					(cnsval "PAD_TO_PLANE" 381000.0)
+					(cnsval "VIA_TO_VIA" 300000.0)
+					(cnsval "PLANE_TO_PLANE" 381000.0)
+					(cnsval "RESISTOR_TO_RESISTOR" 300000.0)
+					(cnsval "PAD_TO_VIA" 300000.0)
+					(cnsval "TRACE_TO_PAD" 300000.0)
+					(cnsval "TRACE_TO_PLANE" 381000.0))
+				(GenObject "(Master)/(Default Rule)/PLANE_2" "Layer"
+					(cnsval "SMDPAD_TO_TRACE" 381000.0)
+					(cnsval "MASK_TO_RESISTOR" 381000.0)
+					(cnsval "MASK_TO_PAD" 381000.0)
+					(cnsval "TRACE_TO_VIA" 381000.0)
+					(cnsval "RESISTOR_TO_PAD" 381000.0)
+					(cnsval "SMDPAD_TO_VIA" 381000.0)
+					(cnsval "RESISTOR_TO_TRACE" 381000.0)
+					(cnsval "MASK_TO_VIA" 381000.0)
+					(cnsval "MASK_TO_TRACE" 381000.0)
+					(cnsval "VIA_TO_PLANE" 381000.0)
+					(cnsval "TRACE_TO_TRACE" 381000.0)
+					(cnsval "PAD_TO_PAD" 381000.0)
+					(cnsval "RESISTOR_TO_VIA" 381000.0)
+					(cnsval "PAD_TO_PLANE" 381000.0)
+					(cnsval "VIA_TO_VIA" 381000.0)
+					(cnsval "PLANE_TO_PLANE" 381000.0)
+					(cnsval "RESISTOR_TO_RESISTOR" 381000.0)
+					(cnsval "PAD_TO_VIA" 381000.0)
+					(cnsval "TRACE_TO_PAD" 381000.0)
+					(cnsval "TRACE_TO_PLANE" 381000.0))
+				(GenObject "(Master)/(Default Rule)/PLANE_3" "Layer"
+					(cnsval "SMDPAD_TO_TRACE" 381000.0)
+					(cnsval "MASK_TO_RESISTOR" 381000.0)
+					(cnsval "MASK_TO_PAD" 381000.0)
+					(cnsval "TRACE_TO_VIA" 381000.0)
+					(cnsval "RESISTOR_TO_PAD" 381000.0)
+					(cnsval "SMDPAD_TO_VIA" 381000.0)
+					(cnsval "RESISTOR_TO_TRACE" 381000.0)
+					(cnsval "MASK_TO_VIA" 381000.0)
+					(cnsval "MASK_TO_TRACE" 381000.0)
+					(cnsval "VIA_TO_PLANE" 381000.0)
+					(cnsval "TRACE_TO_TRACE" 381000.0)
+					(cnsval "PAD_TO_PAD" 381000.0)
+					(cnsval "RESISTOR_TO_VIA" 381000.0)
+					(cnsval "PAD_TO_PLANE" 381000.0)
+					(cnsval "VIA_TO_VIA" 381000.0)
+					(cnsval "PLANE_TO_PLANE" 381000.0)
+					(cnsval "RESISTOR_TO_RESISTOR" 381000.0)
+					(cnsval "PAD_TO_VIA" 381000.0)
+					(cnsval "TRACE_TO_PAD" 381000.0)
+					(cnsval "TRACE_TO_PLANE" 381000.0))
+				(GenObject "(Master)/(Default Rule)/SIGNAL_4" "Layer"
+					(cnsval "SMDPAD_TO_TRACE" 300000.0)
+					(cnsval "MASK_TO_RESISTOR" 300000.0)
+					(cnsval "MASK_TO_PAD" 300000.0)
+					(cnsval "TRACE_TO_VIA" 300000.0)
+					(cnsval "RESISTOR_TO_PAD" 300000.0)
+					(cnsval "SMDPAD_TO_VIA" 300000.0)
+					(cnsval "RESISTOR_TO_TRACE" 300000.0)
+					(cnsval "MASK_TO_VIA" 300000.0)
+					(cnsval "MASK_TO_TRACE" 300000.0)
+					(cnsval "VIA_TO_PLANE" 381000.0)
+					(cnsval "TRACE_TO_TRACE" 300000.0)
+					(cnsval "PAD_TO_PAD" 300000.0)
+					(cnsval "RESISTOR_TO_VIA" 300000.0)
+					(cnsval "PAD_TO_PLANE" 381000.0)
+					(cnsval "VIA_TO_VIA" 300000.0)
+					(cnsval "PLANE_TO_PLANE" 381000.0)
+					(cnsval "RESISTOR_TO_RESISTOR" 300000.0)
+					(cnsval "PAD_TO_VIA" 300000.0)
+					(cnsval "TRACE_TO_PAD" 300000.0)
+					(cnsval "TRACE_TO_PLANE" 381000.0))))
+		(GenCompObject "(Minimum)" "Scheme"
+			(GenCompObject "(Minimum)/(Default Rule)" "ClearRule"
+				(cnsval "SRLNAME" "(Default Rule)")
+				(GenObject "(Minimum)/(Default Rule)/SIGNAL_1" "Layer"
+					(cnsval "MASK_TO_RESISTOR" 300000.0)
+					(cnsval "SMDPAD_TO_TRACE" 300000.0)
+					(cnsval "MASK_TO_PAD" 300000.0)
+					(cnsval "TRACE_TO_VIA" 300000.0)
+					(cnsval "SRLNAME" "SIGNAL_1")
+					(cnsval "RESISTOR_TO_PAD" 300000.0)
+					(cnsval "RESISTOR_TO_TRACE" 300000.0)
+					(cnsval "SMDPAD_TO_VIA" 300000.0)
+					(cnsval "MASK_TO_VIA" 300000.0)
+					(cnsval "MASK_TO_TRACE" 300000.0)
+					(cnsval "VIA_TO_PLANE" 381000.0)
+					(cnsval "TRACE_TO_TRACE" 300000.0)
+					(cnsval "PAD_TO_PAD" 300000.0)
+					(cnsval "RESISTOR_TO_VIA" 300000.0)
+					(cnsval "PAD_TO_PLANE" 381000.0)
+					(cnsval "PLANE_TO_PLANE" 381000.0)
+					(cnsval "VIA_TO_VIA" 300000.0)
+					(cnsval "RESISTOR_TO_RESISTOR" 300000.0)
+					(cnsval "PAD_TO_VIA" 300000.0)
+					(cnsval "TRACE_TO_PAD" 300000.0)
+					(cnsval "TRACE_TO_PLANE" 381000.0))
+				(GenObject "(Minimum)/(Default Rule)/PLANE_2" "Layer"
+					(cnsval "MASK_TO_RESISTOR" 381000.0)
+					(cnsval "SMDPAD_TO_TRACE" 381000.0)
+					(cnsval "MASK_TO_PAD" 381000.0)
+					(cnsval "TRACE_TO_VIA" 381000.0)
+					(cnsval "SRLNAME" "PLANE_2")
+					(cnsval "RESISTOR_TO_PAD" 381000.0)
+					(cnsval "RESISTOR_TO_TRACE" 381000.0)
+					(cnsval "SMDPAD_TO_VIA" 381000.0)
+					(cnsval "MASK_TO_VIA" 381000.0)
+					(cnsval "MASK_TO_TRACE" 381000.0)
+					(cnsval "VIA_TO_PLANE" 381000.0)
+					(cnsval "TRACE_TO_TRACE" 381000.0)
+					(cnsval "PAD_TO_PAD" 381000.0)
+					(cnsval "RESISTOR_TO_VIA" 381000.0)
+					(cnsval "PAD_TO_PLANE" 381000.0)
+					(cnsval "PLANE_TO_PLANE" 381000.0)
+					(cnsval "VIA_TO_VIA" 381000.0)
+					(cnsval "RESISTOR_TO_RESISTOR" 381000.0)
+					(cnsval "PAD_TO_VIA" 381000.0)
+					(cnsval "TRACE_TO_PAD" 381000.0)
+					(cnsval "TRACE_TO_PLANE" 381000.0))
+				(GenObject "(Minimum)/(Default Rule)/PLANE_3" "Layer"
+					(cnsval "MASK_TO_RESISTOR" 381000.0)
+					(cnsval "SMDPAD_TO_TRACE" 381000.0)
+					(cnsval "MASK_TO_PAD" 381000.0)
+					(cnsval "TRACE_TO_VIA" 381000.0)
+					(cnsval "SRLNAME" "PLANE_3")
+					(cnsval "RESISTOR_TO_PAD" 381000.0)
+					(cnsval "RESISTOR_TO_TRACE" 381000.0)
+					(cnsval "SMDPAD_TO_VIA" 381000.0)
+					(cnsval "MASK_TO_VIA" 381000.0)
+					(cnsval "MASK_TO_TRACE" 381000.0)
+					(cnsval "VIA_TO_PLANE" 381000.0)
+					(cnsval "TRACE_TO_TRACE" 381000.0)
+					(cnsval "PAD_TO_PAD" 381000.0)
+					(cnsval "RESISTOR_TO_VIA" 381000.0)
+					(cnsval "PAD_TO_PLANE" 381000.0)
+					(cnsval "PLANE_TO_PLANE" 381000.0)
+					(cnsval "VIA_TO_VIA" 381000.0)
+					(cnsval "RESISTOR_TO_RESISTOR" 381000.0)
+					(cnsval "PAD_TO_VIA" 381000.0)
+					(cnsval "TRACE_TO_PAD" 381000.0)
+					(cnsval "TRACE_TO_PLANE" 381000.0))
+				(GenObject "(Minimum)/(Default Rule)/SIGNAL_4" "Layer"
+					(cnsval "MASK_TO_RESISTOR" 300000.0)
+					(cnsval "SMDPAD_TO_TRACE" 300000.0)
+					(cnsval "MASK_TO_PAD" 300000.0)
+					(cnsval "TRACE_TO_VIA" 300000.0)
+					(cnsval "SRLNAME" "SIGNAL_4")
+					(cnsval "RESISTOR_TO_PAD" 300000.0)
+					(cnsval "RESISTOR_TO_TRACE" 300000.0)
+					(cnsval "SMDPAD_TO_VIA" 300000.0)
+					(cnsval "MASK_TO_VIA" 300000.0)
+					(cnsval "MASK_TO_TRACE" 300000.0)
+					(cnsval "VIA_TO_PLANE" 381000.0)
+					(cnsval "TRACE_TO_TRACE" 300000.0)
+					(cnsval "PAD_TO_PAD" 300000.0)
+					(cnsval "RESISTOR_TO_VIA" 300000.0)
+					(cnsval "PAD_TO_PLANE" 381000.0)
+					(cnsval "PLANE_TO_PLANE" 381000.0)
+					(cnsval "VIA_TO_VIA" 300000.0)
+					(cnsval "RESISTOR_TO_RESISTOR" 300000.0)
+					(cnsval "PAD_TO_VIA" 300000.0)
+					(cnsval "TRACE_TO_PAD" 300000.0)
+					(cnsval "TRACE_TO_PLANE" 381000.0)))))
+	(GenObjectType DESIGN
+		(GenCompObject "GENCLEAR" "Design"
+			(cnsval "PLCOUT2PLCOUT" 0.0)
+			(cnsval "PLCOUT2BRDEDGE" 0.0))
+		(GenCompObject "SCHEMES" "Design"
+			(GenObject "(Master)" "Scheme")
+			(GenObject "(Minimum)" "Scheme"))
+		(GenCompObject "NETCLASSES" "Design"
+			(GenCompObject "(Default)" "NetClass"))
+		(GenCompObject "CLEARRULES" "Design"
+			(GenObject "(Default Rule)" "ClearRule"))
+		(GenCompObject "RULECLASSES" "Design"
+			(GenCompObject "(All)" "Rule"))
+		(GenCompObject "LAYERS" "Design"
+			(GenObject "SIGNAL_1" "Layer")
+			(GenObject "PLANE_2" "Layer")
+			(GenObject "PLANE_3" "Layer")
+			(GenObject "SIGNAL_4" "Layer"))
+		(GenCompObject "VIAS" "Design"
+			(GenObject "026VIA" "Via")
+			(GenObject "02ViaSMcloseNoInt" "Via"))
+		(GenCompObject "VIASPANS" "Design"
+			(GenCompObject "Through" "ViaSpan"
+				(cnsval "DEFAULT_VIA" "02ViaSMcloseNoInt")
+				(GenObject "Through/026VIA" "Via")
+				(GenObject "Through/02ViaSMcloseNoInt" "Via")))
+		(GenCompObject "TRACES" "Design")
+		(GenCompObject "PADS" "Design")
+		(GenCompObject "PARRULEDEFS" "Design")
+		(GenCompObject "VIAASSIGNS" "Design"
+			(GenObject "(Master)/(Default)/Through" "ViaAssign"))
+		(GenCompObject "CONSTVARS" "Design")
+		(GenCompObject "DRCS" "Design")
+		(GenCompObject "PKGTYPERULES" "Design")
+		(GenCompObject "PHYSBUSSES" "Design")
+		(GenCompObject "PARTTECHS" "Design"
+			(GenObject "ABT" "PartTech")
+			(GenObject "AC" "PartTech")
+			(GenObject "ACT" "PartTech")
+			(GenObject "ALS" "PartTech")
+			(GenObject "AS" "PartTech")
+			(GenObject "C" "PartTech")
+			(GenObject "E10E" "PartTech")
+			(GenObject "E10H" "PartTech")
+			(GenObject "E10K" "PartTech")
+			(GenObject "E100E" "PartTech")
+			(GenObject "E100K" "PartTech")
+			(GenObject "FAST" "PartTech")
+			(GenObject "FCT" "PartTech")
+			(GenObject "GTL" "PartTech")
+			(GenObject "HC" "PartTech")
+			(GenObject "HCT" "PartTech")
+			(GenObject "LS" "PartTech")
+			(GenObject "S" "PartTech")
+			(GenObject "TTL" "PartTech"))))

@@ -1,0 +1,13 @@
+
+                         PCB Net Properties to ASCII Log
+                         -------------------------------
+
+                       03:56 PM Friday, December 16, 2022
+                                   Job Name: 
+
+
+Linear values will be specified in the following units: MM
+
+Overwriting the existing Net Properties ASCII file 'C:\Mentor_proj\450\450.cdb\Layout\\CES\NetProps.hkp'.
+
+Net Properties ASCII file 'C:\Mentor_proj\450\450.cdb\Layout\\CES\NetProps.hkp' was created successfully.

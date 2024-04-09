@@ -1,0 +1,51 @@
+
+                                PLANES PROCESSOR
+                                ----------------
+
+                         04:49 PM Friday, June 10, 2022
+                    Job Name: C:\Mentor_proj\450\PCB\450.pcb
+
+
+
+
+    POSITIVE PLANE LAYER : 2
+
+        Plane Shapes Found On This Layer : 3
+        Plane Holes  Found On This Layer : 0
+
+
+        PLANE NET : SHIELDING PLANE
+
+            Total Plane Shapes For This Net   : 3
+            Use Route Border As Plane Shape   : NO
+            Create Actual Plane Shapes        : NO
+            Regenerate APS Connections Only   : NO
+            Generate Plane Data               : YES
+            Plane To Plane Clearance          : 0.25mm
+            Plane To Other Metal Clearance    : 0mm
+            Mounting Hole / Contour Clearance : 0.25mm
+            Minimum Plane Gap Distance        : NA
+            Orthogonal Data Only              : NO
+            Discard Areas By Dimension        : YES (0mm X 0mm)
+            Default Hatch Width               : 0.2mm
+            Default Hatch Distance            : 0.2mm
+            Default Hatch Pattern             : (|) Vertical
+            Default Metal Percentage          : 100.00
+
+            Plane Created : Layer 2 - Net Shielding
+
+            Plane Created : Layer 2 - Net Shielding
+
+                *** ERROR - Plane data for this hatch cannot be created.
+                            The operation to resolve the plane boundaries
+                            resulted in the shape(s) disappearing.
+                            1. If the plane shape is contained within another
+                               plane shape, make sure that the inner shape is
+                               not behind the outer plane shape.
+                            2. Check Plane Shapes for proper placement
+                               and all clearances for proper values.
+                            3. Make sure that the Route Border is valid.
+
+
+
+                        04:49 PM Friday, June 10, 2022

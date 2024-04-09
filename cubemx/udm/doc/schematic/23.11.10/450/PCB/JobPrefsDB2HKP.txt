@@ -1,0 +1,13 @@
+
+                        PCB Job Preferences to ASCII Log
+                        --------------------------------
+
+                       01:07 PM Tuesday, December 20, 2022
+                                   Job Name: 
+
+
+Linear values will be specified in the following units: MM
+
+Overwriting the existing Job Preferences ASCII file 'C:\Mentor_proj\450\PCB\Work\Layout_Temp\CES\JobPrefs.hkp'.
+
+Job Preferences ASCII file 'C:\Mentor_proj\450\PCB\Work\Layout_Temp\CES\JobPrefs.hkp' was successfully created.

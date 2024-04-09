@@ -1,0 +1,221 @@
+
+                         PCB ASCII to Net Properties Log
+                         -------------------------------
+
+                       10:04 PM Tuesday, November 02, 2021
+                                   Job Name: 
+
+
+Checking for Net Properties ASCII file format errors...
+
+There were no Net Properties ASCII file format errors.
+
+Processing Net Properties ASCII file...
+
+Net Properties ASCII file processed successfully.
+
+Overwriting Net Properties DB...
+
+Net Properties DB successfully created.
+
+                         PCB ASCII to Net Properties Log
+                         -------------------------------
+
+                       10:20 PM Tuesday, November 02, 2021
+                                   Job Name: 
+
+
+Checking for Net Properties ASCII file format errors...
+
+There were no Net Properties ASCII file format errors.
+
+Processing Net Properties ASCII file...
+
+Net Properties ASCII file processed successfully.
+
+Overwriting Net Properties DB...
+
+Net Properties DB successfully created.
+
+                         PCB ASCII to Net Properties Log
+                         -------------------------------
+
+                       01:40 PM Tuesday, November 30, 2021
+                                   Job Name: 
+
+
+Checking for Net Properties ASCII file format errors...
+
+There were no Net Properties ASCII file format errors.
+
+Processing Net Properties ASCII file...
+
+Net Properties ASCII file processed successfully.
+
+Overwriting Net Properties DB...
+
+Net Properties DB successfully created.
+
+                         PCB ASCII to Net Properties Log
+                         -------------------------------
+
+                       06:08 PM Tuesday, December 07, 2021
+                                   Job Name: 
+
+
+Checking for Net Properties ASCII file format errors...
+
+There were no Net Properties ASCII file format errors.
+
+Processing Net Properties ASCII file...
+
+Net Properties ASCII file processed successfully.
+
+Overwriting Net Properties DB...
+
+Net Properties DB successfully created.
+
+                         PCB ASCII to Net Properties Log
+                         -------------------------------
+
+                      12:52 PM Thursday, December 09, 2021
+                                   Job Name: 
+
+
+Checking for Net Properties ASCII file format errors...
+
+There were no Net Properties ASCII file format errors.
+
+Processing Net Properties ASCII file...
+
+Net Properties ASCII file processed successfully.
+
+Overwriting Net Properties DB...
+
+Net Properties DB successfully created.
+
+                         PCB ASCII to Net Properties Log
+                         -------------------------------
+
+                      08:35 PM Thursday, December 09, 2021
+                                   Job Name: 
+
+
+Checking for Net Properties ASCII file format errors...
+
+There were no Net Properties ASCII file format errors.
+
+Processing Net Properties ASCII file...
+
+Net Properties ASCII file processed successfully.
+
+Overwriting Net Properties DB...
+
+Net Properties DB successfully created.
+
+                         PCB ASCII to Net Properties Log
+                         -------------------------------
+
+                       02:53 PM Thursday, January 06, 2022
+                                   Job Name: 
+
+
+Checking for Net Properties ASCII file format errors...
+
+There were no Net Properties ASCII file format errors.
+
+Processing Net Properties ASCII file...
+
+Net Properties ASCII file processed successfully.
+
+Overwriting Net Properties DB...
+
+Net Properties DB successfully created.
+
+                         PCB ASCII to Net Properties Log
+                         -------------------------------
+
+                          03:00 PM Friday, May 27, 2022
+                    Job Name: C:\Mentor_proj\450\PCB\450.pcb
+
+
+Checking for Net Properties ASCII file format errors...
+
+There were no Net Properties ASCII file format errors.
+
+Processing Net Properties ASCII file...
+
+    Line 826 : Net "GND" does not contain pin "C801-2" .
+    Line 826 : Net "GND" does not contain pin "C802-2" .
+    Line 826 : Net "GND" does not contain pin "C803-2" .
+    Line 826 : Net "GND" does not contain pin "C804-2" .
+    Line 826 : Net "GND" does not contain pin "DA801-2" .
+    Line 826 : Net "GND" does not contain pin "DA802-2" .
+    Line 826 : Net "GND" does not contain pin "DA803-2" .
+    Line 826 : Net "GND" does not contain pin "DA804-2" .
+    Line 826 : Net "GND" does not contain pin "DA805-2" .
+    Line 826 : Net "GND" does not contain pin "DA806-2" .
+    Line 826 : Net "GND" does not contain pin "VT802-2" .
+    Line 826 : Net "GND" does not contain pin "VT804-2" .
+    Line 826 : Net "GND" does not contain pin "VT806-2" .
+    Line 6571 : Net "XSIG012073" does not contain pin "DA802-5" .
+    Line 6571 : Net "XSIG012073" does not contain pin "VT802-1" .
+    Line 6584 : Net "XSIG012074" does not contain pin "VT801-3" .
+    Line 6584 : Net "XSIG012074" does not contain pin "VT802-3" .
+    Line 6597 : Net "XSIG012075" does not contain pin "DA801-5" .
+    Line 6597 : Net "XSIG012075" does not contain pin "VT801-1" .
+    Line 6608 : Net "XSIG012080" does not contain pin "DA801-3" .
+    Line 6619 : Net "XSIG012081" does not contain pin "DA802-3" .
+    Line 6632 : Net "XSIG012084" does not contain pin "DA804-5" .
+    Line 6632 : Net "XSIG012084" does not contain pin "VT804-1" .
+    Line 6645 : Net "XSIG012085" does not contain pin "VT803-3" .
+    Line 6645 : Net "XSIG012085" does not contain pin "VT804-3" .
+    Line 6658 : Net "XSIG012086" does not contain pin "DA803-5" .
+    Line 6658 : Net "XSIG012086" does not contain pin "VT803-1" .
+    Line 6669 : Net "XSIG012094" does not contain pin "DA803-3" .
+    Line 6680 : Net "XSIG012095" does not contain pin "DA804-3" .
+    Line 6693 : Net "XSIG012097" does not contain pin "DA806-5" .
+    Line 6693 : Net "XSIG012097" does not contain pin "VT806-1" .
+    Line 6706 : Net "XSIG012098" does not contain pin "VT805-3" .
+    Line 6706 : Net "XSIG012098" does not contain pin "VT806-3" .
+    Line 6719 : Net "XSIG012099" does not contain pin "DA805-5" .
+    Line 6719 : Net "XSIG012099" does not contain pin "VT805-1" .
+    Line 6754 : Net "XSIG012100" does not contain pin "C801-1" .
+    Line 6754 : Net "XSIG012100" does not contain pin "C802-1" .
+    Line 6754 : Net "XSIG012100" does not contain pin "C803-1" .
+    Line 6754 : Net "XSIG012100" does not contain pin "C804-1" .
+    Line 6754 : Net "XSIG012100" does not contain pin "DA801-1" .
+    Line 6754 : Net "XSIG012100" does not contain pin "DA802-1" .
+    Line 6754 : Net "XSIG012100" does not contain pin "DA803-1" .
+    Line 6754 : Net "XSIG012100" does not contain pin "DA804-1" .
+    Line 6754 : Net "XSIG012100" does not contain pin "DA805-1" .
+    Line 6754 : Net "XSIG012100" does not contain pin "DA806-1" .
+    Line 6754 : Net "XSIG012100" does not contain pin "VT801-2" .
+    Line 6754 : Net "XSIG012100" does not contain pin "VT803-2" .
+    Line 6754 : Net "XSIG012100" does not contain pin "VT805-2" .
+    Line 6765 : Net "XSIG012107" does not contain pin "DA805-3" .
+    Line 6776 : Net "XSIG012108" does not contain pin "DA806-3" .
+Net Properties ASCII file processed successfully.
+
+Overwriting Net Properties DB...
+
+Net Properties DB successfully created.
+
+                         PCB ASCII to Net Properties Log
+                         -------------------------------
+
+                         01:38 PM Monday, July 04, 2022
+                                   Job Name: 
+
+
+Checking for Net Properties ASCII file format errors...
+
+There were no Net Properties ASCII file format errors.
+
+Processing Net Properties ASCII file...
+
+Net Properties ASCII file processed successfully.
+
+Overwriting Net Properties DB...
+
+Net Properties DB successfully created.

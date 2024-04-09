@@ -1,0 +1,206 @@
+=======================================================================
+Expedition PCB - Pinnacle - Version EXP2005.1_060615.00 2005.1
+=======================================================================
+
+RELOAD CELLS
+
+Job Directory:  C:\Mentor_proj\408\PCB\
+
+
+Design Units:(mm)
+
+Replace Cell Log:   repCellLog36.txt
+
+Tue Nov 30 20:09:34 2021
+
+Reference Designator            Cell Name                         New Cell Name
+===============================================================================
+
+
+---------------  RELOAD CELLS  Tue Nov 30 20:09:34 2021  ---------------
+
+
+
+
+---------------    Tue Nov 30 20:09:34 2021  ---------------
+
+
+
+
+---------------    Tue Nov 30 20:09:57 2021  ---------------
+
+
+
+
+---------------    Tue Nov 30 20:09:58 2021  ---------------
+
+
+
+
+---------------    Tue Nov 30 20:09:59 2021  ---------------
+
+
+
+
+---------------    Tue Nov 30 20:10:01 2021  ---------------
+
+
+
+
+---------------    Tue Nov 30 20:10:03 2021  ---------------
+
+
+
+
+---------------    Tue Nov 30 20:10:04 2021  ---------------
+
+
+
+
+---------------    Tue Nov 30 20:10:08 2021  ---------------
+
+
+
+
+---------------    Tue Nov 30 20:33:05 2021  ---------------
+
+
+
+
+---------------    Tue Nov 30 20:34:05 2021  ---------------
+
+
+
+
+---------------  RELOAD CELLS  Wed Dec 01 12:59:22 2021  ---------------
+
+
+C472                            CAPC1005X55N                      CAPC1005X55N                    
+C763                            CAPC1005X55N                      CAPC1005X55N                    
+C510                            CAPC1005X55N                      CAPC1005X55N                    
+C204                            CAPC1005X55N                      CAPC1005X55N                    
+C672                            CAPC1005X55N                      CAPC1005X55N                    
+C245                            CAPC1005X55N                      CAPC1005X55N                    
+C664                            CAPC1005X55N                      CAPC1005X55N                    
+C241                            CAPC1005X55N                      CAPC1005X55N                    
+C467                            CAPC1005X55N                      CAPC1005X55N                    
+C249                            CAPC1005X55N                      CAPC1005X55N                    
+C243                            CAPC1005X55N                      CAPC1005X55N                    
+C248                            CAPC1005X55N                      CAPC1005X55N                    
+C607                            CAPC1005X55N                      CAPC1005X55N                    
+C242                            CAPC1005X55N                      CAPC1005X55N                    
+C247                            CAPC1005X55N                      CAPC1005X55N                    
+C244                            CAPC1005X55N                      CAPC1005X55N                    
+C501                            CAPC1005X55N                      CAPC1005X55N                    
+C209                            CAPC1005X55N                      CAPC1005X55N                    
+C669                            CAPC1005X55N                      CAPC1005X55N                    
+C246                            CAPC1005X55N                      CAPC1005X55N                    
+C667                            CAPC1005X55N                      CAPC1005X55N                    
+C508                            CAPC1005X55N                      CAPC1005X55N                    
+C408                            CAPC1005X55N                      CAPC1005X55N                    
+C264                            CAPC1005X55N                      CAPC1005X55N                    
+C562                            CAPC1005X55N                      CAPC1005X55N                    
+C263                            CAPC1005X55N                      CAPC1005X55N                    
+C704                            CAPC1005X55N                      CAPC1005X55N                    
+C670                            CAPC1005X55N                      CAPC1005X55N                    
+C210                            CAPC1005X55N                      CAPC1005X55N                    
+C272                            CAPC1005X55N                      CAPC1005X55N                    
+C463                            CAPC1005X55N                      CAPC1005X55N                    
+C267                            CAPC1005X55N                      CAPC1005X55N                    
+C464                            CAPC1005X55N                      CAPC1005X55N                    
+C265                            CAPC1005X55N                      CAPC1005X55N                    
+C563                            CAPC1005X55N                      CAPC1005X55N                    
+C469                            CAPC1005X55N                      CAPC1005X55N                    
+C262                            CAPC1005X55N                      CAPC1005X55N                    
+C409                            CAPC1005X55N                      CAPC1005X55N                    
+C665                            CAPC1005X55N                      CAPC1005X55N                    
+C470                            CAPC1005X55N                      CAPC1005X55N                    
+C572                            CAPC1005X55N                      CAPC1005X55N                    
+C410                            CAPC1005X55N                      CAPC1005X55N                    
+C273                            CAPC1005X55N                      CAPC1005X55N                    
+C604                            CAPC1005X55N                      CAPC1005X55N                    
+C269                            CAPC1005X55N                      CAPC1005X55N                    
+C569                            CAPC1005X55N                      CAPC1005X55N                    
+C270                            CAPC1005X55N                      CAPC1005X55N                    
+C663                            CAPC1005X55N                      CAPC1005X55N                    
+C601                            CAPC1005X55N                      CAPC1005X55N                    
+C208                            CAPC1005X55N                      CAPC1005X55N                    
+C369                            CAPC1005X55N                      CAPC1005X55N                    
+C364                            CAPC1005X55N                      CAPC1005X55N                    
+C373                            CAPC1005X55N                      CAPC1005X55N                    
+C570                            CAPC1005X55N                      CAPC1005X55N                    
+C362                            CAPC1005X55N                      CAPC1005X55N                    
+C764                            CAPC1005X55N                      CAPC1005X55N                    
+C372                            CAPC1005X55N                      CAPC1005X55N                    
+C363                            CAPC1005X55N                      CAPC1005X55N                    
+C573                            CAPC1005X55N                      CAPC1005X55N                    
+C309                            CAPC1005X55N                      CAPC1005X55N                    
+C407                            CAPC1005X55N                      CAPC1005X55N                    
+C565                            CAPC1005X55N                      CAPC1005X55N                    
+C370                            CAPC1005X55N                      CAPC1005X55N                    
+C367                            CAPC1005X55N                      CAPC1005X55N                    
+C404                            CAPC1005X55N                      CAPC1005X55N                    
+C365                            CAPC1005X55N                      CAPC1005X55N                    
+C707                            CAPC1005X55N                      CAPC1005X55N                    
+C401                            CAPC1005X55N                      CAPC1005X55N                    
+C710                            CAPC1005X55N                      CAPC1005X55N                    
+C310                            CAPC1005X55N                      CAPC1005X55N                    
+C709                            CAPC1005X55N                      CAPC1005X55N                    
+C304                            CAPC1005X55N                      CAPC1005X55N                    
+C567                            CAPC1005X55N                      CAPC1005X55N                    
+C507                            CAPC1005X55N                      CAPC1005X55N                    
+C673                            CAPC1005X55N                      CAPC1005X55N                    
+C509                            CAPC1005X55N                      CAPC1005X55N                    
+C767                            CAPC1005X55N                      CAPC1005X55N                    
+C662                            CAPC1005X55N                      CAPC1005X55N                    
+C308                            CAPC1005X55N                      CAPC1005X55N                    
+C564                            CAPC1005X55N                      CAPC1005X55N                    
+C769                            CAPC1005X55N                      CAPC1005X55N                    
+C762                            CAPC1005X55N                      CAPC1005X55N                    
+C201                            CAPC1005X55N                      CAPC1005X55N                    
+C504                            CAPC1005X55N                      CAPC1005X55N                    
+C765                            CAPC1005X55N                      CAPC1005X55N                    
+C772                            CAPC1005X55N                      CAPC1005X55N                    
+C608                            CAPC1005X55N                      CAPC1005X55N                    
+C307                            CAPC1005X55N                      CAPC1005X55N                    
+C610                            CAPC1005X55N                      CAPC1005X55N                    
+C462                            CAPC1005X55N                      CAPC1005X55N                    
+C773                            CAPC1005X55N                      CAPC1005X55N                    
+C701                            CAPC1005X55N                      CAPC1005X55N                    
+C301                            CAPC1005X55N                      CAPC1005X55N                    
+C473                            CAPC1005X55N                      CAPC1005X55N                    
+C770                            CAPC1005X55N                      CAPC1005X55N                    
+C708                            CAPC1005X55N                      CAPC1005X55N                    
+C207                            CAPC1005X55N                      CAPC1005X55N                    
+C465                            CAPC1005X55N                      CAPC1005X55N                    
+C609                            CAPC1005X55N                      CAPC1005X55N                    
+
+
+---------------    Wed Dec 01 12:59:22 2021  ---------------
+
+
+
+
+---------------    Wed Dec 01 13:01:57 2021  ---------------
+
+
+
+
+---------------    Wed Dec 01 13:03:28 2021  ---------------
+
+
+
+
+---------------    Wed Dec 01 13:03:29 2021  ---------------
+
+
+
+
+---------------    Wed Dec 01 13:03:40 2021  ---------------
+
+
+
+
+---------------    Wed Dec 01 13:03:44 2021  ---------------
+
+

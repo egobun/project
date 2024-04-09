@@ -1,0 +1,13 @@
+
+                           PCB Net Class to ASCII Log
+
+                           ---------------------------
+
+                       01:07 PM Tuesday, December 20, 2022
+                                   Job Name: 
+
+
+Beginning Net Class ASCII Output processing..
+
+Net Class ASCII Output processing completed.
+

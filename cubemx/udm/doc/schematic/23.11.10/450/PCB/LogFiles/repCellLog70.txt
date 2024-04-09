@@ -1,0 +1,27 @@
+=======================================================================
+Expedition PCB - Pinnacle - Version EXP2005.1_060615.00 2005.1
+=======================================================================
+
+RELOAD CELLS
+
+Job Directory:  C:\Mentor_proj\450\PCB\
+
+
+Design Units:(mm)
+
+Replace Cell Log:   repCellLog70.txt
+
+Wed Jun 01 17:09:52 2022
+
+Reference Designator            Cell Name                         New Cell Name
+===============================================================================
+
+
+---------------  RELOAD CELLS  Wed Jun 01 17:09:52 2022  ---------------
+
+
+
+
+---------------    Wed Jun 01 17:09:53 2022  ---------------
+
+

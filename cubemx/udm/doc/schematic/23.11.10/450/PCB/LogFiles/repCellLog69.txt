@@ -1,0 +1,77 @@
+=======================================================================
+Expedition PCB - Pinnacle - Version EXP2005.1_060615.00 2005.1
+=======================================================================
+
+RELOAD CELLS
+
+Job Directory:  C:\Mentor_proj\450\PCB\
+
+
+Design Units:(mm)
+
+Replace Cell Log:   repCellLog69.txt
+
+Tue May 31 13:10:52 2022
+
+Reference Designator            Cell Name                         New Cell Name
+===============================================================================
+
+
+---------------  RELOAD CELLS  Tue May 31 13:10:52 2022  ---------------
+
+
+VT785                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT382                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT684                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT681                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT281                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT485                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT783                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT782                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT386                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT384                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT486                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT381                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT586                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT786                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT584                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT283                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT385                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT284                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT583                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT685                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT285                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT683                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT682                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT401                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT201                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT585                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT483                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT484                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT482                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT781                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT784                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT286                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT383                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT581                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT301                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT686                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT481                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT282                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT701                           SOT95P237X112-3N                  SOT95P237X112-3N                
+VT582                           SOT95P237X112-3N                  SOT95P237X112-3N                
+
+
+---------------    Tue May 31 13:10:52 2022  ---------------
+
+
+
+
+---------------    Tue May 31 13:21:25 2022  ---------------
+
+
+
+
+---------------    Tue May 31 14:16:44 2022  ---------------
+
+

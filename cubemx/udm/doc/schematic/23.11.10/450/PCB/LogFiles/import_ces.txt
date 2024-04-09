@@ -1,0 +1,59 @@
+
+                        Import CES Constraints Error Log
+                        --------------------------------
+
+                       03:56 PM Friday, December 16, 2022
+                    Job Name: C:\Mentor_proj\450\PCB\450.pcb
+
+
+                        PCB ASCII to Job Preferences Log
+                        --------------------------------
+
+                       03:56 PM Friday, December 16, 2022
+                    Job Name: C:\Mentor_proj\450\PCB\450.pcb
+
+
+Checking for ASCII file format errors...
+
+No ASCII file format errors were detected.
+
+
+Processing ASCII file...
+
+ASCII file successfully processed.
+
+
+Overwriting the existing Job Preferences DB file 'C:\Mentor_proj\450\PCB\Work\Layout_Temp\JobPrefsDB.jpf'.
+
+Job Preferences Database file 'C:\Mentor_proj\450\PCB\Work\Layout_Temp\JobPrefsDB.jpf' was created successfully.
+
+
+                           PCB ASCII to Net Class Log
+                           --------------------------
+
+                       03:56 PM Friday, December 16, 2022
+                    Job Name: C:\Mentor_proj\450\PCB\450.pcb
+
+
+Beginning Net Class ASCII Input processing..
+
+Net Class ASCII Input processing completed.
+
+                         PCB ASCII to Net Properties Log
+                         -------------------------------
+
+                       03:56 PM Friday, December 16, 2022
+                    Job Name: C:\Mentor_proj\450\PCB\450.pcb
+
+
+Checking for Net Properties ASCII file format errors...
+
+There were no Net Properties ASCII file format errors.
+
+Processing Net Properties ASCII file...
+
+Net Properties ASCII file processed successfully.
+
+Overwriting Net Properties DB...
+
+Net Properties DB successfully created.

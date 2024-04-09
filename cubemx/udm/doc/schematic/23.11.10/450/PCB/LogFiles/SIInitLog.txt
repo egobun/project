@@ -1,0 +1,12 @@
+
+=======================================================================
+SI Initialization Report
+Thu Sep 23 08:49:10 2010
+=======================================================================
+
+Simulation cannot be run on this board.
+    There are no supply voltages given for any of the nets.
+      Check supply voltage settings in Net Properties.
+
+IBIS Models Assignment
+======================

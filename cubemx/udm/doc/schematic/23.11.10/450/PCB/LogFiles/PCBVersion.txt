@@ -1,0 +1,16 @@
+Expedition PCB - Pinnacle Version: EXP2005.1_060615.00 2005.1
+
+
+
+Environment Variables:
+----------------------
+GW2ODB_DIR = "C:\Valor\GW2ODB"
+HOME = "C:\Documents and Settings\user"
+HOMEDRIVE = "C:"
+HOMEPATH = "\Documents and Settings\user"
+MGC_HOME = "C:/MentorGraphics/2005EXP/MGC_HOME.ixn"
+OS = "Windows_NT"
+PATH = "C:\MentorGraphics\2005EXP\SDD_HOME\xe\win32\lib;C:\MentorGraphics\2005EXP\SDD_HOME\wg\win32\lib;C:\Documents and Settings\All Users\Application Data\Oracle\Java\javapath;C:\MentorGraphics\2005EXP\SDD_HOME\common\win32\bin;C:\MentorGraphics\2005EXP\SDD_HOME\common\win32\lib;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:/MentorGraphics/2005EXP/MGC_HOME.ixn\bin;C:/MentorGraphics/2005EXP/MGC_HOME.ixn\lib;C:/MentorGraphics/2005EXP/MGC_HOME.ixn\bin;C:/MentorGraphics/2005EXP/MGC_HOME.ixn\lib"
+SDD_HOME = "C:\MentorGraphics\2005EXP\SDD_HOME"
+TEMP = "C:\DOCUME~1\user\LOCALS~1\Temp"
+TMP = "C:\DOCUME~1\user\LOCALS~1\Temp"

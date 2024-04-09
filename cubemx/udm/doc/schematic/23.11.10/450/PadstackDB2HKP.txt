@@ -1,0 +1,359 @@
+
+                            PCB Padstack to ASCII Log
+                            -------------------------
+
+                       03:56 PM Friday, December 16, 2022
+                                   Job Name: 
+
+
+Overwriting existing Padstack ASCII file 'C:\Mentor_proj\450\450.cdb\Layout\\CES\Padstack.hkp'.
+
+    Current units : MM
+
+
+
+
+Processing All Custom Drill Symbols...
+
+No Custom Drill Symbols found.
+
+
+Processing All Pads...
+    Processing Pad 'Round 32'
+    Processing Pad 'Round 26'
+    Processing Pad 'LQH43-Cu'
+    Processing Pad 'LQH43-SM'
+    Processing Pad 'Oblong 0.85 x 0.30'
+    Processing Pad 'Oblong 1.05 x 0.50'
+    Processing Pad 'Oblong 0.95 x 0.30'
+    Processing Pad 'Oblong 1.15 x 0.50'
+    Processing Pad 'Oblong 1.20 x 0.60'
+    Processing Pad 'Oblong 1.40 x 0.80'
+    Processing Pad 'Oblong 1.50 x 0.45'
+    Processing Pad 'Oblong 1.70 x 0.65'
+    Processing Pad 'Rectangle 0.95x0.9'
+    Processing Pad 'Rectangle 1.15x1.1'
+    Processing Pad 'Rectangle 1.1x1.05'
+    Processing Pad 'Rectangle 1.9x1.3'
+    Processing Pad 'Rectangle 2.1x1.5'
+    Processing Pad 'Rectangle 1.4x1.05'
+    Processing Pad 'Rectangle 1.6x1.25'
+    Processing Pad 'Rectangle 1.55x1.2'
+    Processing Pad 'Rectangle 3.5x1.8'
+    Processing Pad 'Rectangle 3.7x1.9'
+    Processing Pad 'Rectangle 6.5x3.5'
+    Processing Pad 'Square 0.6'
+    Processing Pad 'Square 0.8'
+    Processing Pad 'Square 0.75'
+    Processing Pad 'Oblong 1.50 x 0.60'
+    Processing Pad 'Oblong 1.70 x 0.80'
+    Processing Pad 'Rectangle 1.95 x 0.90'
+    Processing Pad 'Rectangle 2.15 x 1.10'
+    Processing Pad 'Rectangle 3.2x0.9'
+    Processing Pad 'Rectangle 3.4x1.1'
+    Processing Pad 'Round 1.25'
+    Processing Pad 'Round 1.45'
+    Processing Pad 'Round 1.1'
+    Processing Pad 'Round 1.65'
+    Processing Pad 'Round 0.4'
+    Processing Pad 'Round 0.2'
+    Processing Pad 'Round 0.5'
+    Processing Pad 'Round 0.65'
+    Processing Pad 'Round 0.8'
+    Processing Pad 'Round 0.9'
+    Processing Pad 'Round 1.3'
+    Processing Pad 'Round 0.75'
+    Processing Pad 'Round 1'
+    Processing Pad 'Round 1.2'
+    Processing Pad 'Oblong 1.4x0.25 Off 0.25x0'
+    Processing Pad 'Oblong 1.6x0.5 Off 0.25x0'
+    Processing Pad 'Oblong 1.55x0.4 Off 0.25x0'
+    Processing Pad 'Finger Rnd 1.6x0.25 Off 0.35x0'
+    Processing Pad 'Finger Rnd 1.8x0.5 Off 0.35x0'
+    Processing Pad 'Finger Rnd 1.75x0.4 Off 0.35x0'
+    Processing Pad 'Oblong 1.10 x 0.50'
+    Processing Pad 'Oblong 1.30 x 0.70'
+    Processing Pad 'Oblong 1.30 x 0.60'
+    Processing Pad 'Oblong 1.50 x 0.80'
+    Processing Pad 'Oblong 1.35 x 0.45'
+    Processing Pad 'Oblong 1.55 x 0.65'
+    Processing Pad 'Rectangle 0.5x0.45'
+    Processing Pad 'Rectangle 0.70 x 0.65'
+    Processing Pad 'Rectangle 0.65x0.25'
+    Processing Pad 'Rectangle 0.75x0.45'
+    Processing Pad 'Rectangle 1.5x0.8'
+    Processing Pad 'Rectangle 1.7x1'
+    Processing Pad 'Rectangle 1.45x0.95'
+    Processing Pad 'Rectangle 1.65x1.15'
+    Processing Pad 'Rectangle 1.6x1.1'
+    Processing Pad 'Rectangle 2.5x0.5'
+    Processing Pad 'Rectangle 2.7x0.7'
+    Processing Pad 'Rectangle 2.25 x 1.65'
+    Processing Pad 'Rectangle 2.45 x 1.85'
+    Processing Pad 'VIK_Cu'
+    Processing Pad 'VIK_SM'
+    Processing Pad 'Oblong 1.25 x 0.60'
+    Processing Pad 'Oblong 1.45 x 0.80'
+    Processing Pad 'Rectangle 0.85x0.6'
+    Processing Pad 'Rectangle 1.05x0.8'
+    Processing Pad 'Rectangle 1.15 x 0.80'
+    Processing Pad 'Rectangle 1.35 x 1.00'
+    Processing Pad 'Rectangle 1.45 x 1.15'
+    Processing Pad 'Rectangle 1.65 x 1.35'
+    Processing Pad 'Rectangle 2.5x1.7'
+    Processing Pad 'Rectangle 2.7x1.8'
+    Processing Pad 'Oblong 0.65x0.3'
+    Processing Pad 'Oblong 0.85 x 0.50'
+    Processing Pad 'Round 0.35'
+    Processing Pad 'Round 0.45'
+    Processing Pad 'Round 2.2'
+    Processing Pad 'Round 3'
+    Processing Pad 'Round 3.1'
+    Processing Pad 'Round 1.5'
+    Processing Pad 'Round 1.4'
+    Processing Pad 'Oblong 2.00 x 0.60'
+    Processing Pad 'Oblong 2.20 x 0.80'
+    Processing Pad 'Square 5.40'
+    Processing Pad 'Square 5.6'
+    Processing Pad 'COMPLEX 4.32 x 4.32 A10.50'
+    Processing Pad 'Rectangle 0.65 x 0.55'
+    Processing Pad 'Rectangle 0.85 x 0.75'
+    Processing Pad 'Rectangle 1.05x0.5'
+    Processing Pad 'Rectangle 1.25 x 0.70'
+    Processing Pad 'Round 0.60'
+    Processing Pad 'Round 0.31'
+    Processing Pad 'Round 0.25'
+    Processing Pad 'Round 0.55'
+    Processing Pad 'Rectangle 0.35x0.3'
+    Processing Pad 'Rectangle 0.4x0.35'
+    Processing Pad 'Rectangle 0.85x0.27'
+    Processing Pad 'Rectangle 0.9x0.3'
+    Processing Pad 'Rectangle 2.2x1.1'
+    Processing Pad 'Rectangle 2.4x1.3'
+    Processing Pad 'Round 0.85'
+
+All Pads have been processed.
+
+
+Processing All Holes...
+    Processing Hole 'Rnd 19 +Tol 0 -Tol -3'
+    Processing Hole 'Rnd 0.85 +Tol 0 -Tol -0.13'
+    Processing Hole 'Rnd 0.2 +Tol 0 -Tol -0.1'
+    Processing Hole 'Rnd 0.5 +Tol 0 -Tol -0.13'
+    Processing Hole 'Rnd 0.4 +Tol 0 -Tol -0.13'
+    Processing Hole 'Rnd 0.7 +Tol 0 -Tol -0.13'
+    Processing Hole 'Rnd 2.2 +Tol 0.05 -Tol -0.18'
+    Processing Hole 'Rnd 2.7 +Tol 0.05 -Tol -0.18'
+    Processing Hole 'Rnd 1 +Tol 0 -Tol -0.13'
+    Processing Hole 'Rnd 0.3 +Tol 0 -Tol -0.1'
+
+All Holes have been processed.
+
+
+Processing All Padstacks...
+
+    Processing Padstack '026VIA'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'LQH43-Tpad1812'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Oblong 0.85 x 0.30 M96'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Oblong 0.95 x 0.30 M93'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Oblong 1.20 x 0.60 M53'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Oblong 1.50 x 0.45 M60'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 0.95 x 0.90 M47'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack 'SMD Rectangle 1.9x1.3'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 1.40 x 1.05 M36'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack 'SMD Rectangle 3.5x1.8'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 6.5x3.5'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Square 0.60 M78'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack 'SMD Oblong 1.50 x 0.60 M49'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 1.95 x 0.90 M35'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 3.2x0.9'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack '085PinTh'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+        Processing Technology Padstack 'PCBTelerem'
+
+    Processing Padstack '02ViaSMcloseNoInt'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack '05ViaSMopenNoInt'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PCBTelerem'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack '04ViaSMopenNoInt'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack 'QFP0.5Pitch1.4x0.25'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack 'QFP0.5Pitch1.4x0.25FP'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack 'SMD Oblong 1.10 x 0.50 M60'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Oblong 1.30 x 0.60 M51'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Oblong 1.35 x 0.45 M64'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 0.50 x 0.45 M105_1'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 0.65 x 0.25'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 1.5x0.8'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 1.45 x 0.95 M38'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack 'SMD Rectangle 2.5x0.5'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 2.25 x 1.65 M22'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'VIK'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack '07PinTh3'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+        Processing Technology Padstack 'PCBTelerem'
+
+    Processing Padstack 'SMD Oblong 1.25 x 0.60 M52'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 0.85x0.6'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 1.15 x 0.80 M47'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 1.45 x 1.15 M34'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 2.5 x 1.7'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Oblong 0.65 x 0.30 M106'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Round 0.35 M140-1'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack '22MH-NonPlated'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack '27MH-NonPlated'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack '27MH-MinPlated'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack '08ViaSMopenNoInt'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PCBTelerem'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack 'SMD Oblong 2.00 x 0.60 M45'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack '07PinTh2'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+        Processing Technology Padstack 'PCBTelerem'
+
+    Processing Padstack 'SMDC Square 5.40 P-64 M8'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 0.65 x 0.55 M78'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 1.05 x 0.50 M69'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack '03ViaSMcloseNoInt_0.6'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack '020ViaSMopenNoInt'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack '04ViaSMclose'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack 'SMD Rectangle 0.35 x 0.3'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 0.85x0.3'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack 'SMD Rectangle 2.2x1.1'
+        Processing Technology Padstack '(Default)'
+
+    Processing Padstack '03VSMcloseNoInt_0.6_1'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack '04ViaSMcloseNoInt'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack '02_04ViaNoInt'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack '02_05Via'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+
+    Processing Padstack '02_04Via'
+        Processing Technology Padstack '(Default)'
+        Processing Technology Padstack 'PSElectroClassB'
+
+All Padstacks have been processed.
+
+Padstack ASCII file 'C:\Mentor_proj\450\450.cdb\Layout\\CES\Padstack.hkp' was created successfully.

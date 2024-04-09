@@ -1,0 +1,37 @@
+
+------------------------------------------------------------------------
+            Part/Reference             | Pin | Augmented Net Name
+------------------------------------------------------------------------
+ Part SMD03225C4-4-25.000MHz           |
+       ZQ741                           |    2| <unconnected pin>
+       ZQ741                           |    3| <unconnected pin>
+       ZQ641                           |    2| <unconnected pin>
+       ZQ641                           |    3| <unconnected pin>
+       ZQ541                           |    2| <unconnected pin>
+       ZQ541                           |    3| <unconnected pin>
+       ZQ441                           |    2| <unconnected pin>
+       ZQ441                           |    3| <unconnected pin>
+       ZQ341                           |    2| <unconnected pin>
+       ZQ341                           |    3| <unconnected pin>
+       ZQ241                           |    2| <unconnected pin>
+       ZQ241                           |    3| <unconnected pin>
+ Part LTC3130IMSE                      |
+       DA762                           |   17| GND
+       DA662                           |   17| GND
+       DA562                           |   17| GND
+       DA462                           |   17| GND
+       DA362                           |   17| GND
+       DA262                           |   17| GND
+ Part BM08B-SRSS-TB                    |
+       XP761                           |    9| GND
+       XP761                           |   10| GND
+       XP661                           |    9| GND
+       XP661                           |   10| GND
+       XP561                           |    9| GND
+       XP561                           |   10| GND
+       XP461                           |    9| GND
+       XP461                           |   10| GND
+       XP361                           |    9| GND
+       XP361                           |   10| GND
+       XP261                           |    9| GND
+       XP261                           |   10| GND

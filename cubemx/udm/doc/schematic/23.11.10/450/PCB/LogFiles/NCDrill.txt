@@ -1,0 +1,35 @@
+ ----------------------------
+|      Drill Engine Log      |
+|          Started           |
+|  Fri Dec 16 16:25:41 2022  |
+ ----------------------------
+
+Creating Directory Output/NCDrill/
+
+Created drill file "Output/NCDrill/ThruHolePlated.ncd" for span from 1 to 4
+Total holes, contours in this file 1342, 0
+
+    Tool   Size (MM)    Tolerance (MM)     Plated   Count
+    ----   ---------   -----------------   ------   -----
+     05     0.2000     +0.0000 / -0.1000    YES     833
+     03     0.3000     +0.0000 / -0.1000    YES     246
+     04     0.4000     +0.0000 / -0.1300    YES     139
+     06     0.5000     +0.0000 / -0.1300    YES     29
+     01     0.7000     +0.0000 / -0.1300    YES     30
+     02     0.8500     +0.0000 / -0.1300    YES     60
+     07     2.7000     +0.0500 / -0.1800    YES     5
+
+
+Created drill file "Output/NCDrill/ContourPlated.ncd" for span from 1 to 4
+Total holes, contours in this file 0, 4
+
+    Tool   Size (MM)    Tolerance (MM)     Plated   Count
+    ----   ---------   -----------------   ------   -----
+     08     1.0000     +0.0000 / -0.1300    YES     4
+
+
+ ----------------------------
+|      Drill Engine Log      |
+|          Finished          |
+|  Fri Dec 16 16:25:41 2022  |
+ ----------------------------

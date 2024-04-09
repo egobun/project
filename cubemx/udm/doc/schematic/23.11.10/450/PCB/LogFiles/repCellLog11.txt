@@ -1,0 +1,65 @@
+=======================================================================
+Expedition PCB - Pinnacle - Version EXP2005.1_060615.00 2005.1
+=======================================================================
+
+RELOAD CELLS
+
+Job Directory:  C:\Mentor_proj\408\PCB\
+
+
+Design Units:(mm)
+
+Replace Cell Log:   repCellLog11.txt
+
+Wed Nov 03 17:55:46 2021
+
+Reference Designator            Cell Name                         New Cell Name
+===============================================================================
+
+
+---------------  RELOAD CELLS  Wed Nov 03 17:55:46 2021  ---------------
+
+
+C243                            CAPC1005X55N                      CAPC1005X55N                    
+C246                            CAPC1005X55N                      CAPC1005X55N                    
+C247                            CAPC1005X55N                      CAPC1005X55N                    
+C244                            CAPC1005X55N                      CAPC1005X55N                    
+C242                            CAPC1005X55N                      CAPC1005X55N                    
+C241                            CAPC1005X55N                      CAPC1005X55N                    
+C248                            CAPC1005X55N                      CAPC1005X55N                    
+C212                            CAPC1005X55N                      CAPC1005X55N                    
+C211                            CAPC1005X55N                      CAPC1005X55N                    
+C210                            CAPC1005X55N                      CAPC1005X55N                    
+C205                            CAPC1005X55N                      CAPC1005X55N                    
+C209                            CAPC1005X55N                      CAPC1005X55N                    
+C203                            CAPC1005X55N                      CAPC1005X55N                    
+C245                            CAPC1005X55N                      CAPC1005X55N                    
+C270                            CAPC1005X55N                      CAPC1005X55N                    
+C262                            CAPC1005X55N                      CAPC1005X55N                    
+C265                            CAPC1005X55N                      CAPC1005X55N                    
+C264                            CAPC1005X55N                      CAPC1005X55N                    
+C263                            CAPC1005X55N                      CAPC1005X55N                    
+C273                            CAPC1005X55N                      CAPC1005X55N                    
+C267                            CAPC1005X55N                      CAPC1005X55N                    
+C272                            CAPC1005X55N                      CAPC1005X55N                    
+C269                            CAPC1005X55N                      CAPC1005X55N                    
+
+
+---------------    Wed Nov 03 17:55:46 2021  ---------------
+
+
+
+
+---------------    Wed Nov 03 18:05:12 2021  ---------------
+
+
+
+
+---------------    Wed Nov 03 18:05:12 2021  ---------------
+
+
+
+
+---------------    Wed Nov 03 18:05:16 2021  ---------------
+
+
