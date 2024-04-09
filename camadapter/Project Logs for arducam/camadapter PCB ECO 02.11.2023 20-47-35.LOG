@@ -1,0 +1,35 @@
+Added Component: Designator=SW1(TS5MP646)
+Added Pin To Net: NetName=NetC1_1 Pin=SW1-1
+Added Pin To Net: NetName=CLKN Pin=SW1-4
+Added Pin To Net: NetName=CLKP Pin=SW1-5
+Added Pin To Net: NetName=D1N Pin=SW1-6
+Added Pin To Net: NetName=D1P Pin=SW1-7
+Added Pin To Net: NetName=D2N Pin=SW1-8
+Added Pin To Net: NetName=D2P Pin=SW1-9
+Added Pin To Net: NetName=IO0 Pin=SW1-10
+Added Pin To Net: NetName=IO1 Pin=SW1-11
+Added Pin To Net: NetName=SCL Pin=SW1-12
+Added Pin To Net: NetName=SDA Pin=SW1-13
+Added Pin To Net: NetName=CLKAN Pin=SW1-16
+Added Pin To Net: NetName=CLKAP Pin=SW1-17
+Added Pin To Net: NetName=DA1N Pin=SW1-18
+Added Pin To Net: NetName=DA1P Pin=SW1-19
+Added Pin To Net: NetName=DA2N Pin=SW1-20
+Added Pin To Net: NetName=DA2P Pin=SW1-21
+Added Pin To Net: NetName=A_IO0 Pin=SW1-22
+Added Pin To Net: NetName=A_IO1 Pin=SW1-23
+Added Pin To Net: NetName=A_SCL Pin=SW1-24
+Added Pin To Net: NetName=A_SDA Pin=SW1-25
+Added Pin To Net: NetName=CLKBN Pin=SW1-26
+Added Pin To Net: NetName=CLKBP Pin=SW1-27
+Added Pin To Net: NetName=DB1N Pin=SW1-28
+Added Pin To Net: NetName=DB1P Pin=SW1-29
+Added Pin To Net: NetName=DB2N Pin=SW1-30
+Added Pin To Net: NetName=DB2P Pin=SW1-31
+Added Pin To Net: NetName=B_IO0 Pin=SW1-32
+Added Pin To Net: NetName=B_IO1 Pin=SW1-33
+Added Pin To Net: NetName=B_SDA Pin=SW1-35
+Added Pin To Net: NetName=B_SDA Pin=SW1-35
+Added Pin To Net: NetName=GND Pin=SW1-36
+Added Member To Class: ClassName=camadapter Member=Component SW1 TS5MP646
+Added Member To Class: ClassName=camadapter Member=Component XS1 SFW15R-1STE1LF

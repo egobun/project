@@ -1,0 +1,53 @@
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Pin From Net: NetName=2D_P Pin=SW1-6
+Removed Member From Class: ClassName=camadapter Member=SW1
+Added Component: Designator=SW?(NX3DV642)
+Added Pin To Net: NetName=CLK_N Pin=SW?-1
+Added Pin To Net: NetName=CLK_P Pin=SW?-2
+Added Pin To Net: NetName=1D_N Pin=SW?-3
+Added Pin To Net: NetName=1D_P Pin=SW?-4
+Added Pin To Net: NetName=2D_N Pin=SW?-5
+Added Pin To Net: NetName=2D_P Pin=SW?-6
+Added Pin To Net: NetName=GND Pin=SW?-9
+Added Pin To Net: NetName=NetC1_1 Pin=SW?-10
+Added Pin To Net: NetName=2D1_N Pin=SW?-12
+Added Pin To Net: NetName=2D1_P Pin=SW?-13
+Added Pin To Net: NetName=1D1_N Pin=SW?-14
+Added Pin To Net: NetName=1D1_P Pin=SW?-15
+Added Pin To Net: NetName=CLK1_P Pin=SW?-16
+Added Pin To Net: NetName=CLK1_N Pin=SW?-17
+Added Pin To Net: NetName=2D2_N Pin=SW?-18
+Added Pin To Net: NetName=2D2_P Pin=SW?-19
+Added Pin To Net: NetName=1D2_P Pin=SW?-20
+Added Pin To Net: NetName=1D2_N Pin=SW?-21
+Added Pin To Net: NetName=CLK2_P Pin=SW?-22
+Added Pin To Net: NetName=CLK2_N Pin=SW?-23
+Added Pin To Net: NetName=NetSW?_8 Pin=SW?-8
+Added Pin To Net: NetName=NetSW?_8 Pin=XP1-3
+Added Net: Name=NetSW?_8
+Added Pin To Net: NetName=NetSW?_11 Pin=SW?-11
+Added Pin To Net: NetName=NetSW?_11 Pin=XP1-4
+Added Net: Name=NetSW?_11
+Added Member To Class: ClassName=camadapter Member=Component SW? NX3DV642

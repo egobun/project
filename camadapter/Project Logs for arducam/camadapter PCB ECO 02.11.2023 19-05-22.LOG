@@ -1,0 +1,17 @@
+Added Component: Designator=XS?(SFW15R-1STE1LF_D)
+Added Pin To Net: NetName=GND Pin=XS?-1
+Added Pin To Net: NetName=D1N Pin=XS?-2
+Added Pin To Net: NetName=D1P Pin=XS?-3
+Added Pin To Net: NetName=GND Pin=XS?-4
+Added Pin To Net: NetName=D2N Pin=XS?-5
+Added Pin To Net: NetName=D2P Pin=XS?-6
+Added Pin To Net: NetName=GND Pin=XS?-7
+Added Pin To Net: NetName=CLKN Pin=XS?-8
+Added Pin To Net: NetName=CLKP Pin=XS?-9
+Added Pin To Net: NetName=GND Pin=XS?-10
+Added Pin To Net: NetName=IO0 Pin=XS?-11
+Added Pin To Net: NetName=IO1 Pin=XS?-12
+Added Pin To Net: NetName=SCL Pin=XS?-13
+Added Pin To Net: NetName=SDA Pin=XS?-14
+Added Pin To Net: NetName=3V3 Pin=XS?-15
+Added Member To Class: ClassName=camadapter Member=Component XS? SFW15R-1STE1LF

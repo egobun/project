@@ -1,0 +1,523 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD21\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">03.11.2023</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">17:59:29</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc" class="file"><acronym title="C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc">C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">61</td></tr>
+</table>
+</td>
+</table><a name="IDE1VAMLPFVS3YCVZEJABSNP3SIJK25N00UPQ4K5HKMTOQQFBWUDGF"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYAMB4X0ZLWJ2DURYN4M531IHTJM4LQXWYOH5M0JSNUKUIH5GEMLD">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">9</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDDOL0THHMR30ZKJZZDDCIZDNXIHKW0KAWW0I33AD1ZIM0BBGYJJEI">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID55KPOWXC1RT3BEJMZZYMUE0OSJQOP0EVMKW5XIJTTXLQXYNRV5TN">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">48</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDL5OIWTMVIBQ5PD1XLE14QHRBBKFIFVJ5EAUK5VD2DGENPJ1HFKEO">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDVGZGTTS4DTPDPUQCGWAQV1BG1EWD2KYHJ4HC4ENN2UFCZDSOAYXN">Width Constraint (Min=0.1mm) (Max=1mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXNKXG0XGCYXSBOLFLUKEUG4IJLKFQXVOKLLVXKCA0OGLKFOHXOGI">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTZC2KS0UXDCPEYRMSPOMOHFLYJMA4A0XJ3Y0JFI2X3S3ACQFHAC">Hole Size Constraint (Min=0.025mm) (Max=3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGLRB22SLGAIHD5FVXJQOROSCIOPFHW2KPIVSSFNJWMKMY13DBBBN">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUS5UX4E1PIVKOMDTZ3VFDYUFCJ44HLXAZLANTWHYIJLVB32XTWBN">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDMLZRDUEIHRQCEOO5QO51KW5GLD4REOETFROHSRI3ITNAS5MGMQIH">Silk To Solder Mask (Clearance=0.1mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDV4JEEVPAGIGSGOWNS3AHDCJ3HEDGPSZTFK0S5FGJOKSQHXM5ESEL">Silk to Silk (Clearance=0.1mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBZMMTSFLXTFCGQTAYXBT13GNOKDZKNM0B4V0TMBX5FOMO113HY3M">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFG1N3BBAQ0HCDNNRXVUI02ZJCDPKVDRSIPRQQYEXYYXJSLFHGFAL">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">61</td>
+</tr>
+</table><br><a name="IDYAMB4X0ZLWJ2DURYN4M531IHTJM4LQXWYOH5M0JSNUKUIH5GEMLD"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4253.819mil|Location2.X=4266.88mil|Location1.Y=2202.983mil|Location2.Y=2220.59mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4253.819mil|Location2.X=4266.88mil|Location1.Y=2202.983mil|Location2.Y=2220.59mil|Absolute=True">Clearance Constraint: (0.209mm &lt; 0.3mm) Between Track (21.05mm,15.3mm)(21.05mm,15.4mm) on Top Layer And Track (21.376mm,15.474mm)(21.376mm,17.275mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4253.819mil|Location2.X=4266.88mil|Location1.Y=2202.983mil|Location2.Y=2220.59mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4253.819mil|Location2.X=4266.88mil|Location1.Y=2202.983mil|Location2.Y=2220.59mil|Absolute=True">Clearance Constraint: (0.209mm &lt; 0.3mm) Between Track (21.05mm,15.3mm)(21.05mm,15.4mm) on Top Layer And Track (21.376mm,15.474mm)(21.45mm,15.4mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4255.28mil|Location2.X=4268.341mil|Location1.Y=2202.131mil|Location2.Y=2215.192mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4255.28mil|Location2.X=4268.341mil|Location1.Y=2202.131mil|Location2.Y=2215.192mil|Absolute=True">Clearance Constraint: (0.275mm &lt; 0.3mm) Between Track (21.05mm,15.3mm)(21.05mm,15.4mm) on Top Layer And Track (21.45mm,15.3mm)(21.45mm,15.4mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4255.28mil|Location2.X=4268.341mil|Location1.Y=2208.99mil|Location2.Y=2222.051mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4255.28mil|Location2.X=4268.341mil|Location1.Y=2208.99mil|Location2.Y=2222.051mil|Absolute=True">Clearance Constraint: (0.127mm &lt; 0.3mm) Between Track (21.05mm,15.4mm)(21.124mm,15.474mm) on Top Layer And Track (21.376mm,15.474mm)(21.376mm,17.275mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4255.28mil|Location2.X=4268.341mil|Location1.Y=2208.99mil|Location2.Y=2222.051mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4255.28mil|Location2.X=4268.341mil|Location1.Y=2208.99mil|Location2.Y=2222.051mil|Absolute=True">Clearance Constraint: (0.127mm &lt; 0.3mm) Between Track (21.05mm,15.4mm)(21.124mm,15.474mm) on Top Layer And Track (21.376mm,15.474mm)(21.45mm,15.4mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4256.742mil|Location2.X=4269.803mil|Location1.Y=2207.529mil|Location2.Y=2225.169mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4256.742mil|Location2.X=4269.803mil|Location1.Y=2207.529mil|Location2.Y=2225.169mil|Absolute=True">Clearance Constraint: (0.209mm &lt; 0.3mm) Between Track (21.05mm,15.4mm)(21.124mm,15.474mm) on Top Layer And Track (21.45mm,15.3mm)(21.45mm,15.4mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4255.28mil|Location2.X=4268.341mil|Location1.Y=2208.99mil|Location2.Y=2222.052mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4255.28mil|Location2.X=4268.341mil|Location1.Y=2208.99mil|Location2.Y=2222.052mil|Absolute=True">Clearance Constraint: (0.127mm &lt; 0.3mm) Between Track (21.124mm,15.474mm)(21.124mm,17.275mm) on Top Layer And Track (21.376mm,15.474mm)(21.376mm,17.275mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4255.28mil|Location2.X=4268.341mil|Location1.Y=2208.99mil|Location2.Y=2222.052mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4255.28mil|Location2.X=4268.341mil|Location1.Y=2208.99mil|Location2.Y=2222.052mil|Absolute=True">Clearance Constraint: (0.127mm &lt; 0.3mm) Between Track (21.124mm,15.474mm)(21.124mm,17.275mm) on Top Layer And Track (21.376mm,15.474mm)(21.45mm,15.4mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4256.742mil|Location2.X=4269.803mil|Location1.Y=2207.529mil|Location2.Y=2225.169mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4256.742mil|Location2.X=4269.803mil|Location1.Y=2207.529mil|Location2.Y=2225.169mil|Absolute=True">Clearance Constraint: (0.209mm &lt; 0.3mm) Between Track (21.124mm,15.474mm)(21.124mm,17.275mm) on Top Layer And Track (21.45mm,15.3mm)(21.45mm,15.4mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID55KPOWXC1RT3BEJMZZYMUE0OSJQOP0EVMKW5XIJTTXLQXYNRV5TN"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4346.197mil|Location2.X=4412.661mil|Location1.Y=2153.283mil|Location2.Y=2185.693mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4346.197mil|Location2.X=4412.661mil|Location1.Y=2153.283mil|Location2.Y=2185.693mil|Absolute=True">Un-Routed Net Constraint: Net NetC1_1 Between Pad C2-1(23.825mm,14.305mm) on Top Layer And Pad C1-1(24.65mm,14.305mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4346.197mil|Location2.X=4412.661mil|Location1.Y=2114.701mil|Location2.Y=2147.11mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4346.197mil|Location2.X=4412.661mil|Location1.Y=2114.701mil|Location2.Y=2147.11mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Pad C2-2(23.825mm,13.325mm) on Top Layer And Pad C1-2(24.65mm,13.325mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4378.677mil|Location2.X=4444.038mil|Location1.Y=2114.701mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4378.677mil|Location2.X=4444.038mil|Location1.Y=2114.701mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Pad C1-2(24.65mm,13.325mm) on Top Layer And Pad XS3-15(25.477mm,24.207mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4295.275mil|Location2.X=4380.181mil|Location1.Y=2153.283mil|Location2.Y=2185.693mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4295.275mil|Location2.X=4380.181mil|Location1.Y=2153.283mil|Location2.Y=2185.693mil|Absolute=True">Un-Routed Net Constraint: Net NetC1_1 Between Pad SW1-10(22.35mm,14.45mm) on Top Layer And Pad C2-1(23.825mm,14.305mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4223.362mil|Location2.X=4380.181mil|Location1.Y=1765.686mil|Location2.Y=2147.11mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4223.362mil|Location2.X=4380.181mil|Location1.Y=1765.686mil|Location2.Y=2147.11mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Pad XP1-1(20.775mm,4.95mm) on Top Layer And Pad C2-2(23.825mm,13.325mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4212.598mil|Location1.Y=2116.142mil|Location2.Y=2192.976mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4212.598mil|Location1.Y=2116.142mil|Location2.Y=2192.976mil|Absolute=True">Un-Routed Net Constraint: Net CLK_N Between Pad XS1-8(6mm,14.5mm) on Top Layer And Pad SW1-1(19.85mm,13.25mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4295.275mil|Location2.X=4410.496mil|Location1.Y=1765.686mil|Location2.Y=2196.85mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4295.275mil|Location2.X=4410.496mil|Location1.Y=1765.686mil|Location2.Y=2196.85mil|Absolute=True">Un-Routed Net Constraint: Net NetSW1_11 Between Pad SW1-11(22.35mm,14.85mm) on Top Layer And Pad XP1-4(24.525mm,4.95mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4254.649mil|Location2.X=4314.961mil|Location1.Y=2200.787mil|Location2.Y=2602.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4254.649mil|Location2.X=4314.961mil|Location1.Y=2200.787mil|Location2.Y=2602.213mil|Absolute=True">Un-Routed Net Constraint: Net 2D1_N Between Pad XS2-5(21.47mm,24.195mm) on Top Layer And Pad SW1-12(22.35mm,15.25mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4215.279mil|Location2.X=4291.339mil|Location1.Y=2198.819mil|Location2.Y=2602.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4215.279mil|Location2.X=4291.339mil|Location1.Y=2198.819mil|Location2.Y=2602.213mil|Absolute=True">Un-Routed Net Constraint: Net 2D1_P Between Pad XS2-6(20.47mm,24.195mm) on Top Layer And Pad SW1-13(21.85mm,15.3mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4097.169mil|Location2.X=4244.095mil|Location1.Y=2198.819mil|Location2.Y=2602.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4097.169mil|Location2.X=4244.095mil|Location1.Y=2198.819mil|Location2.Y=2602.213mil|Absolute=True">Un-Routed Net Constraint: Net CLK1_P Between Pad XS2-9(17.47mm,24.195mm) on Top Layer And Pad SW1-16(20.65mm,15.3mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4136.539mil|Location2.X=4228.346mil|Location1.Y=2198.819mil|Location2.Y=2602.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4136.539mil|Location2.X=4228.346mil|Location1.Y=2198.819mil|Location2.Y=2602.213mil|Absolute=True">Un-Routed Net Constraint: Net CLK1_N Between Pad XS2-8(18.47mm,24.195mm) on Top Layer And Pad SW1-17(20.25mm,15.3mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4018.715mil|Location2.X=4212.598mil|Location1.Y=2198.819mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4018.715mil|Location2.X=4212.598mil|Location1.Y=2198.819mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net 2D2_N Between Pad XS3-5(15.477mm,24.207mm) on Bottom Layer And Pad SW1-18(19.85mm,15.3mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4058.085mil|Location2.X=4196.85mil|Location1.Y=2200.787mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4058.085mil|Location2.X=4196.85mil|Location1.Y=2200.787mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net 2D2_P Between Pad XS3-6(16.477mm,24.207mm) on Bottom Layer And Pad SW1-19(19.35mm,15.25mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4228.346mil|Location1.Y=2116.142mil|Location2.Y=2153.606mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4228.346mil|Location1.Y=2116.142mil|Location2.Y=2153.606mil|Absolute=True">Un-Routed Net Constraint: Net CLK_P Between Pad XS1-9(6mm,13.5mm) on Top Layer And Pad SW1-2(20.25mm,13.2mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3939.975mil|Location2.X=4196.85mil|Location1.Y=2185.039mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3939.975mil|Location2.X=4196.85mil|Location1.Y=2185.039mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net 1D2_P Between Pad XS3-3(13.477mm,24.207mm) on Bottom Layer And Pad SW1-20(19.35mm,14.85mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3900.605mil|Location2.X=4196.85mil|Location1.Y=2169.291mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3900.605mil|Location2.X=4196.85mil|Location1.Y=2169.291mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net 1D2_N Between Pad XS3-2(12.477mm,24.207mm) on Bottom Layer And Pad SW1-21(19.35mm,14.45mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4176.196mil|Location2.X=4207.818mil|Location1.Y=2153.543mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4176.196mil|Location2.X=4207.818mil|Location1.Y=2153.543mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net CLK2_P Between Pad SW1-22(19.35mm,14.05mm) on Top Layer And Pad XS3-9(19.477mm,24.207mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4136.826mil|Location2.X=4196.85mil|Location1.Y=2137.795mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4136.826mil|Location2.X=4196.85mil|Location1.Y=2137.795mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net CLK2_N Between Pad XS3-8(18.477mm,24.207mm) on Bottom Layer And Pad SW1-23(19.35mm,13.65mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4244.094mil|Location1.Y=2116.142mil|Location2.Y=2429.197mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4244.094mil|Location1.Y=2116.142mil|Location2.Y=2429.197mil|Absolute=True">Un-Routed Net Constraint: Net 1D_N Between Pad XS1-2(6mm,20.5mm) on Top Layer And Pad SW1-3(20.65mm,13.2mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4259.842mil|Location1.Y=2116.142mil|Location2.Y=2389.827mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4259.842mil|Location1.Y=2116.142mil|Location2.Y=2389.827mil|Absolute=True">Un-Routed Net Constraint: Net 1D_P Between Pad XS1-3(6mm,19.5mm) on Top Layer And Pad SW1-4(21.05mm,13.2mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4275.59mil|Location1.Y=2116.142mil|Location2.Y=2311.087mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4275.59mil|Location1.Y=2116.142mil|Location2.Y=2311.087mil|Absolute=True">Un-Routed Net Constraint: Net 2D_N Between Pad XS1-5(6mm,17.5mm) on Top Layer And Pad SW1-5(21.45mm,13.2mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4291.339mil|Location1.Y=2116.142mil|Location2.Y=2271.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4291.339mil|Location1.Y=2116.142mil|Location2.Y=2271.717mil|Absolute=True">Un-Routed Net Constraint: Net 2D_P Between Pad XS1-6(6mm,16.5mm) on Top Layer And Pad SW1-6(21.85mm,13.2mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4295.275mil|Location2.X=4361.284mil|Location1.Y=1765.686mil|Location2.Y=2149.606mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4295.275mil|Location2.X=4361.284mil|Location1.Y=1765.686mil|Location2.Y=2149.606mil|Absolute=True">Un-Routed Net Constraint: Net NetSW1_8 Between Pad SW1-8(22.35mm,13.65mm) on Top Layer And Pad XP1-3(23.275mm,4.95mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4272.575mil|Location2.X=4314.961mil|Location1.Y=1765.686mil|Location2.Y=2165.354mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4272.575mil|Location2.X=4314.961mil|Location1.Y=1765.686mil|Location2.Y=2165.354mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad XP1-2(22.025mm,4.95mm) on Top Layer And Pad SW1-9(22.35mm,14.05mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4294.019mil|Location2.X=4325.641mil|Location1.Y=2153.543mil|Location2.Y=2602.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4294.019mil|Location2.X=4325.641mil|Location1.Y=2153.543mil|Location2.Y=2602.213mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad SW1-9(22.35mm,14.05mm) on Top Layer And Pad XS2-4(22.47mm,24.195mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4262.858mil|Location1.Y=1765.686mil|Location2.Y=1917.386mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4262.858mil|Location1.Y=1765.686mil|Location2.Y=1917.386mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Pad XS1-15(6mm,7.5mm) on Top Layer And Pad XP1-1(20.775mm,4.95mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=3704.787mil|Location1.Y=2318.835mil|Location2.Y=2468.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=3704.787mil|Location1.Y=2318.835mil|Location2.Y=2468.567mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad XS1-4(6mm,18.5mm) on Top Layer And Pad XS1-1(6mm,21.5mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=3892.857mil|Location1.Y=2436.945mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=3892.857mil|Location1.Y=2436.945mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad XS1-1(6mm,21.5mm) on Top Layer And Pad XS3-1(11.477mm,24.207mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=3704.787mil|Location1.Y=2082.614mil|Location2.Y=2232.347mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=3704.787mil|Location1.Y=2082.614mil|Location2.Y=2232.347mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad XS1-10(6mm,12.5mm) on Top Layer And Pad XS1-7(6mm,15.5mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4050.051mil|Location1.Y=2043.244mil|Location2.Y=2602.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4050.051mil|Location1.Y=2043.244mil|Location2.Y=2602.213mil|Absolute=True">Un-Routed Net Constraint: Net IO1 Between Pad XS1-11(6mm,11.5mm) on Top Layer And Pad XS2-11(15.47mm,24.195mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4010.681mil|Location1.Y=2003.874mil|Location2.Y=2602.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=4010.681mil|Location1.Y=2003.874mil|Location2.Y=2602.213mil|Absolute=True">Un-Routed Net Constraint: Net IO0 Between Pad XS1-12(6mm,10.5mm) on Top Layer And Pad XS2-12(14.47mm,24.195mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=3971.311mil|Location1.Y=1964.504mil|Location2.Y=2602.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=3971.311mil|Location1.Y=1964.504mil|Location2.Y=2602.213mil|Absolute=True">Un-Routed Net Constraint: Net SCL Between Pad XS1-13(6mm,9.5mm) on Top Layer And Pad XS2-13(13.47mm,24.195mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=3931.941mil|Location1.Y=1925.134mil|Location2.Y=2602.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=3931.941mil|Location1.Y=1925.134mil|Location2.Y=2602.213mil|Absolute=True">Un-Routed Net Constraint: Net SDA Between Pad XS1-14(6mm,8.5mm) on Top Layer And Pad XS2-14(12.47mm,24.195mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=3704.787mil|Location1.Y=2200.724mil|Location2.Y=2350.457mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3618.047mil|Location2.X=3704.787mil|Location1.Y=2200.724mil|Location2.Y=2350.457mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad XS1-7(6mm,15.5mm) on Top Layer And Pad XS1-4(6mm,18.5mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4294.019mil|Location2.X=4443.752mil|Location1.Y=2515.473mil|Location2.Y=2602.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4294.019mil|Location2.X=4443.752mil|Location1.Y=2515.473mil|Location2.Y=2602.213mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad XS2-4(22.47mm,24.195mm) on Top Layer And Pad XS2-1(25.47mm,24.195mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4057.799mil|Location2.X=4129.078mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4057.799mil|Location2.X=4129.078mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad XS2-10(16.47mm,24.195mm) on Top Layer And Pad XS3-7(17.477mm,24.207mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4018.429mil|Location2.X=4286.558mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4018.429mil|Location2.X=4286.558mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net IO1 Between Pad XS2-11(15.47mm,24.195mm) on Top Layer And Pad XS3-11(21.477mm,24.207mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3979.059mil|Location2.X=4325.928mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3979.059mil|Location2.X=4325.928mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net IO0 Between Pad XS2-12(14.47mm,24.195mm) on Top Layer And Pad XS3-12(22.477mm,24.207mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3939.689mil|Location2.X=4365.298mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3939.689mil|Location2.X=4365.298mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net SCL Between Pad XS2-13(13.47mm,24.195mm) on Top Layer And Pad XS3-13(23.477mm,24.207mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3900.318mil|Location2.X=4404.668mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3900.318mil|Location2.X=4404.668mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net SDA Between Pad XS2-14(12.47mm,24.195mm) on Top Layer And Pad XS3-14(24.477mm,24.207mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3860.948mil|Location2.X=4444.038mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3860.948mil|Location2.X=4444.038mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net 3V3 Between Pad XS2-15(11.47mm,24.195mm) on Top Layer And Pad XS3-15(25.477mm,24.207mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4166.762mil|Location2.X=4488.57mil|Location1.Y=2186.417mil|Location2.Y=2658.843mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4166.762mil|Location2.X=4488.57mil|Location1.Y=2186.417mil|Location2.Y=2658.843mil|Absolute=True">Un-Routed Net Constraint: Net 1D1_N Between Track (21.376mm,15.474mm)(21.376mm,17.275mm) on Top Layer And Pad XS2-2(24.47mm,24.195mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4156.859mil|Location2.X=4449.2mil|Location1.Y=2186.417mil|Location2.Y=2658.843mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4156.859mil|Location2.X=4449.2mil|Location1.Y=2186.417mil|Location2.Y=2658.843mil|Absolute=True">Un-Routed Net Constraint: Net 1D1_P Between Track (21.124mm,15.474mm)(21.124mm,17.275mm) on Top Layer And Pad XS2-3(23.47mm,24.195mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4215.566mil|Location2.X=4325.641mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4215.566mil|Location2.X=4325.641mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad XS3-10(20.477mm,24.207mm) on Bottom Layer And Pad XS2-4(22.47mm,24.195mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4175.909mil|Location2.X=4247.188mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4175.909mil|Location2.X=4247.188mil|Location1.Y=2515.473mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad XS2-7(19.47mm,24.195mm) on Top Layer And Pad XS3-10(20.477mm,24.207mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.235mil|Location2.X=4010.967mil|Location1.Y=2515.977mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3861.235mil|Location2.X=4010.967mil|Location1.Y=2515.977mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad XS3-1(11.477mm,24.207mm) on Bottom Layer And Pad XS3-4(14.477mm,24.207mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4097.456mil|Location2.X=4247.188mil|Location1.Y=2515.977mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4097.456mil|Location2.X=4247.188mil|Location1.Y=2515.977mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad XS3-7(17.477mm,24.207mm) on Bottom Layer And Pad XS3-10(20.477mm,24.207mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3979.345mil|Location2.X=4129.078mil|Location1.Y=2515.977mil|Location2.Y=2602.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3979.345mil|Location2.X=4129.078mil|Location1.Y=2515.977mil|Location2.Y=2602.717mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad XS3-4(14.477mm,24.207mm) on Bottom Layer And Pad XS3-7(17.477mm,24.207mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDUS5UX4E1PIVKOMDTZ3VFDYUFCJ44HLXAZLANTWHYIJLVB32XTWBN"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4290.713mil|Location2.X=4295.9mil|Location1.Y=2207.643mil|Location2.Y=2212.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4290.713mil|Location2.X=4295.9mil|Location1.Y=2207.643mil|Location2.Y=2212.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad SW1-12(22.35mm,15.25mm) on Top Layer And Pad SW1-13(21.85mm,15.3mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4290.713mil|Location2.X=4295.9mil|Location1.Y=2128.903mil|Location2.Y=2134.09mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4290.713mil|Location2.X=4295.9mil|Location1.Y=2128.903mil|Location2.Y=2134.09mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad SW1-6(21.85mm,13.2mm) on Top Layer And Pad SW1-7(22.35mm,13.25mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDBZMMTSFLXTFCGQTAYXBT13GNOKDZKNM0B4V0TMBX5FOMO113HY3M"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4250.906mil|Location2.X=4268.951mil|Location1.Y=2280.464mil|Location2.Y=2305.521mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4250.906mil|Location2.X=4268.951mil|Location1.Y=2280.464mil|Location2.Y=2305.521mil|Absolute=True">Net Antennae: Track (21.124mm,15.474mm)(21.124mm,17.275mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4260.809mil|Location2.X=4278.854mil|Location1.Y=2280.464mil|Location2.Y=2305.521mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\ebunakov\project\camadapter\camadapter.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4260.809mil|Location2.X=4278.854mil|Location1.Y=2280.464mil|Location2.Y=2305.521mil|Absolute=True">Net Antennae: Track (21.376mm,15.474mm)(21.376mm,17.275mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

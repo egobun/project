@@ -1,0 +1,82 @@
+Added Component: Designator=C1(Cap_0402_N)
+Add component (AddParameter): Name = "Part Number"; Value = "Capacitor 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=C2(Cap_0402_N)
+Add component (AddParameter): Name = "Part Number"; Value = "Capacitor 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "2.2uF"; VariantName = "[No Variations]"
+Added Component: Designator=SW1(TS5MP646)
+Added Pin To Net: NetName=3V3 Pin=C1-2
+Added Pin To Net: NetName=3V3 Pin=C2-2
+Added Net: Name=3V3
+Added Pin To Net: NetName=A_IO0 Pin=SW1-22
+Added Net: Name=A_IO0
+Added Pin To Net: NetName=A_IO1 Pin=SW1-23
+Added Net: Name=A_IO1
+Added Pin To Net: NetName=A_SCL Pin=SW1-24
+Added Net: Name=A_SCL
+Added Pin To Net: NetName=A_SDA Pin=SW1-25
+Added Net: Name=A_SDA
+Added Pin To Net: NetName=B_IO0 Pin=SW1-32
+Added Net: Name=B_IO0
+Added Pin To Net: NetName=B_IO1 Pin=SW1-33
+Added Net: Name=B_IO1
+Added Pin To Net: NetName=B_SCL Pin=SW1-34
+Added Net: Name=B_SCL
+Added Pin To Net: NetName=B_SDA Pin=SW1-35
+Added Net: Name=B_SDA
+Added Pin To Net: NetName=CLKAN Pin=SW1-16
+Added Net: Name=CLKAN
+Added Pin To Net: NetName=CLKAP Pin=SW1-17
+Added Net: Name=CLKAP
+Added Pin To Net: NetName=CLKBN Pin=SW1-26
+Added Net: Name=CLKBN
+Added Pin To Net: NetName=CLKBP Pin=SW1-27
+Added Net: Name=CLKBP
+Added Pin To Net: NetName=CLKN Pin=SW1-4
+Added Net: Name=CLKN
+Added Pin To Net: NetName=CLKP Pin=SW1-5
+Added Net: Name=CLKP
+Added Pin To Net: NetName=D1N Pin=SW1-6
+Added Net: Name=D1N
+Added Pin To Net: NetName=D1P Pin=SW1-7
+Added Net: Name=D1P
+Added Pin To Net: NetName=D2N Pin=SW1-8
+Added Net: Name=D2N
+Added Pin To Net: NetName=D2P Pin=SW1-9
+Added Net: Name=D2P
+Added Pin To Net: NetName=DA1N Pin=SW1-18
+Added Net: Name=DA1N
+Added Pin To Net: NetName=DA1P Pin=SW1-19
+Added Net: Name=DA1P
+Added Pin To Net: NetName=DA2N Pin=SW1-20
+Added Net: Name=DA2N
+Added Pin To Net: NetName=DA2P Pin=SW1-21
+Added Net: Name=DA2P
+Added Pin To Net: NetName=DB1N Pin=SW1-28
+Added Net: Name=DB1N
+Added Pin To Net: NetName=DB1P Pin=SW1-29
+Added Net: Name=DB1P
+Added Pin To Net: NetName=DB2N Pin=SW1-30
+Added Net: Name=DB2N
+Added Pin To Net: NetName=DB2P Pin=SW1-31
+Added Net: Name=DB2P
+Added Pin To Net: NetName=GND Pin=SW1-36
+Added Net: Name=GND
+Added Pin To Net: NetName=IO0 Pin=SW1-10
+Added Net: Name=IO0
+Added Pin To Net: NetName=IO1 Pin=SW1-11
+Added Net: Name=IO1
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetC1_1 Pin=C2-1
+Added Pin To Net: NetName=NetC1_1 Pin=SW1-1
+Added Net: Name=NetC1_1
+Added Pin To Net: NetName=SCL Pin=SW1-12
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=SW1-13
+Added Net: Name=SDA
+Added Member To Class: ClassName=camadapter Member=Component C1 100nF
+Added Member To Class: ClassName=camadapter Member=Component C2 2.2uF
+Added Member To Class: ClassName=camadapter Member=Component SW1 TS5MP646
+Added Room: Name=camadapter

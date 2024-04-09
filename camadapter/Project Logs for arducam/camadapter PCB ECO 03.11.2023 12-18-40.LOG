@@ -1,0 +1,6 @@
+Added Component: Designator=XP?(653104131822_D_arch)
+Added Pin To Net: NetName=3V3 Pin=XP?-1
+Added Pin To Net: NetName=GND Pin=XP?-2
+Added Pin To Net: NetName=NetSW1_2 Pin=XP?-3
+Added Pin To Net: NetName=NetSW1_3 Pin=XP?-4
+Added Member To Class: ClassName=camadapter Member=Component XP? 653104131822
