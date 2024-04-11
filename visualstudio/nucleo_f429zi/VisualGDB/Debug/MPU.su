@@ -1,0 +1,2 @@
+MPU.c:37:6:InitMPU6050	32	static
+MPU.c:60:6:MPU6050Read	32	static

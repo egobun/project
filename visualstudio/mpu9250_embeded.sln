@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34407.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mpu9250_embeded", "mpu9250\mpu9250_embeded.vcxproj", "{D80E28FF-DEF2-4BB1-9DA8-8D858557D476}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D80E28FF-DEF2-4BB1-9DA8-8D858557D476}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{D80E28FF-DEF2-4BB1-9DA8-8D858557D476}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{D80E28FF-DEF2-4BB1-9DA8-8D858557D476}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{D80E28FF-DEF2-4BB1-9DA8-8D858557D476}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7F8C80C-8D9C-44D7-849E-3D9BD3767411}
+	EndGlobalSection
+EndGlobal

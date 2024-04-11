@@ -1,0 +1,2 @@
+interrupt.c:14:6:HAL_TIM_IC_CaptureCallback	24	static
+interrupt.c:22:6:HAL_I2C_MemRxCpltCallback	16	static

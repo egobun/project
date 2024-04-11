@@ -1,0 +1,5 @@
+Core/Src/freertos.c:124:6:MX_FREERTOS_Init	8	static
+Core/Src/freertos.c:179:6:StartDefaultTask	16	static
+Core/Src/freertos.c:197:6:StartLED1Task	16	static
+Core/Src/freertos.c:216:6:StartMPUTask	16	static
+Core/Src/freertos.c:234:6:StartUsartTask	16	static

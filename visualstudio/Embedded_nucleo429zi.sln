@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34407.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Embedded_nucleo429zi", "nucleo_f429zi\Embedded_nucleo429zi.vcxproj", "{008025C1-7617-42EC-B1DD-2E748980712B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{008025C1-7617-42EC-B1DD-2E748980712B}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{008025C1-7617-42EC-B1DD-2E748980712B}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{008025C1-7617-42EC-B1DD-2E748980712B}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{008025C1-7617-42EC-B1DD-2E748980712B}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF65E49A-60AC-4E19-B029-2A5F84705CC5}
+	EndGlobalSection
+EndGlobal

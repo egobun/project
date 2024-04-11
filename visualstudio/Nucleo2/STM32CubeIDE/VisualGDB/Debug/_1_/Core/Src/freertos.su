@@ -1,0 +1,3 @@
+C:/Project/visualstudio/Nucleo2/Core/Src/freertos.c:95:6:MX_FREERTOS_Init	8	static
+C:/Project/visualstudio/Nucleo2/Core/Src/freertos.c:144:6:StartDefaultTask	16	static
+C:/Project/visualstudio/Nucleo2/Core/Src/freertos.c:164:6:StartLEDTask	16	static

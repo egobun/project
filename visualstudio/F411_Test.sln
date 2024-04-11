@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34407.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "F411_Test", "f411_test\F411_Test.vcxproj", "{CAF2B4DE-B1D7-4F86-A4B7-66FE9AED596E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAF2B4DE-B1D7-4F86-A4B7-66FE9AED596E}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{CAF2B4DE-B1D7-4F86-A4B7-66FE9AED596E}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{CAF2B4DE-B1D7-4F86-A4B7-66FE9AED596E}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{CAF2B4DE-B1D7-4F86-A4B7-66FE9AED596E}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {278F636A-5D17-4E35-AB64-E987EF89BDC0}
+	EndGlobalSection
+EndGlobal
