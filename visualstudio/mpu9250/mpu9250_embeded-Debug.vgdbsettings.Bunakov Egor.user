@@ -46,6 +46,40 @@
         <e>false</e>
         <b>false</b>
       </dz2>
+      <dz2>
+        <g>counter</g>
+        <h>true</h>
+        <a>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </a>
+        <f>false</f>
+        <e>false</e>
+        <b>false</b>
+      </dz2>
+      <dz2>
+        <g>command</g>
+        <h>true</h>
+        <a>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </a>
+        <f>false</f>
+        <e>false</e>
+        <b>false</b>
+      </dz2>
+      <dz2>
+        <g>receive_bayte</g>
+        <c>com.sysprogs.types.builtin.UInt8</c>
+        <h>true</h>
+        <a>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </a>
+        <f>false</f>
+        <e>false</e>
+        <b>false</b>
+      </dz2>
     </c>
     <d>
       <b>
@@ -54,44 +88,7 @@
       </b>
       <b>
         <b>com.sysprogs.SpecificVariables</b>
-        <a>
-          <dz2>
-            <g>destination_a[0]</g>
-            <c>com.sysprogs.types.builtin.SInt16</c>
-            <h>true</h>
-            <a>
-              <ComparisonMode>Equals</ComparisonMode>
-              <Enabled>false</Enabled>
-            </a>
-            <f>true</f>
-            <e>false</e>
-            <b>false</b>
-          </dz2>
-          <dz2>
-            <g>destination_a[1]</g>
-            <c>com.sysprogs.types.builtin.SInt16</c>
-            <h>true</h>
-            <a>
-              <ComparisonMode>Equals</ComparisonMode>
-              <Enabled>false</Enabled>
-            </a>
-            <f>true</f>
-            <e>false</e>
-            <b>false</b>
-          </dz2>
-          <dz2>
-            <g>destination_a[2]</g>
-            <c>com.sysprogs.types.builtin.SInt16</c>
-            <h>true</h>
-            <a>
-              <ComparisonMode>Equals</ComparisonMode>
-              <Enabled>false</Enabled>
-            </a>
-            <f>true</f>
-            <e>false</e>
-            <b>false</b>
-          </dz2>
-        </a>
+        <a />
       </b>
       <b>
         <b>com.sysprogs.Custom</b>

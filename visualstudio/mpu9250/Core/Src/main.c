@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "MPU9250_reg.h"
+#include "string.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,14 +50,19 @@ ETH_HandleTypeDef heth;
 
 I2C_HandleTypeDef hi2c1;
 
+UART_HandleTypeDef huart4;
 UART_HandleTypeDef huart3;
 
 PCD_HandleTypeDef hpcd_USB_OTG_FS;
 
 /* USER CODE BEGIN PV */
-int16_t destination_a[3] = { 0, };
-int16_t destination_g[3] = { 0, };
+float destination_a[3] = { 0, };
+float destination_g[3] = { 0, };
 int16_t destination_m[3] = { 0, };
+uint32_t counter = 0;
+char mass[50];
+uint8_t flag = 0; 
+uint8_t receive_bayte = 0; 
 
 /* USER CODE END PV */
 
@@ -67,6 +73,7 @@ static void MX_ETH_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_USART3_UART_Init(void);
 static void MX_USB_OTG_FS_PCD_Init(void);
+static void MX_UART4_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -87,26 +94,26 @@ void MPU_init(void) {
 	// Disable FSYNC and set accelerometer and gyro bandwidth to 44 and 42 Hz, respectively;
 	// DLPF_CFG = bits 2:0 = 010; this sets the sample rate at 1 kHz for both
 	// Maximum delay is 4.9 ms which is just over a 200 Hz maximum rate
-	R = 0x03;
+	R = 0x00;
 	HAL_I2C_Mem_Write(&hi2c1, MPU9250_ADDRESS_W, CONFIG, 1, &R, 1, 100);
  
 	// Set sample rate = gyroscope output rate/(1 + SMPLRT_DIV)
-	R = 0x04;
+	R = 0x01;
 	HAL_I2C_Mem_Write(&hi2c1, MPU9250_ADDRESS_W, SMPLRT_DIV, 1, &R, 1, 100); // Use a 200 Hz rate; the same rate set in CONFIG above
  
 	// Set gyroscope full scale range
 	// Range selects FS_SEL and AFS_SEL are 0 - 3, so 2-bit values are left-shifted into positions 4:3
 	HAL_I2C_Mem_Read(&hi2c1, MPU9250_ADDRESS_R, GYRO_CONFIG, 1, &c, 6, 100); // get current GYRO_CONFIG register value
-	 // c = c & ~0xE0; // Clear self-test bits [7:5]
+	c = c & ~0xE0; // Clear self-test bits [7:5]
 	c = c & ~0x02; // Clear Fchoice bits [1:0]
 	c = c & ~0x18; // Clear AFS bits [4:3]
 	c = c | 0 << 3; // Set full scale range for the gyro - 0=+250dps
-	 // c =| 0x00; // Set Fchoice for the gyro to 11 by writing its inverse to bits 1:0 of GYRO_CONFIG
+	c = c| 0x00; // Set Fchoice for the gyro to 11 by writing its inverse to bits 1:0 of GYRO_CONFIG
 	HAL_I2C_Mem_Write(&hi2c1, MPU9250_ADDRESS_W, GYRO_CONFIG, 1, &c, 1, 100); // Write new GYRO_CONFIG value to register
  
    // Set accelerometer full-scale range configuration
 	HAL_I2C_Mem_Read(&hi2c1, MPU9250_ADDRESS_R, ACCEL_CONFIG, 1, &c, 6, 100); // get current ACCEL_CONFIG register value
-	 // c = c & ~0xE0; // Clear self-test bits [7:5]
+	 c = c & ~0xE0; // Clear self-test bits [7:5]
 	c = c & ~0x18; // Clear AFS bits [4:3]
 	c = c | 0 << 3; // Set full scale range for the accelerometer  - 0=2g
 	HAL_I2C_Mem_Write(&hi2c1, MPU9250_ADDRESS_W, ACCEL_CONFIG, 1, &c, 1, 100); // Write new ACCEL_CONFIG register value
@@ -163,34 +170,34 @@ void MAGN_init(float * destination) {
 	HAL_I2C_Mem_Write(&hi2c1, AK8963_ADDRESS_W, AK8963_ASTC, 1, &R, 1, 100); // set self-test  
 }
 
-void MPU_get_accel(int16_t * destination) {
+void MPU_get_accel(float * destination) {
  
  
 	uint8_t rawData[6];
-	HAL_I2C_Mem_Read(&hi2c1, MPU9250_ADDRESS_R, MPU9250_ACCEL_XOUT_H, 1, rawData, 6, 100);
-	destination[0] = (int16_t)(((int16_t)rawData[0] << 8) | rawData[1]); // Turn the MSB and LSB into a signed 16-bit value
-	destination[1] = (int16_t)(((int16_t)rawData[2] << 8) | rawData[3]); 
-	destination[2] = (int16_t)(((int16_t)rawData[4] << 8) | rawData[5]);
+	HAL_I2C_Mem_Read(&hi2c1, MPU9250_ADDRESS_R, MPU9250_ACCEL_XOUT_H, 1, rawData, 6,100);
+	destination[0] = (float)(int16_t)(((int16_t)rawData[0] << 8) | rawData[1]) / 16384 * 9.8; // Turn the MSB and LSB into a signed 16-bit value
+	destination[1] = (float)(int16_t)(((int16_t)rawData[2] << 8) | rawData[3]) / 16384 * 9.8; 
+	destination[2] = (float)(int16_t)(((int16_t)rawData[4] << 8) | rawData[5]) / 16384 * 9.8;
 }
 
  
-void MPU_get_gyro(int16_t * destination) {
+void MPU_get_gyro(float * destination) {
  
 	uint8_t rawData[6]; // x/y/z gyro register data stored here
-	HAL_I2C_Mem_Read(&hi2c1, MPU9250_ADDRESS_R, MPU9250_GYRO_XOUT_H, 1, rawData, 6, 100); // Read the six raw data registers sequentially into data array
-	destination[0] = (int16_t)(((int16_t)rawData[0] << 8) | rawData[1]); // Turn the MSB and LSB into a signed 16-bit value
-	destination[1] = (int16_t)(((int16_t)rawData[2] << 8) | rawData[3]); 
-	destination[2] = (int16_t)(((int16_t)rawData[4] << 8) | rawData[5]);
+	HAL_I2C_Mem_Read(&hi2c1, MPU9250_ADDRESS_R, MPU9250_GYRO_XOUT_H, 1, rawData, 6,100); // Read the six raw data registers sequentially into data array
+	destination[0] = (float)(int16_t)(((int16_t)rawData[0] << 8) | rawData[1]) / 131; // Turn the MSB and LSB into a signed 16-bit value
+	destination[1] = (float)(int16_t)(((int16_t)rawData[2] << 8) | rawData[3]) / 131; 
+	destination[2] = (float)(int16_t)(((int16_t)rawData[4] << 8) | rawData[5]) / 131;
 }
  
  
 void MPU_get_magn(int16_t * destination) {
 	uint8_t rawData[7]; // x/y/z gyro register data, ST2 register stored here, must read ST2 at end of data acquisition
 	uint8_t c;
-	HAL_I2C_Mem_Read(&hi2c1, AK8963_ADDRESS_R, AK8963_ST1, 1, &c, 1, 100);
+	HAL_I2C_Mem_Read(&hi2c1, AK8963_ADDRESS_R, AK8963_ST1, 1, &c, 1,10);
 	if (c >= 0x01) {
 		// wait for magnetometer data ready bit to be set
-		HAL_I2C_Mem_Read(&hi2c1, AK8963_ADDRESS_R, AK8963_XOUT_L, 1, rawData, 7, 100); // Read the six raw data and ST2 registers sequentially into data array
+		HAL_I2C_Mem_Read(&hi2c1, AK8963_ADDRESS_R, AK8963_XOUT_L, 1, rawData, 7,10); // Read the six raw data and ST2 registers sequentially into data array
 		c = rawData[6]; // End data read by reading ST2 register
 		if (!(c & 0x08)) {
 			// Check if magnetic sensor overflow set, if not then report data
@@ -202,6 +209,16 @@ void MPU_get_magn(int16_t * destination) {
 	}
  
 }
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) 
+{ 
+	if (huart == &huart4) 
+	{ 
+		if (receive_bayte == 'r') flag = 1; 
+		if (receive_bayte == 's') flag = 0; 
+	} 
+	HAL_UART_Receive_IT(&huart4, &receive_bayte, 1); 
+} 
 /* USER CODE END 0 */
 
 /**
@@ -211,8 +228,7 @@ void MPU_get_magn(int16_t * destination) {
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	MPU_init();
-	//MAGN_init(destination_m);
+  
 	
   /* USER CODE END 1 */
 
@@ -238,8 +254,32 @@ int main(void)
   MX_I2C1_Init();
   MX_USART3_UART_Init();
   MX_USB_OTG_FS_PCD_Init();
+  MX_UART4_Init();
   /* USER CODE BEGIN 2 */
+	uint32_t a = 3181772803; 
+	uint8_t sw[4] = { 0x02, 0x00, 0xA6, 0xBD }; 
+	float data[9] = { 
+		0.2348,
+		1.5478,
+		88.9567,
+		100.4589,
+		3.0234, 
+		7.0005,
+		9.8907,
+		23.2951,
+		4.9084
+	}; 
+	uint8_t data8[36] = { 0, }; 
+	HAL_UART_Receive_IT(&huart4, &receive_bayte, 1); 
+ 
+	memcpy((uint8_t*)data, data8, sizeof(data)); 
+  MPU_init();
+  //MAGN_init((float*)destination_m);
+	
+	 
+	
 
+ 
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -249,7 +289,17 @@ int main(void)
 	  MPU_get_gyro(destination_g);
 	  MPU_get_accel(destination_a);
 	  MPU_get_magn(destination_m);
-	  
+//	  strcpy(mass, "MAX ADC\r\n\0");
+//	  HAL_UART_Transmit(&huart4, (uint8_t*)mass, strlen(mass), 100); 
+//	  HAL_Delay(100); 
+	  //counter++;
+	  if (flag == 1) 
+	  { 
+		  HAL_UART_Transmit(&huart4, sw, 4,100); 
+		  HAL_Delay(10); 
+		  HAL_UART_Transmit(&huart4, (uint8_t*)data, sizeof(data),100); 
+		  HAL_Delay(100); 
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -367,8 +417,8 @@ static void MX_I2C1_Init(void)
 
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
-  hi2c1.Init.ClockSpeed = 100000;
-  hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
+  hi2c1.Init.ClockSpeed = 400000;
+  hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_16_9;
   hi2c1.Init.OwnAddress1 = 0;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
   hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
@@ -396,6 +446,39 @@ static void MX_I2C1_Init(void)
   /* USER CODE BEGIN I2C1_Init 2 */
 
   /* USER CODE END I2C1_Init 2 */
+
+}
+
+/**
+  * @brief UART4 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_UART4_Init(void)
+{
+
+  /* USER CODE BEGIN UART4_Init 0 */
+
+  /* USER CODE END UART4_Init 0 */
+
+  /* USER CODE BEGIN UART4_Init 1 */
+
+  /* USER CODE END UART4_Init 1 */
+  huart4.Instance = UART4;
+  huart4.Init.BaudRate = 115200;
+  huart4.Init.WordLength = UART_WORDLENGTH_8B;
+  huart4.Init.StopBits = UART_STOPBITS_1;
+  huart4.Init.Parity = UART_PARITY_NONE;
+  huart4.Init.Mode = UART_MODE_TX_RX;
+  huart4.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart4.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_UART_Init(&huart4) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN UART4_Init 2 */
+
+  /* USER CODE END UART4_Init 2 */
 
 }
 
