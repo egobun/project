@@ -24,6 +24,7 @@
 /* USER CODE BEGIN Includes */
 #include "MPU9250_reg.h"
 #include "string.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -51,7 +52,6 @@ ETH_HandleTypeDef heth;
 I2C_HandleTypeDef hi2c1;
 
 UART_HandleTypeDef huart4;
-UART_HandleTypeDef huart3;
 
 PCD_HandleTypeDef hpcd_USB_OTG_FS;
 
@@ -62,7 +62,11 @@ int16_t destination_m[3] = { 0, };
 uint32_t counter = 0;
 char mass[50];
 uint8_t flag = 0; 
-uint8_t receive_bayte = 0; 
+uint8_t flag_t = 1;
+uint8_t receive_bayte ; 
+char buf[36] = { 0, };
+uint8_t sw[4] = { 0x02, 0x00, 0xA6, 0xBD }; 
+float data[9];
 
 /* USER CODE END PV */
 
@@ -71,7 +75,6 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_ETH_Init(void);
 static void MX_I2C1_Init(void);
-static void MX_USART3_UART_Init(void);
 static void MX_USB_OTG_FS_PCD_Init(void);
 static void MX_UART4_Init(void);
 /* USER CODE BEGIN PFP */
@@ -212,13 +215,47 @@ void MPU_get_magn(int16_t * destination) {
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) 
 { 
-	if (huart == &huart4) 
-	{ 
-		if (receive_bayte == 'r') flag = 1; 
-		if (receive_bayte == 's') flag = 0; 
-	} 
-	HAL_UART_Receive_IT(&huart4, &receive_bayte, 1); 
+	if (huart == &huart4)
+	{
+		//HAL_UART_Transmit(&huart4,&receive_bayte, 1, 100);
+		if (receive_bayte == 'r') {
+			flag = 1;
+			//snprintf(buf, 20, "%d %d %d %d ", sw[0], sw[1], sw[2], sw[3]);
+			//HAL_UART_Transmit(&huart4, (uint8_t *)buf, sizeof(buf), 1000);
+		}
+		if (receive_bayte == 's')
+		{
+			flag = 0;
+		}
+	}
+	HAL_UART_Receive_IT(&huart4, &receive_bayte, 1);
 } 
+
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
+{
+	if (huart == &huart4)
+	{
+		flag_t = 1;
+		// можно установить какой-то флаг, сообщающий об окончании отправки
+	}     
+}
+
+void set_data()
+{
+	for (int i = 0; i < 3; i++)
+	{
+		data[i] = destination_m[i];
+	}
+	for (int i = 0; i < 3; i++)
+	{
+		data[i + 3] = destination_a[i];
+	}
+	for (int i = 0; i < 3; i++)
+	{
+		data[i + 6] = destination_g[i];
+	}
+	
+}
 /* USER CODE END 0 */
 
 /**
@@ -252,30 +289,23 @@ int main(void)
   MX_GPIO_Init();
   MX_ETH_Init();
   MX_I2C1_Init();
-  MX_USART3_UART_Init();
   MX_USB_OTG_FS_PCD_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
-	uint32_t a = 3181772803; 
-	uint8_t sw[4] = { 0x02, 0x00, 0xA6, 0xBD }; 
-	float data[9] = { 
-		0.2348,
-		1.5478,
-		88.9567,
-		100.4589,
-		3.0234, 
-		7.0005,
-		9.8907,
-		23.2951,
-		4.9084
-	}; 
-	uint8_t data8[36] = { 0, }; 
-	HAL_UART_Receive_IT(&huart4, &receive_bayte, 1); 
- 
-	memcpy((uint8_t*)data, data8, sizeof(data)); 
-  MPU_init();
-  //MAGN_init((float*)destination_m);
+	HAL_UART_Receive_IT(&huart4, &receive_bayte, 1);
+	//uint32_t a = 3181772803; 
 	
+
+	
+	//HAL_UART_Receive_IT(&huart4, &receive_bayte, 1); 
+ 
+	
+	MPU_init();
+	MAGN_init((float*)destination_m);
+	MPU_get_gyro(destination_g);
+	MPU_get_accel(destination_a);
+	MPU_get_magn(destination_m);
+	set_data();
 	 
 	
 
@@ -286,20 +316,38 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  MPU_get_gyro(destination_g);
-	  MPU_get_accel(destination_a);
-	  MPU_get_magn(destination_m);
+	 
 //	  strcpy(mass, "MAX ADC\r\n\0");
 //	  HAL_UART_Transmit(&huart4, (uint8_t*)mass, strlen(mass), 100); 
 //	  HAL_Delay(100); 
 	  //counter++;
-	  if (flag == 1) 
-	  { 
-		  HAL_UART_Transmit(&huart4, sw, 4,100); 
-		  HAL_Delay(10); 
-		  HAL_UART_Transmit(&huart4, (uint8_t*)data, sizeof(data),100); 
-		  HAL_Delay(100); 
+	  if (flag == 1)
+	  {
+		  if (flag_t == 1)
+		  {
+			  flag_t = 0;
+			  HAL_UART_Transmit_IT(&huart4, sw, 4); 
+			  HAL_Delay(10); 
+		  }
+		  if (flag_t == 1)
+		  {
+			  flag_t = 0;
+			  HAL_UART_Transmit_IT(&huart4, (uint8_t*)data, sizeof(data)); 
+			  HAL_Delay(10); 
+		  }
+//		  HAL_UART_Transmit_IT(&huart4, sw, 4); 
+//		  HAL_Delay(10); 
+//		  HAL_UART_Transmit_IT(&huart4,(uint8_t*)data, sizeof(data)); 
+//		  HAL_Delay(10); 
+//		  snprintf(buf, 36, "%f ", destination_a[0]);
+//		  HAL_UART_Transmit(&huart4, (uint8_t*)buf, sizeof(buf), 100);
+//		  HAL_Delay(100);
+		 
 	  }
+	  MPU_get_gyro(destination_g);
+	  MPU_get_accel(destination_a);
+	  MPU_get_magn(destination_m);
+	  set_data();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -483,39 +531,6 @@ static void MX_UART4_Init(void)
 }
 
 /**
-  * @brief USART3 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USART3_UART_Init(void)
-{
-
-  /* USER CODE BEGIN USART3_Init 0 */
-
-  /* USER CODE END USART3_Init 0 */
-
-  /* USER CODE BEGIN USART3_Init 1 */
-
-  /* USER CODE END USART3_Init 1 */
-  huart3.Instance = USART3;
-  huart3.Init.BaudRate = 115200;
-  huart3.Init.WordLength = UART_WORDLENGTH_8B;
-  huart3.Init.StopBits = UART_STOPBITS_1;
-  huart3.Init.Parity = UART_PARITY_NONE;
-  huart3.Init.Mode = UART_MODE_TX_RX;
-  huart3.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart3.Init.OverSampling = UART_OVERSAMPLING_16;
-  if (HAL_UART_Init(&huart3) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART3_Init 2 */
-
-  /* USER CODE END USART3_Init 2 */
-
-}
-
-/**
   * @brief USB_OTG_FS Initialization Function
   * @param None
   * @retval None
@@ -585,6 +600,14 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : STLK_RX_Pin STLK_TX_Pin */
+  GPIO_InitStruct.Pin = STLK_RX_Pin|STLK_TX_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+  GPIO_InitStruct.Alternate = GPIO_AF7_USART3;
+  HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
   /*Configure GPIO pin : USB_PowerSwitchOn_Pin */
   GPIO_InitStruct.Pin = USB_PowerSwitchOn_Pin;

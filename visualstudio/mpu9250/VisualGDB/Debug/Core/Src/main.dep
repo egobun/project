@@ -52,7 +52,9 @@ VisualGDB/Debug/Core/Src/main.o: Core/Src/main.c Core/Inc/main.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_locale.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\strings.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\string.h \
- Core/Inc/MPU9250_reg.h
+ Core/Inc/MPU9250_reg.h c:\sysgcc\arm-eabi\arm-none-eabi\include\stdio.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\12.3.1\include\stdarg.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\stdio.h
 Core/Inc/main.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 Core/Inc/stm32f4xx_hal_conf.h:
@@ -109,3 +111,6 @@ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_locale.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\strings.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\string.h:
 Core/Inc/MPU9250_reg.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\stdio.h:
+c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\12.3.1\include\stdarg.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\stdio.h:

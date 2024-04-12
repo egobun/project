@@ -49,7 +49,7 @@
     <AllDependencies>
       <ProjectDependency>
         <RelativePath>.cproject</RelativePath>
-        <Timestamp>133572828250991313</Timestamp>
+        <Timestamp>133573572115592327</Timestamp>
       </ProjectDependency>
     </AllDependencies>
     <RootDirectory>
@@ -62,6 +62,9 @@
               <Files>
                 <VirtualFileSnapshot>
                   <RelativePath>Core\Inc\main.h</RelativePath>
+                </VirtualFileSnapshot>
+                <VirtualFileSnapshot>
+                  <RelativePath>Core\Inc\MPU9250_reg.h</RelativePath>
                 </VirtualFileSnapshot>
                 <VirtualFileSnapshot>
                   <RelativePath>Core\Inc\stm32f4xx_hal_conf.h</RelativePath>
