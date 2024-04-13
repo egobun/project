@@ -59,7 +59,7 @@ PCD_HandleTypeDef hpcd_USB_OTG_FS;
 float destination_a[3] = { 0, };
 float destination_g[3] = { 0, };
 int16_t destination_m[3] = { 0, };
-uint32_t counter = 0;
+uint8_t counter = 0;
 char mass[50];
 uint8_t flag = 0; 
 uint8_t flag_t = 1;
@@ -226,7 +226,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 		if (receive_bayte == 's')
 		{
 			flag = 0;
-		}
+			
+		} 
 	}
 	HAL_UART_Receive_IT(&huart4, &receive_bayte, 1);
 } 
@@ -235,6 +236,7 @@ void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
 {
 	if (huart == &huart4)
 	{
+		counter++;
 		flag_t = 1;
 		// можно установить какой-то флаг, сообщающий об окончании отправки
 	}     
@@ -292,7 +294,7 @@ int main(void)
   MX_USB_OTG_FS_PCD_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
-	HAL_UART_Receive_IT(&huart4, &receive_bayte, 1);
+	
 	//uint32_t a = 3181772803; 
 	
 
@@ -306,7 +308,7 @@ int main(void)
 	MPU_get_accel(destination_a);
 	MPU_get_magn(destination_m);
 	set_data();
-	 
+	HAL_UART_Receive_IT(&huart4, &receive_bayte, 1);
 	
 
  
@@ -323,31 +325,35 @@ int main(void)
 	  //counter++;
 	  if (flag == 1)
 	  {
-		  if (flag_t == 1)
-		  {
-			  flag_t = 0;
-			  HAL_UART_Transmit_IT(&huart4, sw, 4); 
-			  HAL_Delay(10); 
-		  }
-		  if (flag_t == 1)
-		  {
-			  flag_t = 0;
-			  HAL_UART_Transmit_IT(&huart4, (uint8_t*)data, sizeof(data)); 
-			  HAL_Delay(10); 
-		  }
-//		  HAL_UART_Transmit_IT(&huart4, sw, 4); 
-//		  HAL_Delay(10); 
-//		  HAL_UART_Transmit_IT(&huart4,(uint8_t*)data, sizeof(data)); 
-//		  HAL_Delay(10); 
-//		  snprintf(buf, 36, "%f ", destination_a[0]);
-//		  HAL_UART_Transmit(&huart4, (uint8_t*)buf, sizeof(buf), 100);
-//		  HAL_Delay(100);
+		  // flag = 0;
+		  
+		  
+			 // flag_t = 0;
+		  HAL_UART_Transmit_IT(&huart4, sw, 4); 
+		  HAL_Delay(10); 
+		  // flag_t = 0;
+		  HAL_UART_Transmit_IT(&huart4, (uint8_t*)data, sizeof(data)); 
+		  HAL_Delay(10); 
+		  //HAL_UART_Receive_IT(&huart4, &receive_bayte, 1);
+		  
+		  
+		  //		  HAL_UART_Transmit_IT(&huart4, sw, 4); 
+		  //		  HAL_Delay(10); 
+		  //		  HAL_UART_Transmit_IT(&huart4,(uint8_t*)data, sizeof(data)); 
+		  //		  HAL_Delay(10); 
+		  //		  snprintf(buf, 36, "%f ", destination_a[0]);
+		  //		  HAL_UART_Transmit(&huart4, (uint8_t*)buf, sizeof(buf), 100);
+		  //		  HAL_Delay(100);
 		 
 	  }
-	  MPU_get_gyro(destination_g);
-	  MPU_get_accel(destination_a);
-	  MPU_get_magn(destination_m);
-	  set_data();
+	  else
+	  {
+		  MPU_get_gyro(destination_g);
+		  MPU_get_accel(destination_a);
+		  MPU_get_magn(destination_m);
+		  set_data();
+	  }
+	  
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
