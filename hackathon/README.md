@@ -13,7 +13,7 @@
     Бунаков Егор - программист
     Волков Роман - конструктор
     Сутурин Даниил - программист
-![alt text](image-3.png)
+![alt text](Image/image-3.png)
 
 ИНТЕРФЕЙС УСТРОЙСТВА:
 
@@ -25,15 +25,15 @@
 
 ПРИНЦИПИАЛЬНАЯ СХЕМА УСТРОЙСТВА:
 
-![alt text](image.png)
+![alt text](Image/image.png)
 
 МОДЕЛЬ SOLIDWORKS:
 
-![alt text](image-2.png)
+![alt text](Image/image-2.png)
 
 ФОТО УСТРОЙСТВА:
 
-![alt text](image-1.png)
+![alt text](Image/image-1.png)
 
 ВИДЕО КАЛИБРОВКИ МАГНИТОМЕТРА:
     [https://www.youtube-nocookie.com/embed/URL](https://youtu.be/XUBhtNs30_Q?si=Yyp379JpWxNiqINJ)
