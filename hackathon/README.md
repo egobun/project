@@ -37,3 +37,6 @@
 
 ВИДЕО КАЛИБРОВКИ МАГНИТОМЕТРА:
     [https://www.youtube-nocookie.com/embed/URL](https://youtu.be/XUBhtNs30_Q?si=Yyp379JpWxNiqINJ)
+
+НЕ РЕАЛИЗОВАННАЯ КАЛИБРОВКА МАГНИТОМЕТРА:
+    https://github.com/ibrahimcahit/MPU9255-Quaternion-AHRS-STM32
