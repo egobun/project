@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+QString arr = "";
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -9,6 +11,11 @@ MainWindow::MainWindow(QWidget *parent)
     ui->plot->addGraph();
     ui->plot->graph(0)->setScatterStyle(QCPScatterStyle::ssCircle);
     ui->plot->graph(0)->setLineStyle(QCPGraph::lsNone);
+    ui->plot->xAxis->setRange(0, 10);
+    if(arr != "")
+        ui->plot->yAxis->setRange(0, arr.toFloat()+1);
+    //customPlot->yAxis->setRange(0, 1);
+    //ui->plot->graph(0)->set
 
     loadPorts();
     connect(&_port, &SerialPort::dataReceived,this,&MainWindow::readData);
@@ -79,8 +86,19 @@ void MainWindow::readData(QByteArray data)
 {
 
     ui->lstMessages->addItem(QString(data));
-    QString arr = QString(data);
 
-    addPoint(arr.toFloat(),2);
+    arr = QString(data);
+    QString y_data = "";
+    QString x_data = "";
+    for(int i = 14; i<18;i++){
+        y_data.append(arr[i]);
+    }
+    for(int i = 3; i<8; i++){
+        x_data.append(arr[i]);
+    }
+    ui->lstMessages->addItem(x_data);
+    ui->plot->xAxis->setRange(0,x_data.toFloat()/1000 + 1);
+    ui->plot->yAxis->setRange(0,y_data.toFloat() + 1);
+    addPoint(x_data.toFloat()/1000,y_data.toFloat());
     plot();
 }
