@@ -74,11 +74,13 @@ void MainWindow::on_btnSend_clicked()
     }
 }
 
+
 void MainWindow::readData(QByteArray data)
 {
 
     ui->lstMessages->addItem(QString(data));
-    qDebug((float)data);
-    addPoint(1,2);
+    QString arr = QString(data);
+
+    addPoint(arr.toFloat(),2);
     plot();
 }

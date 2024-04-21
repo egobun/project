@@ -35,7 +35,7 @@ private slots:
 
     void on_btnSend_clicked();
 
-    void readData(float data);
+    void readData(QByteArray data);
 
 private:
     Ui::MainWindow *ui;
