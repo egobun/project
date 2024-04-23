@@ -52,7 +52,7 @@
       <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
       <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
       <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
-      <LinkerScript>C:\Project_\visualstudio\freertos_task\STM32F429ZITX_FLASH.ld</LinkerScript>
+      <LinkerScript>C:\project\visualstudio\freertos_task\STM32F429ZITX_FLASH.ld</LinkerScript>
       <AdditionalOptions />
     </Link>
   </ItemDefinitionGroup>
@@ -68,7 +68,7 @@
       <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
       <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
       <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
-      <LinkerScript>C:\Project_\visualstudio\freertos_task\STM32F429ZITX_FLASH.ld</LinkerScript>
+      <LinkerScript>C:\project\visualstudio\freertos_task\STM32F429ZITX_FLASH.ld</LinkerScript>
       <AdditionalOptions />
     </Link>
   </ItemDefinitionGroup>

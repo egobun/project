@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34407.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uart_rocket_test_embedded", "uart_rocket_test\uart_rocket_test_embedded.vcxproj", "{C0F89ACE-C206-463C-8A6D-C7514F5DC83E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0F89ACE-C206-463C-8A6D-C7514F5DC83E}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{C0F89ACE-C206-463C-8A6D-C7514F5DC83E}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{C0F89ACE-C206-463C-8A6D-C7514F5DC83E}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{C0F89ACE-C206-463C-8A6D-C7514F5DC83E}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36F5D5AE-CDCB-407F-8521-A527461CB13C}
+	EndGlobalSection
+EndGlobal

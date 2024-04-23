@@ -176,7 +176,7 @@ int main(void)
   myTask03Handle = osThreadCreate(osThread(myTask03), NULL);
 
   /* definition and creation of myTask04 */
-  osThreadStaticDef(myTask04, StartTask04, osPriorityNormal, 0, 128, myTask04Buffer, &myTask04ControlBlock);
+  osThreadStaticDef(myTask04, StartTask04, osPriorityBelowNormal, 0, 128, myTask04Buffer, &myTask04ControlBlock);
   myTask04Handle = osThreadCreate(osThread(myTask04), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
@@ -516,8 +516,8 @@ void StartTask01(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-	 
-	  vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(10)); 
+	  osDelay(20);
+	  //vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(10)); 
 	//  counter++;
    
   }
@@ -543,7 +543,7 @@ void StartTask02(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-	  
+	  osDelay(20);
 	  //vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(25)); 
   }
   /* USER CODE END StartTask02 */
@@ -567,7 +567,7 @@ void StartTask03(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-
+	  osDelay(20);
 	  //vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(50)); 
   }
   /* USER CODE END StartTask03 */
@@ -591,7 +591,7 @@ void StartTask04(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-
+	  osDelay(20);
 	  //vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(2)); 
   }
   /* USER CODE END StartTask04 */

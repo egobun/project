@@ -49,7 +49,7 @@
     <AllDependencies>
       <ProjectDependency>
         <RelativePath>.cproject</RelativePath>
-        <Timestamp>133568201301900332</Timestamp>
+        <Timestamp>133568776744852990</Timestamp>
       </ProjectDependency>
     </AllDependencies>
     <RootDirectory>
@@ -574,7 +574,7 @@
             <string>STM32F429xx</string>
           </PreprocessorMacros>
           <GeneratePreprocessorOutput>false</GeneratePreprocessorOutput>
-          <LinkerScript>C:\Project_\visualstudio\freertos_task\STM32F429ZITX_FLASH.ld</LinkerScript>
+          <LinkerScript>C:\project\visualstudio\freertos_task\STM32F429ZITX_FLASH.ld</LinkerScript>
           <IsDebugConfiguration>false</IsDebugConfiguration>
         </Settings>
       </ImportedConfiguration>
