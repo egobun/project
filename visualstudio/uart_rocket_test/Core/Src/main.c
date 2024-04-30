@@ -57,6 +57,7 @@ PCD_HandleTypeDef hpcd_USB_OTG_FS;
 char message[14] = "1A;19419;4.23;";
 char send_message[27] = "";
 uint8_t altitude = 0;
+uint32_t time = 1000;
 char help[5] = "";
 /* USER CODE END PV */
 
@@ -120,12 +121,18 @@ int main(void)
 	    altitude += 1;
 	  if (altitude >= 250)
 		  altitude -= 1;
-	  sprintf(send_message, "1A;19419;4.23;%d.25;A;0;0;0", altitude);
+	  if (time < 25000)
+		  time += 100;
+	  if(time >= 25000)
+		  time -= 100;
+
+		  
+	  sprintf(send_message, "1A;%d;4.23;%d.25;A;0;0;0", time, altitude);
 	  //sprintf(help, "HELLO");
 	  //printf("\"%s\"",send_message);
 	  HAL_UART_Transmit(&huart3, (uint8_t*)send_message, strlen(send_message), 200);
 	  //HAL_UART_Transmit(&huart3, (uint8_t*)"Hello World\n", 12, 1000);
-	  HAL_Delay(1000);
+	  HAL_Delay(10);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

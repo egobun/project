@@ -21,7 +21,7 @@
           <ComparisonMode>Equals</ComparisonMode>
           <Enabled>false</Enabled>
         </a>
-        <f>false</f>
+        <f>true</f>
         <e>false</e>
         <b>false</b>
       </dz2>
