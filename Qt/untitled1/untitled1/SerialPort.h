@@ -2,7 +2,7 @@
 #define SERIALPORT_H
 
 #include <QObject>
-#include <QSerialPort>
+#include <QtSerialPort/QSerialPort>
 
 
 class SerialPort : public QObject

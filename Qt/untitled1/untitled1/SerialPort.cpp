@@ -13,7 +13,7 @@ bool SerialPort::connect(QString portName)
     }
     _serialPort = new QSerialPort(this);
     _serialPort->setPortName(portName);
-    _serialPort->setBaudRate(QSerialPort::Baud115200);
+    _serialPort->setBaudRate(QSerialPort::Baud9600);
     _serialPort->setDataBits(QSerialPort::Data8);
     _serialPort->setParity(QSerialPort::NoParity);
     _serialPort->setStopBits(QSerialPort::OneStop);
@@ -35,10 +35,9 @@ quint64 SerialPort::write(QByteArray data)
 void SerialPort::dataReady()
 {
     //if(_serialPort->isOpen()){
-    //_serialPort->waitForReadyRead(3) &&
-    char *datta;
-    while (_serialPort->isOpen()){
-        emit dataReceived(_serialPort->readAll());
+    while (_serialPort->waitForReadyRead(10)){
+        dann = _serialPort->readAll();
+        emit dataReceived(dann);
     }
         //requestData += serial.readAll();
 

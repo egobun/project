@@ -61,25 +61,92 @@ proc step_failed { step } {
 }
 
 
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
+start_step init_design
+set ACTIVE_STEP init_design
 set rc [catch {
-  create_msg_db write_bitstream.pb
+  create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
-  set_param xicom.use_bs_reader 1
-  open_checkpoint logic_ex_routed.dcp
+  create_project -in_memory -part xc7a100tcsg324-1
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir C:/project/vivado/CH1/CH1.cache/wt [current_project]
-  catch { write_mem_info -force logic_ex.mmi }
-  write_bitstream -force logic_ex.bit 
-  catch {write_debug_probes -quiet -force logic_ex}
-  catch {file copy -force logic_ex.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
+  set_property parent.project_path C:/project/vivado/CH1/CH1.xpr [current_project]
+  set_property ip_output_repo C:/project/vivado/CH1/CH1.cache/ip [current_project]
+  set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet C:/project/vivado/CH1/CH1.runs/synth_1/logic_ex.dcp
+  read_xdc C:/Learn-FPGA-Programming/CH1/build/xdc/Nexys-A7-100T-Master.xdc
+  link_design -top logic_ex -part xc7a100tcsg324-1
+  close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
-  step_failed write_bitstream
+  step_failed init_design
   return -code error $RESULT
 } else {
-  end_step write_bitstream
+  end_step init_design
+  unset ACTIVE_STEP 
+}
+
+start_step opt_design
+set ACTIVE_STEP opt_design
+set rc [catch {
+  create_msg_db opt_design.pb
+  opt_design 
+  write_checkpoint -force logic_ex_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file logic_ex_drc_opted.rpt -pb logic_ex_drc_opted.pb -rpx logic_ex_drc_opted.rpx"
+  close_msg_db -file opt_design.pb
+} RESULT]
+if {$rc} {
+  step_failed opt_design
+  return -code error $RESULT
+} else {
+  end_step opt_design
+  unset ACTIVE_STEP 
+}
+
+start_step place_design
+set ACTIVE_STEP place_design
+set rc [catch {
+  create_msg_db place_design.pb
+  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
+    implement_debug_core 
+  } 
+  place_design 
+  write_checkpoint -force logic_ex_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file logic_ex_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file logic_ex_utilization_placed.rpt -pb logic_ex_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file logic_ex_control_sets_placed.rpt"
+  close_msg_db -file place_design.pb
+} RESULT]
+if {$rc} {
+  step_failed place_design
+  return -code error $RESULT
+} else {
+  end_step place_design
+  unset ACTIVE_STEP 
+}
+
+start_step route_design
+set ACTIVE_STEP route_design
+set rc [catch {
+  create_msg_db route_design.pb
+  route_design 
+  write_checkpoint -force logic_ex_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file logic_ex_drc_routed.rpt -pb logic_ex_drc_routed.pb -rpx logic_ex_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file logic_ex_methodology_drc_routed.rpt -pb logic_ex_methodology_drc_routed.pb -rpx logic_ex_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file logic_ex_power_routed.rpt -pb logic_ex_power_summary_routed.pb -rpx logic_ex_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file logic_ex_route_status.rpt -pb logic_ex_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file logic_ex_timing_summary_routed.rpt -pb logic_ex_timing_summary_routed.pb -rpx logic_ex_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file logic_ex_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file logic_ex_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file logic_ex_bus_skew_routed.rpt -pb logic_ex_bus_skew_routed.pb -rpx logic_ex_bus_skew_routed.rpx"
+  close_msg_db -file route_design.pb
+} RESULT]
+if {$rc} {
+  write_checkpoint -force logic_ex_routed_error.dcp
+  step_failed route_design
+  return -code error $RESULT
+} else {
+  end_step route_design
   unset ACTIVE_STEP 
 }
 

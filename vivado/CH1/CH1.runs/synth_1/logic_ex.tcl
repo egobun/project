@@ -26,7 +26,6 @@ set_property webtalk.parent_dir C:/project/vivado/CH1/CH1.cache/wt [current_proj
 set_property parent.project_path C:/project/vivado/CH1/CH1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/project/vivado/CH1/CH1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv C:/Learn-FPGA-Programming/CH1/hdl/logic_ex.sv
 # Mark all dcp files as not used in implementation to prevent them from being
