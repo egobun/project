@@ -35,9 +35,10 @@ quint64 SerialPort::write(QByteArray data)
 void SerialPort::dataReady()
 {
     //if(_serialPort->isOpen()){
-    while (_serialPort->waitForReadyRead(10)){
-        dann = _serialPort->readAll();
-        emit dataReceived(dann);
+    //_serialPort->waitForReadyRead(3) &&
+    char *datta;
+    while (_serialPort->isOpen()){
+        emit dataReceived(_serialPort->readAll());
     }
         //requestData += serial.readAll();
 

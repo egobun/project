@@ -3,6 +3,7 @@
 extern QByteArray dann;
 QString arr = "";
 QString help = "";
+int i = 0;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -91,47 +92,54 @@ void MainWindow::on_btnSend_clicked()
 
 
 void MainWindow::readData(QByteArray data)
-{
-    ui->lstMessages->addItem(QString(data));
-    //qDebug() << data;
-    arr = QString(data);
-    qsizetype index1 = arr.indexOf(";",3);
-    qsizetype index2 = arr.indexOf(";",(int8_t)index1+6);
-    qsizetype index3 = arr.indexOf(";",9);
+{   if(QString(data) != "" ){
+        i = 0;
+        ui->lstMessages->addItem(QString(data));
+        //qDebug() << data;
+        arr = QString(data);
+        qsizetype index1 = arr.indexOf(";",3);
+        qsizetype index2 = arr.indexOf(";",(int8_t)index1+6);
+        qsizetype index3 = arr.indexOf(";",9);
 
-    //setlocale(LC_ALL, "");
+        //setlocale(LC_ALL, "");
 
-    //ui->lstMessages->addItem(arr);
+        //ui->lstMessages->addItem(arr);
 
-    //arr.replace(QString(""), QString(""));
-    //arr.indexOf(QRegExp("[\\n]"), 0);
-    //ui->lstMessages->addItem(QString(arr.indexOf(QRegExp("0"), 0)));
-    //qDebug() << arr;
-    qsizetype len = index2-index3-1;
-    QString y_data = arr.mid(index2-len, len);
-    QString x_data = arr.mid(3, index1-3);
-    //ui->lstMessages->addItem((x_data));
-    //qDebug() << x_data;
-    //qDebug() << y_data;
-    //QString X_data = QString(&x_data);
-    //x_data = QString(x_data);
-    //y_data = QString(y_data);
-    /*
-    for(int i = 14; i<18;i++){
-        y_data.append(arr[i]);
+        //arr.replace(QString(""), QString(""));
+        //arr.indexOf(QRegExp("[\\n]"), 0);
+        //ui->lstMessages->addItem(QString(arr.indexOf(QRegExp("0"), 0)));
+        //qDebug() << arr;
+        qsizetype len = index2-index3-1;
+        QString y_data = arr.mid(index2-len, len);
+        QString x_data = arr.mid(3, index1-3);
+        //ui->lstMessages->addItem((x_data));
+        //qDebug() << x_data;
+        //qDebug() << y_data;
+        //QString X_data = QString(&x_data);
+        //x_data = QString(x_data);
+        //y_data = QString(y_data);
+        /*
+        for(int i = 14; i<18;i++){
+            y_data.append(arr[i]);
+        }
+        for(int i = 3; i<8; i++){
+            x_data.append(arr[i]);
+        }*/
+        //ui->lstMessages->addItem(x_data);
+        if(x_data != "" && y_data != ""){
+            ui->plot->xAxis->setRange(0,x_data.toFloat()/1000 + 1);
+            ui->plot->yAxis->setRange(0,y_data.toFloat() + 1);
+            addPoint(x_data.toFloat()/1000,y_data.toFloat());
+        }
+
+        //qDebug() << x_data;
+        //qDebug() << y_data;
+        plot();
     }
-    for(int i = 3; i<8; i++){
-        x_data.append(arr[i]);
-    }*/
-    //ui->lstMessages->addItem(x_data);
-    if(x_data != "" && y_data != ""){
-        ui->plot->xAxis->setRange(0,x_data.toFloat()/1000 + 1);
-        ui->plot->yAxis->setRange(0,y_data.toFloat() + 1);
-        addPoint(x_data.toFloat()/1000,y_data.toFloat());
-    }
+    else
+    {
+        i++;
 
-    //qDebug() << x_data;
-    //qDebug() << y_data;
-    plot();
+    }
 
 }
