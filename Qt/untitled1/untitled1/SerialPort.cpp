@@ -13,7 +13,7 @@ bool SerialPort::connect(QString portName)
     }
     _serialPort = new QSerialPort(this);
     _serialPort->setPortName(portName);
-    _serialPort->setBaudRate(QSerialPort::Baud115200);
+    _serialPort->setBaudRate(QSerialPort::Baud9600);
     _serialPort->setDataBits(QSerialPort::Data8);
     _serialPort->setParity(QSerialPort::NoParity);
     _serialPort->setStopBits(QSerialPort::OneStop);

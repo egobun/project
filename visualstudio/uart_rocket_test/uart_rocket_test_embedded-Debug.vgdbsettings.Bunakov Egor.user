@@ -15,7 +15,7 @@
     <c>
       <dz2>
         <g>altitude</g>
-        <c>com.sysprogs.types.builtin.UInt8</c>
+        <c>com.sysprogs.types.builtin.SInt16</c>
         <h>true</h>
         <a>
           <ComparisonMode>Equals</ComparisonMode>
@@ -35,6 +35,18 @@
         </a>
         <f>false</f>
         <e>true</e>
+        <b>false</b>
+      </dz2>
+      <dz2>
+        <g>time</g>
+        <c>com.sysprogs.types.builtin.UInt32</c>
+        <h>true</h>
+        <a>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </a>
+        <f>false</f>
+        <e>false</e>
         <b>false</b>
       </dz2>
     </c>
