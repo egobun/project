@@ -1,5 +1,5 @@
 #include "SerialPort.h"
-QByteArray  dann;
+int counter = 0;
 SerialPort::SerialPort(QObject *parent)
     : QObject{parent}
     ,_serialPort(nullptr)
@@ -13,7 +13,7 @@ bool SerialPort::connect(QString portName)
     }
     _serialPort = new QSerialPort(this);
     _serialPort->setPortName(portName);
-    _serialPort->setBaudRate(QSerialPort::Baud9600);
+    _serialPort->setBaudRate(QSerialPort::Baud115200);
     _serialPort->setDataBits(QSerialPort::Data8);
     _serialPort->setParity(QSerialPort::NoParity);
     _serialPort->setStopBits(QSerialPort::OneStop);
@@ -34,10 +34,12 @@ quint64 SerialPort::write(QByteArray data)
 
 void SerialPort::dataReady()
 {
+    counter++;
     //if(_serialPort->isOpen()){
+    //_serialPort->waitForReadyRead(10)
     while (_serialPort->waitForReadyRead(10)){
-        dann = _serialPort->readAll();
-        emit dataReceived(dann);
+
+        emit dataReceived( _serialPort->readAll());
     }
         //requestData += serial.readAll();
 

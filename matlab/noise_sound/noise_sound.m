@@ -1,9 +1,9 @@
 [y,Fs] = audioread("Dance_Monkey.mp3");
-[x,Fs] = audioread("Dance_Monkey.mp3",[1,length(y) - 10*Fs]);
-
+[x,Fs] = audioread("Dance_Monkey.mp3",[1,length(y) - 1*Fs]);
+N = length(x);
 
 sound(x,Fs);
-pause(10);
+pause(1);
 clear sound;
 xn = awgn (x, 15, 'measured');
 
@@ -35,10 +35,13 @@ hold on
 
 plot (xden, 'b')
 sound(xn,Fs);
-pause(10);
+pause(1);
 clear sound;
 grid on
 
 legend ("Зашумленный аудиосигнал", "Очищенный аудиосигнал")
 
 hold off
+
+figure
+cwt(x,'amor',100)
