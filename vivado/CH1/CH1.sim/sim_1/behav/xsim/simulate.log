@@ -1,0 +1,9 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Timescale of (tb) is 1ns/100ps.
+Setting switches to 00
+Setting switches to 01
+Setting switches to 10
+Setting switches to 11
+PASS: logic_ex test PASSED!
+$stop called at time : 400 ns : File "C:/Learn-FPGA-Programming/CH1/tb/tb.sv" Line 20

@@ -1,0 +1,80 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Timescale of (tb(SELECTOR="UNIQUE_CASE")) is 1ns/100ps.
+Setting switches to 0011010100100100
+WARNING: 0ns : Multiple conditions true
+	 condition at line:21 conflicts with condtion at line:20
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+WARNING: 0ns : Multiple conditions true
+	 condition at line:21 conflicts with condtion at line:20
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+Setting switches to 0101111010000001
+WARNING: 100ns : Multiple conditions true
+	 condition at line:21 conflicts with condtion at line:19
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+WARNING: 100ns : Multiple conditions true
+	 condition at line:21 conflicts with condtion at line:19
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+Setting switches to 1101011000001001
+WARNING: 200ns : Multiple conditions true
+	 condition at line:19 conflicts with condtion at line:18
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+WARNING: 200ns : Multiple conditions true
+	 condition at line:19 conflicts with condtion at line:18
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+Setting switches to 0101011001100011
+WARNING: 300ns : Multiple conditions true
+	 condition at line:21 conflicts with condtion at line:19
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+WARNING: 300ns : Multiple conditions true
+	 condition at line:21 conflicts with condtion at line:19
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+Setting switches to 0111101100001101
+WARNING: 400ns : Multiple conditions true
+	 condition at line:20 conflicts with condtion at line:19
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+WARNING: 400ns : Multiple conditions true
+	 condition at line:20 conflicts with condtion at line:19
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+Setting switches to 1001100110001101
+WARNING: 500ns : Multiple conditions true
+	 condition at line:21 conflicts with condtion at line:18
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+WARNING: 500ns : Multiple conditions true
+	 condition at line:21 conflicts with condtion at line:18
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+Setting switches to 1000010001100101
+WARNING: 600ns : Multiple conditions true
+	 condition at line:23 conflicts with condtion at line:18
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+WARNING: 600ns : Multiple conditions true
+	 condition at line:23 conflicts with condtion at line:18
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+Setting switches to 0101001000010010
+WARNING: 700ns : Multiple conditions true
+	 condition at line:21 conflicts with condtion at line:19
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+WARNING: 700ns : Multiple conditions true
+	 condition at line:21 conflicts with condtion at line:19
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+Setting switches to 1110001100000001
+WARNING: 800ns : Multiple conditions true
+	 condition at line:19 conflicts with condtion at line:18
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+WARNING: 800ns : Multiple conditions true
+	 condition at line:19 conflicts with condtion at line:18
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+Setting switches to 1100110100001101
+WARNING: 900ns : Multiple conditions true
+	 condition at line:19 conflicts with condtion at line:18
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+WARNING: 900ns : Multiple conditions true
+	 condition at line:19 conflicts with condtion at line:18
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+Setting switches to 1111000101110110
+WARNING: 1000ns : Multiple conditions true
+	 condition at line:19 conflicts with condtion at line:18
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17
+WARNING: 1000ns : Multiple conditions true
+	 condition at line:19 conflicts with condtion at line:18
+	 for unique case from File:C:/project/vivado/CH2/hdl/leading_ones.sv:17

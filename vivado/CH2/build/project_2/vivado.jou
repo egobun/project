@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May  1 12:42:41 2024
+# Process ID: 7848
+# Current directory: C:/project/vivado/CH2/build/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13316 C:\project\vivado\CH2\build\project_2\project_2.xpr
+# Log file: C:/project/vivado/CH2/build/project_2/vivado.log
+# Journal file: C:/project/vivado/CH2/build/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/project/vivado/CH2/build/project_2/project_2.xpr
+save_project_as project_3 C:/project/vivado/project_3 -force
+set_property generic {SELECTOR=UNIQUE_CASE UNIQUE_CASE=TRUE TEST_CASE=LEADING_ONES} [get_filesets sim_1]
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+add_bp {C:/project/vivado/CH2/hdl/leading_ones.sv} 22
+remove_bps -file {C:/project/vivado/CH2/hdl/leading_ones.sv} -line 22
+add_bp {C:/project/vivado/CH2/hdl/leading_ones.sv} 23
+remove_bps -file {C:/project/vivado/CH2/hdl/leading_ones.sv} -line 23
+close_sim
+launch_simulation
+source tb.tcl
+set_property generic {SELECTOR=UNIQUE_CASE UNIQUE_CASE=FALSE TEST_CASE=LEADING_ONES} [get_filesets sim_1]
+close_sim
+launch_simulation
+source tb.tcl
+set_property generic {SELECTOR=UNIQUE_CASE UNIQUE_CASE=FALSE TEST_CASE=LEADING_ONES} [current_fileset]
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/project/vivado/project_3/project_3.runs/impl_1/project_2.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/project/vivado/project_3/project_3.runs/impl_1/project_2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/project/vivado/project_3/project_3.runs/impl_1/project_2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim

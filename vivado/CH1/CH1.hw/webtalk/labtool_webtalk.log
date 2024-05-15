@@ -1,0 +1,9 @@
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/project/vivado/CH1/CH1.hw/webtalk/labtool_webtalk.tcl -notrace
+Отказано в доступе.
+INFO: [Common 17-206] Exiting Webtalk at Wed May  8 21:15:30 2024...

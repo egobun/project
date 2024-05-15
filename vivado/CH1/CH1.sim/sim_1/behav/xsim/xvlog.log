@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Learn-FPGA-Programming/CH1/hdl/logic_ex.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_ex
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Learn-FPGA-Programming/CH1/tb/tb.sv" into library xil_defaultlib
+WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Learn-FPGA-Programming/CH1/tb/tb.sv:1]
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivado/CH1/CH1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

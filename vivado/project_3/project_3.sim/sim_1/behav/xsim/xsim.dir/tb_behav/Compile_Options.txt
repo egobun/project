@@ -1,0 +1,1 @@
+-wto "ff6ac55971b946768df1bf977289280e" --incr --debug "typical" --relax --mt "2" -generic_top "SELECTOR=UNIQUE_CASE" -generic_top "UNIQUE_CASE=FALSE" -generic_top "TEST_CASE=LEADING_ONES" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "tb_behav" "xil_defaultlib.tb" "xil_defaultlib.glbl" -log "elaborate.log" 

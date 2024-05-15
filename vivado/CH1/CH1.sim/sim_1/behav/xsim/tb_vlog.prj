@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../../../Learn-FPGA-Programming/CH1/hdl/logic_ex.sv" \
+"../../../../../../../Learn-FPGA-Programming/CH1/tb/tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
