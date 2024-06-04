@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="C:/project/vivado/CH1/CH1.xpr">
+<Project Version="7" Minor="40" Path="C:/Users/deneg/project/vivado/CH1/CH1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="a74448a7d5ef462d81628213520a643c"/>

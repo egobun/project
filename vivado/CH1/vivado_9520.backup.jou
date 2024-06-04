@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May  8 21:14:12 2024
+# Process ID: 9520
+# Current directory: C:/project/vivado/CH1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8684 C:\project\vivado\CH1\CH1.xpr
+# Log file: C:/project/vivado/CH1/vivado.log
+# Journal file: C:/project/vivado/CH1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/project/vivado/CH1/CH1.xpr
+uuupdate_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/project/vivado/6.111.1/tb/tb.sv
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/project/vivado/6.111.1/tb/tb.sv] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/project/vivado/6.111.1/tb/tb.sv

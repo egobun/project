@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu May  9 15:24:10 2024
-# Process ID: 17948
-# Current directory: C:/project/vivado/6.111.1/6.111.1.runs/synth_1
+# Start of session at: Tue Jun  4 19:49:08 2024
+# Process ID: 40436
+# Current directory: C:/Users/deneg/project/vivado/6.111.1/6.111.1.runs/synth_1
 # Command line: vivado.exe -log leds.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source leds.tcl
-# Log file: C:/project/vivado/6.111.1/6.111.1.runs/synth_1/leds.vds
-# Journal file: C:/project/vivado/6.111.1/6.111.1.runs/synth_1\vivado.jou
+# Log file: C:/Users/deneg/project/vivado/6.111.1/6.111.1.runs/synth_1/leds.vds
+# Journal file: C:/Users/deneg/project/vivado/6.111.1/6.111.1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source leds.tcl -notrace

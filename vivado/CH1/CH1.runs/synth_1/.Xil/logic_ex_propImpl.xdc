@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Learn-FPGA-Programming/CH1/build/xdc/Nexys-A7-100T-Master.xdc rfile:../../../../../../Learn-FPGA-Programming/CH1/build/xdc/Nexys-A7-100T-Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/deneg/Learn-FPGA-Programming/CH1/build/xdc/Nexys-A7-100T-Master.xdc rfile:../../../../../../Learn-FPGA-Programming/CH1/build/xdc/Nexys-A7-100T-Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN J15   IOSTANDARD LVCMOS33 } [get_ports { SW[0] }]; #IO_L24N_T3_RS0_15 Sch=sw[0]
 set_property src_info {type:XDC file:1 line:15 export:INPUT save:INPUT read:READ} [current_design]

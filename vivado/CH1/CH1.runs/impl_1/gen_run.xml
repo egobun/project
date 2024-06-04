@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1715191363">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1717505090">
   <File Type="BITSTR-BMM" Name="logic_ex_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="logic_ex_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="logic_ex_timing_summary_init.rpt"/>

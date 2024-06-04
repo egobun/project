@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed May  8 21:02:34 2024
-| Host         : DESKTOP-DU3OVKP running 64-bit major release  (build 9200)
+| Date         : Tue Jun  4 15:45:14 2024
+| Host         : ant-lab running 64-bit major release  (build 9200)
 | Command      : report_utilization -file logic_ex_utilization_synth.rpt -pb logic_ex_utilization_synth.pb
 | Design       : logic_ex
 | Device       : 7a100tcsg324-1
