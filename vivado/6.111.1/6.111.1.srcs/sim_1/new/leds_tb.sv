@@ -47,7 +47,7 @@ module leds_tb;
                 );
         */
  
-        binary_to_seven_seg my_display(SW, LED);
+        bin_to_seven_seg my_display(SW, LED);
     
         initial begin
                 $display("Starting Sim");
