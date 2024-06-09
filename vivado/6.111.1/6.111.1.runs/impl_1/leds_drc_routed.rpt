@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Jun  4 19:50:58 2024
-| Host         : ant-lab running 64-bit major release  (build 9200)
+| Date         : Sun Jun  9 22:06:53 2024
+| Host         : DESKTOP-DU3OVKP running 64-bit major release  (build 9200)
 | Command      : report_drc -file leds_drc_routed.rpt -pb leds_drc_routed.pb -rpx leds_drc_routed.rpx
 | Design       : leds
 | Device       : xc7a100tcsg324-1
@@ -24,12 +24,18 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 0
-+------+----------+-------------+------------+
-| Rule | Severity | Description | Violations |
-+------+----------+-------------+------------+
-+------+----------+-------------+------------+
+             Violations found: 1
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 1          |
++----------+----------+-------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net my_convert//i__n_0 is a gated clock net sourced by a combinational pin my_convert//i_/O, cell my_convert//i_. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
 

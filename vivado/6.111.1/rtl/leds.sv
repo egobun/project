@@ -1,14 +1,6 @@
 module leds
     (
-        input wire [3:0] SW,
-        input logic CLK100MHZ,
-        output logic[3:0] LED,
-        output logic LED16_R,
-        output logic LED16_G,
-        output logic LED16_B,
-        input BTNC,
-        input BTNL,
-        input BTNR,
+        input logic [3:0] SW,
         output logic CA,
         output logic CB,
         output logic CC,
@@ -19,12 +11,19 @@ module leds
         output logic DP,
         output logic [7:0] AN
     );
-    
-    assign LED16_R = BTNL;
-    assign LED16_G = BTNC;
-    assign LED16_B = BTNR;
-    
-    assign AN[6] = SW[0];
+
+    logic [6:0] log_out;
+    assign AN[7] = 1'b0;
+    assign AN[6] = 1'b0;
+    assign AN[5] = 1'b0;
+    assign AN[4] = 1'b0;
+    assign AN[3] = 1'b0;
+    assign AN[2] = 1'b0;
+    assign AN[1] = 1'b0;
+    assign AN[0] = 1'b0;
+    bin_to_seven_seg my_convert(SW,log_out);
+    assign {CG,CF,CE,CD,CC,CB,CA} = ~log_out;
+    /*
     always@ (posedge CLK100MHZ)begin
         if(SW[1] == 1'b1)begin
             CA <= 1;
@@ -54,6 +53,7 @@ module leds
             CG <= 0;
         end
     end
+    */
     /*
     always@ (SW[0])
     while(SW[0] != 0)

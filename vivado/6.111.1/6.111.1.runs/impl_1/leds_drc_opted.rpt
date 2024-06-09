@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Jun  4 19:50:13 2024
-| Host         : ant-lab running 64-bit major release  (build 9200)
+| Date         : Sun Jun  9 22:06:20 2024
+| Host         : DESKTOP-DU3OVKP running 64-bit major release  (build 9200)
 | Command      : report_drc -file leds_drc_opted.rpt -pb leds_drc_opted.pb -rpx leds_drc_opted.rpx
 | Design       : leds
 | Device       : xc7a100tcsg324-1

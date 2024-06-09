@@ -1,2 +1,2 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/deneg/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb

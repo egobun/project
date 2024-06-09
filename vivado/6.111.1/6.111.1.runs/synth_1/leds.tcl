@@ -17,23 +17,23 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 3
-set_param synth.incrementalSynthesisCache C:/Users/deneg/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-17200-ant-lab/incrSyn
+set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/deneg/project/vivado/6.111.1/6.111.1.cache/wt [current_project]
-set_property parent.project_path C:/Users/deneg/project/vivado/6.111.1/6.111.1.xpr [current_project]
+set_property webtalk.parent_dir C:/project/vivado/6.111.1/6.111.1.cache/wt [current_project]
+set_property parent.project_path C:/project/vivado/6.111.1/6.111.1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/deneg/project/vivado/6.111.1/6.111.1.cache/ip [current_project]
+set_property ip_output_repo c:/project/vivado/6.111.1/6.111.1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib -sv C:/Users/deneg/project/vivado/6.111.1/rtl/leds.sv
+read_verilog -library xil_defaultlib -sv {
+  C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/new/bin_to_seven_seg.sv
+  C:/project/vivado/6.111.1/rtl/leds.sv
+}
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -42,8 +42,8 @@ read_verilog -library xil_defaultlib -sv C:/Users/deneg/project/vivado/6.111.1/r
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/deneg/project/vivado/6.111.1/constr/constr.xdc
-set_property used_in_implementation false [get_files C:/Users/deneg/project/vivado/6.111.1/constr/constr.xdc]
+read_xdc C:/project/vivado/6.111.1/constr/constr.xdc
+set_property used_in_implementation false [get_files C:/project/vivado/6.111.1/constr/constr.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

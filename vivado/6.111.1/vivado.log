@@ -1,0 +1,1488 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jun  9 18:51:50 2024
+# Process ID: 7164
+# Current directory: C:/project/vivado/6.111.1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3584 C:\project\vivado\6.111.1\6.111.1.xpr
+# Log file: C:/project/vivado/6.111.1/vivado.log
+# Journal file: C:/project/vivado/6.111.1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/project/vivado/6.111.1/6.111.1.xpr
+WARNING: [Board 49-91] Board repository path 'C:/Users/Bunakov' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Egor/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Bunakov' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Bunakov' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Bunakov' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/{C:/Users/Bunakov' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Bunakov' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store}' does not exist, it will not be used to search board files.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/{C:/Users/Bunakov'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store}'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 855.133 ; gain = 164.305
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.leds_tb in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 857.168 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.leds_tb in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 927.945 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot leds_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/xsim.dir/leds_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun  9 19:03:18 2024...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1108.781 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "leds_tb_behav -key {Behavioral:sim_1:Functional:leds_tb} -tclbatch {leds_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source leds_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1108.781 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1108.781 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1108.781 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+ERROR: [VRFC 10-1280] procedural assignment to a non-register SW is not permitted, left-hand side should be reg/integer/time/genvar [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:64]
+WARNING: [VRFC 10-3522] missing or empty argument against format specification for 'display' [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:68]
+ERROR: [VRFC 10-2865] module 'leds_tb' ignored due to previous errors [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+WARNING: [VRFC 10-3522] missing or empty argument against format specification for 'display' [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:68]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.1/rtl/leds.sv" Line 1. Module leds doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.leds_tb
+ERROR: [XSIM 43-3185] "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" Line 68. Number of arguments are less than format specifiers. 
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+WARNING: [VRFC 10-3522] missing or empty argument against format specification for 'display' [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:68]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.1/rtl/leds.sv" Line 1. Module leds doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.leds_tb
+ERROR: [XSIM 43-3185] "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" Line 68. Number of arguments are less than format specifiers. 
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.1/rtl/leds.sv" Line 1. Module leds doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.leds_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot leds_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "leds_tb_behav -key {Behavioral:sim_1:Functional:leds_tb} -tclbatch {leds_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source leds_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1180.895 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.895 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.1/rtl/leds.sv" Line 1. Module leds doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.leds_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot leds_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "leds_tb_behav -key {Behavioral:sim_1:Functional:leds_tb} -tclbatch {leds_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source leds_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1180.895 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.895 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.1/rtl/leds.sv" Line 1. Module leds doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.leds_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot leds_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "leds_tb_behav -key {Behavioral:sim_1:Functional:leds_tb} -tclbatch {leds_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source leds_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+
+
+---------
+Starting Simulation!
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1180.895 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+WARNING: [VRFC 10-3522] missing or empty argument against format specification for 'display' [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:68]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.1/rtl/leds.sv" Line 1. Module leds doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.leds_tb
+ERROR: [XSIM 43-3185] "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" Line 68. Number of arguments are less than format specifiers. 
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+WARNING: [VRFC 10-3522] missing or empty argument against format specification for 'display' [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:68]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.1/rtl/leds.sv" Line 1. Module leds doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.leds_tb
+ERROR: [XSIM 43-3185] "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" Line 68. Number of arguments are less than format specifiers. 
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.1/rtl/leds.sv" Line 1. Module leds doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.leds_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot leds_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "leds_tb_behav -key {Behavioral:sim_1:Functional:leds_tb} -tclbatch {leds_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source leds_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1180.895 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.1/rtl/leds.sv" Line 1. Module leds doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.leds_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot leds_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "leds_tb_behav -key {Behavioral:sim_1:Functional:leds_tb} -tclbatch {leds_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source leds_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: CB doesn't light
+Time: 10 ns  Iteration: 0  Process: /leds_tb/Initial63_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1180.895 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.1/rtl/leds.sv" Line 1. Module leds doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.leds_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot leds_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "leds_tb_behav -key {Behavioral:sim_1:Functional:leds_tb} -tclbatch {leds_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source leds_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: CB doesn't light
+Time: 10 ns  Iteration: 0  Process: /leds_tb/Initial63_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+Error: CC doesn't light
+Time: 10 ns  Iteration: 0  Process: /leds_tb/Initial63_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+$finish called at time : 10 ns : File "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" Line 73
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1180.895 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1180.895 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.1/rtl/leds.sv" Line 1. Module leds doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.leds_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot leds_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "leds_tb_behav -key {Behavioral:sim_1:Functional:leds_tb} -tclbatch {leds_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source leds_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: CB doesn't light
+Time: 10 ns  Iteration: 0  Process: /leds_tb/Initial64_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+Error: CC doesn't light
+Time: 10 ns  Iteration: 0  Process: /leds_tb/Initial64_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+$finish called at time : 10 ns : File "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" Line 74
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1330.988 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1330.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.1/rtl/leds.sv" Line 1. Module leds doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.leds_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot leds_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "leds_tb_behav -key {Behavioral:sim_1:Functional:leds_tb} -tclbatch {leds_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source leds_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: CB doesn't light
+Time: 10 ns  Iteration: 0  Process: /leds_tb/Initial64_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+Error: CC doesn't light
+Time: 10 ns  Iteration: 0  Process: /leds_tb/Initial64_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+$finish called at time : 10 ns : File "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" Line 74
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1330.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "leds_tb_behav -key {Behavioral:sim_1:Functional:leds_tb} -tclbatch {leds_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source leds_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1330.988 ; gain = 0.000
+# run 1000ns
+Error: CB doesn't light
+Time: 10 ns  Iteration: 0  Process: /leds_tb/Initial64_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+Error: CC doesn't light
+Time: 10 ns  Iteration: 0  Process: /leds_tb/Initial64_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+$finish called at time : 10 ns : File "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" Line 74
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1330.988 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1330.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.1/rtl/leds.sv" Line 1. Module leds doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.leds_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot leds_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "leds_tb_behav -key {Behavioral:sim_1:Functional:leds_tb} -tclbatch {leds_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source leds_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: CB doesn't light
+Time: 10 ns  Iteration: 0  Process: /leds_tb/Initial64_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+Error: CC doesn't light
+Time: 10 ns  Iteration: 0  Process: /leds_tb/Initial64_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+Error: CB doesn't light
+Time: 20 ns  Iteration: 0  Process: /leds_tb/Initial64_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+Error: CC doesn't light
+Time: 20 ns  Iteration: 0  Process: /leds_tb/Initial64_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+$finish called at time : 20 ns : File "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" Line 84
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1330.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/rtl/leds.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.1/rtl/leds.sv" Line 1. Module leds doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.leds_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot leds_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "leds_tb_behav -key {Behavioral:sim_1:Functional:leds_tb} -tclbatch {leds_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source leds_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: CB doesn't light
+Time: 10 ns  Iteration: 0  Process: /leds_tb/Initial65_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+Error: CC doesn't light
+Time: 10 ns  Iteration: 0  Process: /leds_tb/Initial65_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+Error: CB doesn't light
+Time: 20 ns  Iteration: 0  Process: /leds_tb/Initial65_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+Error: CC doesn't light
+Time: 20 ns  Iteration: 0  Process: /leds_tb/Initial65_1  File: C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv
+$finish called at time : 20 ns : File "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" Line 85
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1330.988 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+file mkdir C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/new
+close [ open C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/new/bin_to_seven_seg.sv w ]
+add_files C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/new/bin_to_seven_seg.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <binary_to_seven_seg> not found while processing module instance <my_display> [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:50]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <binary_to_seven_seg> not found while processing module instance <my_display> [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:50]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <binary_to_seven_seg> not found while processing module instance <my_display> [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:50]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <binary_to_seven_seg> not found while processing module instance <my_display> [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:50]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <binary_to_seven_seg> not found while processing module instance <my_display> [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:50]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <binary_to_seven_seg> not found while processing module instance <my_display> [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:50]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun Jun  9 20:50:59 2024] Launched synth_1...
+Run output will be captured here: C:/project/vivado/6.111.1/6.111.1.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <binary_to_seven_seg> not found while processing module instance <my_display> [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:50]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <binary_to_seven_seg> not found while processing module instance <my_display> [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:50]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.leds_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot leds_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "leds_tb_behav -key {Behavioral:sim_1:Functional:leds_tb} -tclbatch {leds_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source leds_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1330.988 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun  9 20:52:14 2024] Launched synth_1...
+Run output will be captured here: C:/project/vivado/6.111.1/6.111.1.runs/synth_1/runme.log
+[Sun Jun  9 20:52:14 2024] Launched impl_1...
+Run output will be captured here: C:/project/vivado/6.111.1/6.111.1.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "leds_tb_behav -key {Behavioral:sim_1:Functional:leds_tb} -tclbatch {leds_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source leds_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1330.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "leds_tb_behav -key {Behavioral:sim_1:Functional:leds_tb} -tclbatch {leds_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source leds_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun Jun  9 21:01:23 2024] Launched synth_1...
+Run output will be captured here: C:/project/vivado/6.111.1/6.111.1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Jun  9 21:02:20 2024] Launched impl_1...
+Run output will be captured here: C:/project/vivado/6.111.1/6.111.1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun  9 21:03:51 2024] Launched impl_1...
+Run output will be captured here: C:/project/vivado/6.111.1/6.111.1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292745376A
+set_property PROGRAM.FILE {C:/project/vivado/6.111.1/6.111.1.runs/impl_1/leds.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/project/vivado/6.111.1/6.111.1.runs/impl_1/leds.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun  9 21:08:19 2024] Launched impl_1...
+Run output will be captured here: C:/project/vivado/6.111.1/6.111.1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/project/vivado/6.111.1/6.111.1.runs/impl_1/leds.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292745376A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292745376A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun  9 21:43:09 2024] Launched synth_1...
+Run output will be captured here: C:/project/vivado/6.111.1/6.111.1.runs/synth_1/runme.log
+[Sun Jun  9 21:43:09 2024] Launched impl_1...
+Run output will be captured here: C:/project/vivado/6.111.1/6.111.1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/project/vivado/6.111.1/6.111.1.runs/impl_1/leds.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun  9 21:51:29 2024] Launched synth_1...
+Run output will be captured here: C:/project/vivado/6.111.1/6.111.1.runs/synth_1/runme.log
+[Sun Jun  9 21:51:29 2024] Launched impl_1...
+Run output will be captured here: C:/project/vivado/6.111.1/6.111.1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/project/vivado/6.111.1/6.111.1.runs/impl_1/leds.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun  9 22:01:28 2024] Launched synth_1...
+Run output will be captured here: C:/project/vivado/6.111.1/6.111.1.runs/synth_1/runme.log
+[Sun Jun  9 22:01:28 2024] Launched impl_1...
+Run output will be captured here: C:/project/vivado/6.111.1/6.111.1.runs/impl_1/runme.log
+create_bd_design "design_1"
+Wrote  : <C:\project\vivado\6.111.1\6.111.1.srcs\sources_1\bd\design_1\design_1.bd> 
+update_compile_order -fileset sources_1
+generate_target all [get_files  C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : <C:\project\vivado\6.111.1\6.111.1.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/project/vivado/6.111.1/6.111.1.ip_user_files/sim_scripts -ip_user_files_dir C:/project/vivado/6.111.1/6.111.1.ip_user_files -ipstatic_source_dir C:/project/vivado/6.111.1/6.111.1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/modelsim} {questa=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/questa} {riviera=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/riviera} {activehdl=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/project/vivado/6.111.1/6.111.1.runs/impl_1/leds.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun  9 22:05:20 2024] Launched synth_1...
+Run output will be captured here: C:/project/vivado/6.111.1/6.111.1.runs/synth_1/runme.log
+[Sun Jun  9 22:05:20 2024] Launched impl_1...
+Run output will be captured here: C:/project/vivado/6.111.1/6.111.1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/project/vivado/6.111.1/6.111.1.runs/impl_1/leds.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+generate_target all [get_files  C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'design_1' - hence not re-generating.
+export_ip_user_files -of_objects [get_files C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/project/vivado/6.111.1/6.111.1.ip_user_files/sim_scripts -ip_user_files_dir C:/project/vivado/6.111.1/6.111.1.ip_user_files -ipstatic_source_dir C:/project/vivado/6.111.1/6.111.1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/modelsim} {questa=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/questa} {riviera=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/riviera} {activehdl=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd}
+generate_target all [get_files  C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'design_1' - hence not re-generating.
+export_ip_user_files -of_objects [get_files C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/project/vivado/6.111.1/6.111.1.ip_user_files/sim_scripts -ip_user_files_dir C:/project/vivado/6.111.1/6.111.1.ip_user_files -ipstatic_source_dir C:/project/vivado/6.111.1/6.111.1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/modelsim} {questa=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/questa} {riviera=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/riviera} {activehdl=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property synth_checkpoint_mode None [get_files  C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/project/vivado/6.111.1/6.111.1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/project/vivado/6.111.1/6.111.1.ip_user_files/sim_scripts -ip_user_files_dir C:/project/vivado/6.111.1/6.111.1.ip_user_files -ipstatic_source_dir C:/project/vivado/6.111.1/6.111.1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/modelsim} {questa=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/questa} {riviera=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/riviera} {activehdl=C:/project/vivado/6.111.1/6.111.1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'leds_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj leds_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim'
+"xelab -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 27cf1cf6841e4890a8241000757770ff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot leds_tb_behav xil_defaultlib.leds_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <binary_to_seven_seg> not found while processing module instance <my_display> [C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv:50]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.

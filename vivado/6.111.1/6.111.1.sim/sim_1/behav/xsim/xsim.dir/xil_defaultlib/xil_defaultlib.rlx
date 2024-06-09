@@ -2,5 +2,6 @@
 2019.1
 May 24 2019
 15:06:07
-C:/Users/deneg/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/glbl.v,1717503900,verilog,,,,glbl,,,,,,,,
-C:/Users/deneg/project/vivado/6.111.1/rtl/leds.sv,1717516405,systemVerilog,,,,leds,,,,,,,,
+C:/project/vivado/6.111.1/6.111.1.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv,1717960430,systemVerilog,,,,leds_tb,,,,,,,,
+C:/project/vivado/6.111.1/rtl/leds.sv,1717950348,systemVerilog,,C:/project/vivado/6.111.1/6.111.1.srcs/sim_1/new/leds_tb.sv,,leds,,,,,,,,

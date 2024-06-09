@@ -60,25 +60,22 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 3
-  set_param synth.incrementalSynthesisCache C:/Users/deneg/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-17200-ant-lab/incrSyn
+  set_param chipscope.maxJobs 4
   set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/deneg/project/vivado/6.111.1/6.111.1.cache/wt [current_project]
-  set_property parent.project_path C:/Users/deneg/project/vivado/6.111.1/6.111.1.xpr [current_project]
-  set_property ip_output_repo C:/Users/deneg/project/vivado/6.111.1/6.111.1.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/project/vivado/6.111.1/6.111.1.cache/wt [current_project]
+  set_property parent.project_path C:/project/vivado/6.111.1/6.111.1.xpr [current_project]
+  set_property ip_output_repo C:/project/vivado/6.111.1/6.111.1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/deneg/project/vivado/6.111.1/6.111.1.runs/synth_1/leds.dcp
-  read_xdc C:/Users/deneg/project/vivado/6.111.1/constr/constr.xdc
+  add_files -quiet C:/project/vivado/6.111.1/6.111.1.runs/synth_1/leds.dcp
+  read_xdc C:/project/vivado/6.111.1/constr/constr.xdc
   link_design -top leds -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
