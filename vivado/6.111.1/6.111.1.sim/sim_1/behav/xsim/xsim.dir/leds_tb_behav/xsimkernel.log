@@ -2,3 +2,6 @@ Running: xsim.dir/leds_tb_behav/xsimk.exe -simmode gui -wdb leds_tb_behav.wdb -s
 Design successfully loaded
 Design Loading Memory Usage: 5904 KB (Peak: 5904 KB)
 Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 6560 KB (Peak: 6560 KB)
+Simulation CPU Usage: 15 ms

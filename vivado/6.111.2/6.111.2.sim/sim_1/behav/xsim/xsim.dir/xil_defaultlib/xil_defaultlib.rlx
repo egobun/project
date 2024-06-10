@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/project/vivado/6.111.2/6.111.2.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/project/vivado/6.111.2/rtl/bin_to_seven_seg.sv,1717959660,systemVerilog,,C:/project/vivado/6.111.2/tb/top_level_tb.sv,,bin_to_seven_seg,,,,,,,,
+C:/project/vivado/6.111.2/rtl/seven_seg_controller.sv,1717973809,systemVerilog,,C:/project/vivado/6.111.2/rtl/top_level.sv,,seven_seg_controller,,,,,,,,
+C:/project/vivado/6.111.2/rtl/top_level.sv,1717974306,systemVerilog,,,,top_level,,,,,,,,
+C:/project/vivado/6.111.2/tb/top_level_tb.sv,1717972914,systemVerilog,,,,top_level_tb,,,,,,,,
