@@ -18,6 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 4
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -31,7 +32,9 @@ set_property ip_output_repo c:/project/vivado/6.111.2/6.111.2.cache/ip [current_
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
   C:/project/vivado/6.111.2/rtl/bin_to_seven_seg.sv
+  C:/project/vivado/6.111.2/rtl/debounce.sv
   C:/project/vivado/6.111.2/rtl/seven_seg_controller.sv
+  C:/project/vivado/6.111.2/rtl/simple_counter.sv
   C:/project/vivado/6.111.2/rtl/top_level.sv
 }
 # Mark all dcp files as not used in implementation to prevent them from being

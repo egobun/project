@@ -64,8 +64,8 @@ all: main-build
 main-build: freertos_start.elf secondary-outputs
 
 # Tool invocations
-freertos_start.elf freertos_start.map: $(OBJS) $(USER_OBJS) C:\Project\cubemx\NUCLEO\STM32F429ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "freertos_start.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Project\cubemx\NUCLEO\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="freertos_start.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+freertos_start.elf freertos_start.map: $(OBJS) $(USER_OBJS) C:\project\cubemx\NUCLEO\STM32F429ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "freertos_start.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\project\cubemx\NUCLEO\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="freertos_start.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

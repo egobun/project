@@ -173,4 +173,3 @@ launch_simulation
 launch_simulation
 launch_simulation
 source leds_tb.tcl
-close_sim

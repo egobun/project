@@ -1677,7 +1677,3 @@ $finish called at time : 10 ns : File "C:/project/vivado/6.111.1/6.111.1.srcs/si
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'leds_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
 launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2577.711 ; gain = 7.750
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-exit
-INFO: [Common 17-206] Exiting Vivado at Mon Jun 10 00:19:49 2024...
