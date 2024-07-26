@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="serial_tx_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="serial_tx_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="117000000001fs"></ZoomEndTime>
+      <Cursor1Time time="40000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="139"></NameColumnWidth>
+      <ValueColumnWidth column_width="104"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/serial_tx_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serial_tx_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serial_tx_tb/trigger" type="logic">
+      <obj_property name="ElementShortName">trigger</obj_property>
+      <obj_property name="ObjectShortName">trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serial_tx_tb/val" type="array">
+      <obj_property name="ElementShortName">val[7:0]</obj_property>
+      <obj_property name="ObjectShortName">val[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serial_tx_tb/data" type="logic">
+      <obj_property name="ElementShortName">data</obj_property>
+      <obj_property name="ObjectShortName">data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serial_tx_tb/my_serial/val_in" type="array">
+      <obj_property name="ElementShortName">val_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">val_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serial_tx_tb/my_serial/trigger_in" type="logic">
+      <obj_property name="ElementShortName">trigger_in</obj_property>
+      <obj_property name="ObjectShortName">trigger_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serial_tx_tb/my_serial/rst_in" type="logic">
+      <obj_property name="ElementShortName">rst_in</obj_property>
+      <obj_property name="ObjectShortName">rst_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serial_tx_tb/my_serial/clk_in" type="logic">
+      <obj_property name="ElementShortName">clk_in</obj_property>
+      <obj_property name="ObjectShortName">clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serial_tx_tb/my_serial/data_out" type="logic">
+      <obj_property name="ElementShortName">data_out</obj_property>
+      <obj_property name="ObjectShortName">data_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serial_tx_tb/my_serial/i" type="array">
+      <obj_property name="ElementShortName">i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">i[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serial_tx_tb/my_serial/shift_buffer" type="array">
+      <obj_property name="ElementShortName">shift_buffer[9:0]</obj_property>
+      <obj_property name="ObjectShortName">shift_buffer[9:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/serial_tx_tb/my_serial/count" type="array">
+      <obj_property name="ElementShortName">count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serial_tx_tb/my_serial/btn_was_pressed" type="logic">
+      <obj_property name="ElementShortName">btn_was_pressed</obj_property>
+      <obj_property name="ObjectShortName">btn_was_pressed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serial_tx_tb/my_serial/DIVISOR" type="array">
+      <obj_property name="ElementShortName">DIVISOR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DIVISOR[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,813 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jun 19 14:08:15 2024
+# Process ID: 17884
+# Current directory: C:/project/vivado/6.111.2.2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8868 C:\project\vivado\6.111.2.2\6.111.2.2.xpr
+# Log file: C:/project/vivado/6.111.2.2/vivado.log
+# Journal file: C:/project/vivado/6.111.2.2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/project/vivado/6.111.2.2/6.111.2.2.xpr
+WARNING: [Board 49-91] Board repository path 'C:/Users/Bunakov' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Egor/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Bunakov' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Bunakov' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Bunakov' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/{C:/Users/Bunakov' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Bunakov' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store}' does not exist, it will not be used to search board files.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/{C:/Users/Bunakov'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Bunakov Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/Egor/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store}'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+oopen_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 853.020 ; gain = 205.641update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'serial_tx_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj serial_tx_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/tb/serial_tx_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xelab -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" Line 1. Module serial_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_tx
+Compiling module xil_defaultlib.serial_tx_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot serial_tx_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim/xsim.dir/serial_tx_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 19 14:13:11 2024...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 874.797 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "serial_tx_tb_behav -key {Behavioral:sim_1:Functional:serial_tx_tb} -tclbatch {serial_tx_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source serial_tx_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'serial_tx_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 893.422 ; gain = 18.625
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/project/vivado/6.111.2.2/6.111.2.2.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Jun 19 14:14:05 2024] Launched synth_1...
+Run output will be captured here: C:/project/vivado/6.111.2.2/6.111.2.2.runs/synth_1/runme.log
+[Wed Jun 19 14:14:06 2024] Launched impl_1...
+Run output will be captured here: C:/project/vivado/6.111.2.2/6.111.2.2.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292745376A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292745376A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292745376A
+set_property PROGRAM.FILE {C:/project/vivado/6.111.2.2/6.111.2.2.runs/impl_1/top_level.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/project/vivado/6.111.2.2/6.111.2.2.runs/impl_1/top_level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/project/vivado/6.111.2.2/6.111.2.2.runs/impl_1/top_level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292745376A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292745376A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292745376A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292745376A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292745376A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292745376A
+set_property PROGRAM.FILE {C:/project/vivado/6.111.2.2/6.111.2.2.runs/impl_1/top_level.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/project/vivado/6.111.2.2/6.111.2.2.runs/impl_1/top_level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/project/vivado/6.111.2.2/6.111.2.2.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Jun 19 14:39:44 2024] Launched synth_1...
+Run output will be captured here: C:/project/vivado/6.111.2.2/6.111.2.2.runs/synth_1/runme.log
+[Wed Jun 19 14:39:44 2024] Launched impl_1...
+Run output will be captured here: C:/project/vivado/6.111.2.2/6.111.2.2.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/project/vivado/6.111.2.2/6.111.2.2.runs/impl_1/top_level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'serial_tx_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj serial_tx_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/tb/serial_tx_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xelab -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" Line 1. Module serial_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_tx
+Compiling module xil_defaultlib.serial_tx_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot serial_tx_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "serial_tx_tb_behav -key {Behavioral:sim_1:Functional:serial_tx_tb} -tclbatch {serial_tx_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source serial_tx_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'serial_tx_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'serial_tx_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj serial_tx_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/tb/serial_tx_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xelab -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" Line 1. Module serial_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_tx
+Compiling module xil_defaultlib.serial_tx_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot serial_tx_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "serial_tx_tb_behav -key {Behavioral:sim_1:Functional:serial_tx_tb} -tclbatch {serial_tx_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source serial_tx_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'serial_tx_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'serial_tx_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj serial_tx_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/tb/serial_tx_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xelab -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" Line 1. Module serial_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_tx
+Compiling module xil_defaultlib.serial_tx_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot serial_tx_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "serial_tx_tb_behav -key {Behavioral:sim_1:Functional:serial_tx_tb} -tclbatch {serial_tx_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source serial_tx_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'serial_tx_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'serial_tx_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj serial_tx_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/tb/serial_tx_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xelab -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" Line 1. Module serial_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_tx
+Compiling module xil_defaultlib.serial_tx_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot serial_tx_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "serial_tx_tb_behav -key {Behavioral:sim_1:Functional:serial_tx_tb} -tclbatch {serial_tx_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source serial_tx_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'serial_tx_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'serial_tx_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj serial_tx_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/tb/serial_tx_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xelab -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" Line 1. Module serial_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_tx
+Compiling module xil_defaultlib.serial_tx_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot serial_tx_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "serial_tx_tb_behav -key {Behavioral:sim_1:Functional:serial_tx_tb} -tclbatch {serial_tx_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source serial_tx_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'serial_tx_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'serial_tx_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj serial_tx_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/tb/serial_tx_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xelab -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" Line 1. Module serial_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_tx
+Compiling module xil_defaultlib.serial_tx_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot serial_tx_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "serial_tx_tb_behav -key {Behavioral:sim_1:Functional:serial_tx_tb} -tclbatch {serial_tx_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source serial_tx_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'serial_tx_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'serial_tx_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj serial_tx_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/tb/serial_tx_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xelab -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" Line 1. Module serial_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_tx
+Compiling module xil_defaultlib.serial_tx_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot serial_tx_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "serial_tx_tb_behav -key {Behavioral:sim_1:Functional:serial_tx_tb} -tclbatch {serial_tx_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source serial_tx_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'serial_tx_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'serial_tx_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj serial_tx_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/tb/serial_tx_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xelab -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" Line 1. Module serial_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_tx
+Compiling module xil_defaultlib.serial_tx_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot serial_tx_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "serial_tx_tb_behav -key {Behavioral:sim_1:Functional:serial_tx_tb} -tclbatch {serial_tx_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source serial_tx_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'serial_tx_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'serial_tx_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj serial_tx_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/tb/serial_tx_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xelab -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" Line 1. Module serial_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_tx
+Compiling module xil_defaultlib.serial_tx_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot serial_tx_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "serial_tx_tb_behav -key {Behavioral:sim_1:Functional:serial_tx_tb} -tclbatch {serial_tx_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source serial_tx_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'serial_tx_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'serial_tx_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj serial_tx_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xelab -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "serial_tx_tb_behav -key {Behavioral:sim_1:Functional:serial_tx_tb} -tclbatch {serial_tx_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source serial_tx_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'serial_tx_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+run all
+run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2323.117 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'serial_tx_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj serial_tx_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xelab -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2323.117 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'serial_tx_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj serial_tx_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/project/vivado/6.111.2.2/tb/serial_tx_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+"xelab -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" Line 1. Module serial_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_tx
+Compiling module xil_defaultlib.serial_tx_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot serial_tx_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "serial_tx_tb_behav -key {Behavioral:sim_1:Functional:serial_tx_tb} -tclbatch {serial_tx_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source serial_tx_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'serial_tx_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+relaunch_sim

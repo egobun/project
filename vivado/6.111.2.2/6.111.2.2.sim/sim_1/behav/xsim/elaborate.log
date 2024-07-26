@@ -1,0 +1,14 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 961083902ce14c8181f089ee784f6208 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot serial_tx_tb_behav xil_defaultlib.serial_tx_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/project/vivado/6.111.2.2/rtl/serial_tx.sv" Line 1. Module serial_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_tx
+Compiling module xil_defaultlib.serial_tx_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot serial_tx_tb_behav

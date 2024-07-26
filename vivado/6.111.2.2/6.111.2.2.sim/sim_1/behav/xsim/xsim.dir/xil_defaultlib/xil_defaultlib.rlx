@@ -1,0 +1,7 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/project/vivado/6.111.2.2/6.111.2.2.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/project/vivado/6.111.2.2/rtl/serial_tx.sv,1718800181,systemVerilog,,C:/project/vivado/6.111.2.2/tb/serial_tx_tb.sv,,serial_tx,,,,,,,,
+C:/project/vivado/6.111.2.2/tb/serial_tx_tb.sv,1718798860,systemVerilog,,,,serial_tx_tb,,,,,,,,

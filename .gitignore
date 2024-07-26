@@ -1,0 +1,6 @@
+*.wdb
+/vivado/6.111.2/6.111.2.sim/sim_1/behav/xsim/debounce_tb_behav.wdb
+/vivado/6.111.2/6.111.2.sim/sim_1/behav/xsim/seven_seg_controller_behav.wdb
+/vivado/6.111.2/6.111.2.sim/sim_1/behav/xsim/simple_counter_tb_behav.wdb
+/vivado/6.111.2/6.111.2.sim/sim_1/behav/xsim/top_level_behav.wdb
+/vivado/6.111.2/6.111.2.sim/sim_1/behav/xsim/top_level_tb_behav.wdb
